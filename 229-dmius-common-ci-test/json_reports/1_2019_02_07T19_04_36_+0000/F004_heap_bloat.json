@@ -1,0 +1,115 @@
+{
+  "project": "test",
+  "name": "heap_bloat",
+  "checkId": "F004",
+  "timestamptz": "2019-02-07 19:05:24.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-07 19:05:24.0+0000",
+      "dir": "1_2019_02_07T19_04_36_+0000"
+    }
+  },
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": {
+        "t_with_bloat": {
+          "Is N/A": "",
+          "Table": "t_with_bloat",
+          "Size": "69 MB",
+          "Extra": "~35 MB (50.19%)",
+          "Bloat estimate": "~35 MB (50.19%)",
+          "Live": "~34 MB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        },
+        "bloated": {
+          "Is N/A": "",
+          "Table": "bloated",
+          "Size": "3544 kB",
+          "Extra": "~1776 kB (50.11%)",
+          "Bloat estimate": "~1776 kB (50.11%)",
+          "Live": "~1768 kB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        },
+        "t_fk_2": {
+          "Is N/A": "",
+          "Table": "t_fk_2",
+          "Size": "42 MB",
+          "Extra": "~152 kB (0.35%)",
+          "Bloat estimate": "~152 kB (0.35%)",
+          "Live": "~42 MB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        },
+        "t_with_redundant_index": {
+          "Is N/A": "",
+          "Table": "t_with_redundant_index",
+          "Size": "35 MB",
+          "Extra": "~136 kB (0.38%)",
+          "Bloat estimate": "~136 kB (0.38%)",
+          "Live": "~34 MB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        },
+        "t_with_unused_index": {
+          "Is N/A": "",
+          "Table": "t_with_unused_index",
+          "Size": "35 MB",
+          "Extra": "~136 kB (0.38%)",
+          "Bloat estimate": "~136 kB (0.38%)",
+          "Live": "~34 MB",
+          "Last Vaccuum": "2019-02-07 19:04:13",
+          "Fillfactor": 100
+        },
+        "t_with_invalid_index": {
+          "Is N/A": "",
+          "Table": "t_with_invalid_index",
+          "Size": "35 MB",
+          "Extra": "~136 kB (0.38%)",
+          "Bloat estimate": "~136 kB (0.38%)",
+          "Live": "~34 MB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        },
+        "t_fk_1": {
+          "Is N/A": "",
+          "Table": "t_fk_1",
+          "Size": "35 MB",
+          "Extra": "~136 kB (0.38%)",
+          "Bloat estimate": "~136 kB (0.38%)",
+          "Live": "~34 MB",
+          "Last Vaccuum": "2019-02-07 19:04:14",
+          "Fillfactor": 100
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-07 19:05:24.0+0000",
+          "dir": "1_2019_02_07T19_04_36_+0000"
+        }
+      }
+    }
+  }
+}
