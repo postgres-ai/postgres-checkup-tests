@@ -1,0 +1,55 @@
+{
+  "project": "test",
+  "name": "invalid_indexes",
+  "checkId": "H001",
+  "timestamptz": "2019-02-12 11:49:10.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-12 11:49:10.0+0000",
+      "dir": "1_2019_02_12T11_48_19_+0000"
+    }
+  },
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": {
+        "1": {
+          "num": 1,
+          "relation_name": "t_with_invalid_index",
+          "index_name": "i_invalid",
+          "schema_name": "public",
+          "table_name": "t_with_invalid_index",
+          "index_size": "0 bytes",
+          "drop_code": "DROP INDEX CONCURRENTLY i_invalid; -- Invalid index, table t_with_invalid_index",
+          "revert_code": "CREATE INDEX CONCURRENTLY i_invalid ON public.t_with_invalid_index USING btree (i); -- table t_with_invalid_index"
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-12 11:49:10.0+0000",
+          "dir": "1_2019_02_12T11_48_19_+0000"
+        }
+      }
+    }
+  }
+}
