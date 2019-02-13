@@ -1,0 +1,138 @@
+{
+  "project": "test",
+  "name": "cluster_info",
+  "checkId": "A004",
+  "timestamptz": "2019-02-13 15:11:33.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-ed2dce3a-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-13 15:11:33.0+0000",
+      "dir": "1_2019_02_13T15_10_52_+0000"
+    }
+  },
+  "results": {
+    "runner-ed2dce3a-project-9951336-concurrent-0": {
+      "data": {
+        "general_info": {
+          "Postgres Version": {
+            "metric": "Postgres Version",
+            "value": "PostgreSQL 11.1 (Ubuntu 11.1-3.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit"
+          },
+          "Config file": {
+            "metric": "Config file",
+            "value": "/etc/postgresql/11/main/postgresql.conf"
+          },
+          "Role": {
+            "metric": "Role",
+            "value": "Master"
+          },
+          "Replicas": {
+            "metric": "Replicas",
+            "value": null
+          },
+          "Started At": {
+            "metric": "Started At",
+            "value": "2019-02-13 15:09:53+00"
+          },
+          "Uptime": {
+            "metric": "Uptime",
+            "value": "00:01:41"
+          },
+          "Checkpoints": {
+            "metric": "Checkpoints",
+            "value": "4"
+          },
+          "Forced Checkpoints": {
+            "metric": "Forced Checkpoints",
+            "value": "100.0%"
+          },
+          "Checkpoint MB/sec": {
+            "metric": "Checkpoint MB/sec",
+            "value": "0.006588"
+          },
+          "Database Name": {
+            "metric": "Database Name",
+            "value": "dbname"
+          },
+          "Database Size": {
+            "metric": "Database Size",
+            "value": "349 MB"
+          },
+          "Stats Since": {
+            "metric": "Stats Since",
+            "value": "2019-02-13 15:09:55+00"
+          },
+          "Stats Age": {
+            "metric": "Stats Age",
+            "value": "00:01:38"
+          },
+          "Installed Extensions": {
+            "metric": "Installed Extensions",
+            "value": "pg_stat_kcache 2.1.1, pg_stat_statements 1.6, plpgsql 1.0"
+          },
+          "Cache Effectiveness": {
+            "metric": "Cache Effectiveness",
+            "value": "95.69%"
+          },
+          "Successful Commits": {
+            "metric": "Successful Commits",
+            "value": "99.45%"
+          },
+          "Conflicts": {
+            "metric": "Conflicts",
+            "value": "0"
+          },
+          "Temp Files: total size": {
+            "metric": "Temp Files: total size",
+            "value": "158 MB"
+          },
+          "Temp Files: total number of files": {
+            "metric": "Temp Files: total number of files",
+            "value": "17"
+          },
+          "Temp Files: avg file size": {
+            "metric": "Temp Files: avg file size",
+            "value": "9513 kB"
+          },
+          "Deadlocks": {
+            "metric": "Deadlocks",
+            "value": "0"
+          }
+        },
+        "database_sizes": {
+          "dbname": 366013439,
+          "postgres": 7875583,
+          "checkup_test_db": 7875583,
+          "template1": 7733763,
+          "template0": 7733763
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-ed2dce3a-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-13 15:11:33.0+0000",
+          "dir": "1_2019_02_13T15_10_52_+0000"
+        }
+      }
+    }
+  }
+}
