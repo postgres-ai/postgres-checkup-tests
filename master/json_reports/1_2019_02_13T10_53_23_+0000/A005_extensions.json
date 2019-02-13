@@ -1,0 +1,84 @@
+{
+  "project": "test",
+  "name": "extensions",
+  "checkId": "A005",
+  "timestamptz": "2019-02-13 10:54:03.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-ed2dce3a-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-13 10:54:03.0+0000",
+      "dir": "1_2019_02_13T10_53_23_+0000"
+    }
+  },
+  "results": {
+    "runner-ed2dce3a-project-9951336-concurrent-0": {
+      "data": {
+        "checkup_test_db": {
+          "plpgsql": {
+            "name": "plpgsql",
+            "installed_version": "1.0",
+            "default_version": "1.0",
+            "is_old": null,
+            "settings": null
+          }
+        },
+        "dbname": {
+          "pg_stat_kcache": {
+            "name": "pg_stat_kcache",
+            "installed_version": "2.1.1",
+            "default_version": "2.1.1",
+            "is_old": null,
+            "settings": {
+              "pg_stat_kcache.linux_hz": "1000000"
+            }
+          },
+          "pg_stat_statements": {
+            "name": "pg_stat_statements",
+            "installed_version": "1.6",
+            "default_version": "1.6",
+            "is_old": null,
+            "settings": {
+              "pg_stat_statements.max": "5000",
+              "pg_stat_statements.save": "on",
+              "pg_stat_statements.track": "top",
+              "pg_stat_statements.track_utility": "on"
+            }
+          },
+          "plpgsql": {
+            "name": "plpgsql",
+            "installed_version": "1.0",
+            "default_version": "1.0",
+            "is_old": null,
+            "settings": null
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-ed2dce3a-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-13 10:54:03.0+0000",
+          "dir": "1_2019_02_13T10_53_23_+0000"
+        }
+      }
+    }
+  }
+}
