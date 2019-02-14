@@ -1,0 +1,118 @@
+{
+  "project": "test",
+  "name": "table_sizes",
+  "checkId": "L001",
+  "timestamptz": "2019-02-14 13:43:06.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-14 13:43:06.0+0000",
+      "dir": "1_2019_02_14T13_42_14_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "*** TOTAL ***": {
+          "Table": "*** TOTAL ***",
+          "Rows": "~6M",
+          "Total Size": "342 MB (100.00%)",
+          "Table Size": "254 MB (100.00%)",
+          "Index(es) Size": "88 MB (100.00%)",
+          "TOAST Size": "56 kB (100.00%)"
+        },
+        "t_with_redundant_index": {
+          "Table": "t_with_redundant_index",
+          "Rows": "~1000k",
+          "Total Size": "78 MB (22.71%)",
+          "Table Size": "35 MB (13.66%)",
+          "Index(es) Size": "43 MB (48.77%)",
+          "TOAST Size": null
+        },
+        "t_with_bloat": {
+          "Table": "t_with_bloat",
+          "Rows": "~1000k",
+          "Total Size": "69 MB (20.27%)",
+          "Table Size": "69 MB (27.30%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_fk_1": {
+          "Table": "t_fk_1",
+          "Rows": "~1M",
+          "Total Size": "56 MB (16.42%)",
+          "Table Size": "35 MB (13.66%)",
+          "Index(es) Size": "21 MB (24.39%)",
+          "TOAST Size": null
+        },
+        "t_with_unused_index": {
+          "Table": "t_with_unused_index",
+          "Rows": "~1000k",
+          "Total Size": "56 MB (16.42%)",
+          "Table Size": "35 MB (13.66%)",
+          "Index(es) Size": "21 MB (24.39%)",
+          "TOAST Size": null
+        },
+        "t_fk_2": {
+          "Table": "t_fk_2",
+          "Rows": "~1000k",
+          "Total Size": "42 MB (12.38%)",
+          "Table Size": "42 MB (16.68%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_with_invalid_index": {
+          "Table": "t_with_invalid_index",
+          "Rows": "~1000k",
+          "Total Size": "35 MB (10.14%)",
+          "Table Size": "35 MB (13.66%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "bloated": {
+          "Table": "bloated",
+          "Rows": "~50k",
+          "Total Size": "5784 kB (1.65%)",
+          "Table Size": "3576 kB (1.38%)",
+          "Index(es) Size": "2208 kB (2.45%)",
+          "TOAST Size": null
+        },
+        "t_fillfactor": {
+          "Table": "t_fillfactor",
+          "Rows": "~0",
+          "Total Size": "0 bytes (0.00%)",
+          "Table Size": "0 bytes (0.00%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-14 13:43:06.0+0000",
+          "dir": "1_2019_02_14T13_42_14_+0000"
+        }
+      }
+    }
+  }
+}
