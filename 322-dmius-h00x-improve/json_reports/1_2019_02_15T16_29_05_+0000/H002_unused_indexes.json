@@ -1,0 +1,204 @@
+{
+  "project": "test",
+  "name": "unused_indexes",
+  "checkId": "H002",
+  "timestamptz": "2019-02-15 16:29:53.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-15 16:29:53.0+0000",
+      "dir": "1_2019_02_15T16_29_05_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "never_used_indexes": {
+          "t_with_unused_index.i_unused": {
+            "num": 1,
+            "reason": "Never Used Indexes",
+            "index_id": "16413",
+            "schema_name": "public",
+            "table_name": "t_with_unused_index",
+            "formated_table_name": "t_with_unused_index",
+            "index_name": "i_unused",
+            "idx_scan": 0,
+            "all_scans": 3,
+            "index_scan_pct": 0,
+            "writes": 1000000,
+            "scans_per_write": 0,
+            "index_size_bytes": 22487040,
+            "table_size_bytes": 36249600,
+            "idx_is_btree": true,
+            "index_def": "CREATE INDEX i_unused ON public.t_with_unused_index USING btree (i)"
+          },
+          "t_with_redundant_index.i_redundant_2": {
+            "num": 2,
+            "reason": "Never Used Indexes",
+            "index_id": "16418",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "formated_table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_2",
+            "idx_scan": 0,
+            "all_scans": 6,
+            "index_scan_pct": 0,
+            "writes": 1000000,
+            "scans_per_write": 0,
+            "index_size_bytes": 22487040,
+            "table_size_bytes": 36249600,
+            "idx_is_btree": true,
+            "index_def": "CREATE INDEX i_redundant_2 ON public.t_with_redundant_index USING btree (i)"
+          },
+          "t_with_redundant_index.i_redundant_1": {
+            "num": 3,
+            "reason": "Never Used Indexes",
+            "index_id": "16417",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "formated_table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_1",
+            "idx_scan": 0,
+            "all_scans": 6,
+            "index_scan_pct": 0,
+            "writes": 1000000,
+            "scans_per_write": 0,
+            "index_size_bytes": 22487040,
+            "table_size_bytes": 36249600,
+            "idx_is_btree": true,
+            "index_def": "CREATE INDEX i_redundant_1 ON public.t_with_redundant_index USING btree (i)"
+          },
+          "bloated.i_bloated": {
+            "num": 4,
+            "reason": "Never Used Indexes",
+            "index_id": "16439",
+            "schema_name": "public",
+            "table_name": "bloated",
+            "formated_table_name": "bloated",
+            "index_name": "i_bloated",
+            "idx_scan": 0,
+            "all_scans": 2,
+            "index_scan_pct": 0,
+            "writes": 150000,
+            "scans_per_write": 0,
+            "index_size_bytes": 2260992,
+            "table_size_bytes": 3629056,
+            "idx_is_btree": true,
+            "index_def": "CREATE INDEX i_bloated ON public.bloated USING btree (i)"
+          },
+          "t_with_invalid_index.i_invalid": {
+            "num": 5,
+            "reason": "Never Used Indexes",
+            "index_id": "16422",
+            "schema_name": "public",
+            "table_name": "t_with_invalid_index",
+            "formated_table_name": "t_with_invalid_index",
+            "index_name": "i_invalid",
+            "idx_scan": 0,
+            "all_scans": 1,
+            "index_scan_pct": 0,
+            "writes": 1000000,
+            "scans_per_write": 0,
+            "index_size_bytes": 0,
+            "table_size_bytes": 36249600,
+            "idx_is_btree": true,
+            "index_def": "CREATE INDEX i_invalid ON public.t_with_invalid_index USING btree (i)"
+          }
+        },
+        "never_used_indexes_total": {
+          "index_size_bytes_sum": 69722112,
+          "table_size_bytes_sum": 148627456
+        },
+        "rarely_used_indexes": null,
+        "rarely_used_indexes_total": {
+          "index_size_bytes_sum": null,
+          "table_size_bytes_sum": null
+        },
+        "redundant_indexes": {
+          "t_with_redundant_index.i_redundant_1": {
+            "num": 1,
+            "index_id": "16417",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "table_size_bytes": 36249600,
+            "formated_table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_1",
+            "access_method": "btree",
+            "reason": "redundant to index: i_redundant_2",
+            "main_index_def": "CREATE INDEX i_redundant_2 ON public.t_with_redundant_index USING btree (i)",
+            "main_index_size": "21 MB",
+            "index_def": "CREATE INDEX i_redundant_1 ON public.t_with_redundant_index USING btree (i)",
+            "index_size_bytes": 22487040,
+            "index_usage": 0
+          },
+          "t_with_redundant_index.i_redundant_2": {
+            "num": 2,
+            "index_id": "16418",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "table_size_bytes": 36249600,
+            "formated_table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_2",
+            "access_method": "btree",
+            "reason": "redundant to index: i_redundant_1",
+            "main_index_def": "CREATE INDEX i_redundant_1 ON public.t_with_redundant_index USING btree (i)",
+            "main_index_size": "21 MB",
+            "index_def": "CREATE INDEX i_redundant_2 ON public.t_with_redundant_index USING btree (i)",
+            "index_size_bytes": 22487040,
+            "index_usage": 0
+          }
+        },
+        "redundant_indexes_total": {
+          "index_size_bytes_sum": 44974080,
+          "table_size_bytes_sum": 72499200
+        },
+        "do": [
+          "DROP INDEX CONCURRENTLY i_bloated; -- 2208 kB, Never Used Indexes, table bloated",
+          "DROP INDEX CONCURRENTLY i_invalid; -- 0 bytes, Never Used Indexes, table t_with_invalid_index",
+          "DROP INDEX CONCURRENTLY i_redundant_1; -- 21 MB, Never Used Indexes, redundant to index: i_redundant_2, table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY i_redundant_2; -- 21 MB, Never Used Indexes, redundant to index: i_redundant_1, table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY i_unused; -- 21 MB, Never Used Indexes, table t_with_unused_index"
+        ],
+        "undo": [
+          "CREATE INDEX CONCURRENTLY i_bloated ON public.bloated USING btree (i); -- table bloated",
+          "CREATE INDEX CONCURRENTLY i_invalid ON public.t_with_invalid_index USING btree (i); -- table t_with_invalid_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_1 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_2 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_unused ON public.t_with_unused_index USING btree (i); -- table t_with_unused_index"
+        ],
+        "database_stat": {
+          "stats_reset": "2019-02-15T16:28:07+00:00",
+          "stats_age": "00:01:00",
+          "days": 0
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-15 16:29:53.0+0000",
+          "dir": "1_2019_02_15T16_29_05_+0000"
+        }
+      }
+    }
+  }
+}
