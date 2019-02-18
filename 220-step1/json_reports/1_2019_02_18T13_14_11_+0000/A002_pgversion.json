@@ -1,0 +1,50 @@
+{
+  "project": "test",
+  "name": "pgversion",
+  "checkId": "A002",
+  "timestamptz": "2019-02-18 13:14:51.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-18 13:14:51.0+0000",
+      "dir": "1_2019_02_18T13_14_11_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "version": "PostgreSQL 11.2 (Ubuntu 11.2-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110002",
+        "server_major_ver": "11.2 (Ubuntu 11.2-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-18 13:14:51.0+0000",
+          "dir": "1_2019_02_18T13_14_11_+0000"
+        }
+      }
+    }
+  }
+}
