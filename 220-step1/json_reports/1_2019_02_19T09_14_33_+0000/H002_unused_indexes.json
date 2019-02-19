@@ -1,0 +1,156 @@
+{
+  "project": "test",
+  "name": "unused_indexes",
+  "checkId": "H002",
+  "timestamptz": "2019-02-19 09:15:22.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-19 09:15:22.0+0000",
+      "dir": "1_2019_02_19T09_14_33_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "unused_indexes": {
+          "i_unused": {
+            "reason": "Never Used Indexes",
+            "schema_name": "public",
+            "table_name": "t_with_unused_index",
+            "index_name": "i_unused",
+            "index_scan_pct": 0,
+            "scans_per_write": 0,
+            "index_size": "21 MB",
+            "table_size": "35 MB",
+            "idx_scan": 0,
+            "all_scans": 3
+          },
+          "i_redundant_2": {
+            "reason": "Never Used Indexes",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_2",
+            "index_scan_pct": 0,
+            "scans_per_write": 0,
+            "index_size": "21 MB",
+            "table_size": "35 MB",
+            "idx_scan": 0,
+            "all_scans": 6
+          },
+          "i_redundant_1": {
+            "reason": "Never Used Indexes",
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_1",
+            "index_scan_pct": 0,
+            "scans_per_write": 0,
+            "index_size": "21 MB",
+            "table_size": "35 MB",
+            "idx_scan": 0,
+            "all_scans": 6
+          },
+          "i_bloated": {
+            "reason": "Never Used Indexes",
+            "schema_name": "public",
+            "table_name": "bloated",
+            "index_name": "i_bloated",
+            "index_scan_pct": 0,
+            "scans_per_write": 0,
+            "index_size": "2208 kB",
+            "table_size": "3544 kB",
+            "idx_scan": 0,
+            "all_scans": 2
+          },
+          "i_invalid": {
+            "reason": "Never Used Indexes",
+            "schema_name": "public",
+            "table_name": "t_with_invalid_index",
+            "index_name": "i_invalid",
+            "index_scan_pct": 0,
+            "scans_per_write": 0,
+            "index_size": "0 bytes",
+            "table_size": "35 MB",
+            "idx_scan": 0,
+            "all_scans": 2
+          }
+        },
+        "redundant_indexes": {
+          "i_redundant_1": {
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_1",
+            "access_method": "btree",
+            "reason": "redundant to index: i_redundant_2",
+            "main_index_def": "CREATE INDEX i_redundant_2 ON public.t_with_redundant_index USING btree (i)",
+            "main_index_size": "21 MB",
+            "index_def": "CREATE INDEX i_redundant_1 ON public.t_with_redundant_index USING btree (i)",
+            "index_size": "21 MB",
+            "index_usage": 0
+          },
+          "i_redundant_2": {
+            "schema_name": "public",
+            "table_name": "t_with_redundant_index",
+            "index_name": "i_redundant_2",
+            "access_method": "btree",
+            "reason": "redundant to index: i_redundant_1",
+            "main_index_def": "CREATE INDEX i_redundant_1 ON public.t_with_redundant_index USING btree (i)",
+            "main_index_size": "21 MB",
+            "index_def": "CREATE INDEX i_redundant_2 ON public.t_with_redundant_index USING btree (i)",
+            "index_size": "21 MB",
+            "index_usage": 0
+          }
+        },
+        "drop_code": [
+          "DROP INDEX CONCURRENTLY public.i_bloated; -- 2208 kB, unused (idx_scan: 0), table bloated",
+          "DROP INDEX CONCURRENTLY public.i_invalid; -- 0 bytes, unused (idx_scan: 0), table t_with_invalid_index",
+          "DROP INDEX CONCURRENTLY i_redundant_1; -- 21 MB, redundant to index: i_redundant_2, table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY i_redundant_2; -- 21 MB, redundant to index: i_redundant_1, table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY public.i_redundant_1; -- 21 MB, unused (idx_scan: 0), table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY public.i_redundant_2; -- 21 MB, unused (idx_scan: 0), table t_with_redundant_index",
+          "DROP INDEX CONCURRENTLY public.i_unused; -- 21 MB, unused (idx_scan: 0), table t_with_unused_index"
+        ],
+        "revert_code": [
+          "CREATE INDEX CONCURRENTLY i_bloated ON public.bloated USING btree (i); -- table bloated",
+          "CREATE INDEX CONCURRENTLY i_invalid ON public.t_with_invalid_index USING btree (i); -- table t_with_invalid_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_1 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_2 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_1 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_redundant_2 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index",
+          "CREATE INDEX CONCURRENTLY i_unused ON public.t_with_unused_index USING btree (i); -- table t_with_unused_index"
+        ],
+        "database_stat": {
+          "stats_reset": "2019-02-19T09:13:34+00:00",
+          "stats_age": "00:02:00"
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-19 09:15:22.0+0000",
+          "dir": "1_2019_02_19T09_14_33_+0000"
+        }
+      }
+    }
+  }
+}
