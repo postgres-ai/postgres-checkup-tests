@@ -2,7 +2,7 @@
 ## Epoch number: '1'
 NOTICE: while most reports describe the “current database”, some of them may contain cluster-wide information describing all databases in the cluster.
 
-Last modified at:  2019-02-19 15:31:35 +0000
+Last modified at:  2019-02-19 15:41:06 +0000
 
 
 <a name="postgres-checkup_top"></a>
@@ -41,15 +41,15 @@ Last modified at:  2019-02-19 15:31:35 +0000
 # A001 System information #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:20 +0000 UTC  
+Data collected: 2019-02-19 15:40:51 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 **System**
 
 ```
-Linux runner-72989761-project-9951336-concurrent-0 4.14.48-coreos-r2 #1 SMP Thu Jun 14 08:23:03 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Linux runner-0277ea0f-project-9951336-concurrent-0 4.14.48-coreos-r2 #1 SMP Thu Jun 14 08:23:03 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
 
@@ -86,42 +86,42 @@ Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca 
 **Memory**
 
 ```
-MemTotal:        3784700 kB
-MemFree:          188580 kB
-MemAvailable:    2709572 kB
-Buffers:           75772 kB
-Cached:          2857096 kB
-SwapCached:            4 kB
-Active:          1349928 kB
-Inactive:        1967120 kB
-Active(anon):     460236 kB
-Inactive(anon):   256428 kB
-Active(file):     889692 kB
-Inactive(file):  1710692 kB
+MemTotal:        3784708 kB
+MemFree:          209676 kB
+MemAvailable:    2701584 kB
+Buffers:           71308 kB
+Cached:          2833836 kB
+SwapCached:          172 kB
+Active:          1323508 kB
+Inactive:        1973524 kB
+Active(anon):     428032 kB
+Inactive(anon):   296384 kB
+Active(file):     895476 kB
+Inactive(file):  1677140 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:       2097148 kB
-SwapFree:        2096624 kB
-Dirty:             13880 kB
-Writeback:            44 kB
-AnonPages:        384148 kB
-Mapped:           276544 kB
-Shmem:            332544 kB
-Slab:             238676 kB
-SReclaimable:     208276 kB
-SUnreclaim:        30400 kB
-KernelStack:        2736 kB
-PageTables:         7240 kB
+SwapFree:        2096112 kB
+Dirty:             13556 kB
+Writeback:             0 kB
+AnonPages:        391752 kB
+Mapped:           274040 kB
+Shmem:            332536 kB
+Slab:             237552 kB
+SReclaimable:     206724 kB
+SUnreclaim:        30828 kB
+KernelStack:        2768 kB
+PageTables:         7228 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
-CommitLimit:     3989496 kB
-Committed_AS:    1227872 kB
+CommitLimit:     3989500 kB
+Committed_AS:    1241208 kB
 VmallocTotal:   34359738367 kB
 VmallocUsed:           0 kB
 VmallocChunk:          0 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:    208896 kB
+AnonHugePages:    239616 kB
 ShmemHugePages:        0 kB
 ShmemPmdMapped:        0 kB
 HugePages_Total:       0
@@ -129,9 +129,9 @@ HugePages_Free:        0
 HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
-DirectMap4k:       88052 kB
-DirectMap2M:     3844096 kB
-DirectMap1G:           0 kB
+DirectMap4k:      112628 kB
+DirectMap2M:     2770944 kB
+DirectMap1G:     1048576 kB
 ```
 
 
@@ -162,10 +162,10 @@ shm            tmpfs     64M  8.0K   64M   1% /dev/shm
 # A002 Version information #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:20 +0000 UTC  
+Data collected: 2019-02-19 15:40:51 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 ```
 PostgreSQL 11.2 (Ubuntu 11.2-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit
@@ -185,10 +185,10 @@ PostgreSQL 11.2 (Ubuntu 11.2-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by 
 # A003 Postgres settings #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:21 +0000 UTC  
+Data collected: 2019-02-19 15:40:52 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###  
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###  
 &#9660;&nbsp;Category | Setting | Value | Unit | Pretty value
 ---------|---------|-------|------|--------------
 Autovacuum|[autovacuum](https://postgresqlco.nf/en/doc/param/autovacuum) | on |  | 
@@ -503,10 +503,10 @@ Write-Ahead Log / Settings|[wal_writer_flush_after](https://postgresqlco.nf/en/d
 # A004 Cluster information #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:24 +0000 UTC  
+Data collected: 2019-02-19 15:40:55 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
  Indicator | Value
 -----------|-------
@@ -514,18 +514,18 @@ Postgres Version | PostgreSQL&nbsp;11.2&nbsp;(Ubuntu&nbsp;11.2-1.pgdg16.04+1)&nb
 Config file | /etc/postgresql/11/main/postgresql.conf
 Role | Master
 Replicas | 
-Started At | 2019-02-19&nbsp;15:28:21+00
-Uptime | 00:03:04
+Started At | 2019-02-19&nbsp;15:37:58+00
+Uptime | 00:02:58
 Checkpoints | 6
 Forced Checkpoints | 100.0%
-Checkpoint MB/sec | 0.956291
+Checkpoint MB/sec | 0.990698
 Database Name | dbname
 Database Size | 959&nbsp;MB
-Stats Since | 2019-02-19&nbsp;15:28:24+00
-Stats Age | 00:03:01
+Stats Since | 2019-02-19&nbsp;15:38:00+00
+Stats Age | 00:02:55
 Installed Extensions | pg_stat_kcache&nbsp;2.1.1,&nbsp;pg_stat_statements&nbsp;1.6,&nbsp;plpgsql&nbsp;1.0
-Cache Effectiveness | 92.65%
-Successful Commits | 97.89%
+Cache Effectiveness | 92.68%
+Successful Commits | 97.90%
 Conflicts | 0
 Temp Files: total size | 427&nbsp;MB
 Temp Files: total number of files | 33
@@ -552,10 +552,10 @@ template0 | 7.37&nbsp;MiB
 # A005 Extensions #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:25 +0000 UTC  
+Data collected: 2019-02-19 15:40:55 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 &#9660;&nbsp;Database | Extension name | Installed version | Default version | Is old
 ---------|----------------|-------------------|-----------------|--------
 checkup_test_db | plpgsql | 1.0 | 1.0 | <no value>
@@ -575,7 +575,7 @@ dbname | plpgsql | 1.0 | 1.0 | <no value>
 # A006 Postgres setting deviations #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:25 +0000 UTC  
+Data collected: 2019-02-19 15:40:56 +0000 UTC  
 
 ### Settings (pg_settings) that differ ###
 
@@ -596,10 +596,10 @@ No differences in `pg_config` are found.
 # A007 Altered settings #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:29 +0000 UTC  
+Data collected: 2019-02-19 15:41:00 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 Source | Settings count | Changed settings
 -------|----------------|-----------------
 /etc/postgresql/11/main/postgresql.conf | 25 |  DateStyle TimeZone cluster_name default_text_search_config dynamic_shared_memory_type external_pid_file lc_messages lc_monetary lc_numeric lc_time listen_addresses log_filename log_line_prefix log_timezone max_connections max_wal_size min_wal_size port shared_buffers shared_preload_libraries ssl ssl_cert_file ssl_key_file stats_temp_directory unix_socket_directories  
@@ -621,10 +621,10 @@ default | 278 |
 Output of `df -TPh` (follows symlinks)
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:29 +0000 UTC  
+Data collected: 2019-02-19 15:41:00 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 Name | FS Type | Size | Available | Use | Used | Mount Point | Path | Device
 -----|---------|------|-----------|-----|------|-------------|------|-------
 PGDATA | overlay | 22G | 14G | 7.6G | 37% | / | /var/lib/postgresql/11/main | overlay 
@@ -644,10 +644,10 @@ stats_temp_directory | overlay | 22G | 14G | 7.6G | 37% | / | /var/run/postgresq
 [Table of contents](#postgres-checkup_top)
 # D002 Useful Linux tools
 ## Observations ##
-Data collected: 2019-02-19 15:31:30 +0000 UTC  
+Data collected: 2019-02-19 15:41:00 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 ### cpu
 Utility | Availability
 --------|--------------
@@ -705,10 +705,10 @@ numastat |
 # D004 pg_stat_statements and kcache settings #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:30 +0000 UTC  
+Data collected: 2019-02-19 15:41:01 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 #### `pg_stat_statements` extension settings ####
 Setting | Value | Unit | Type | Min value | Max value
@@ -734,10 +734,10 @@ Setting | Value | Unit | Type | Min value | Max value
 # F001 Autovacuum: Current settings #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:30 +0000 UTC  
+Data collected: 2019-02-19 15:41:01 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 &#9660;&nbsp;Setting name | Value | Unit | Pretty value
 -------------|-------|------|--------------
 [autovacuum](https://postgresqlco.nf/en/doc/param/autovacuum)|on|<no value> | 
@@ -781,39 +781,39 @@ Data collected: 2019-02-19 15:31:30 +0000 UTC
 # F002 Autovacuum: Transaction wraparound check #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:31 +0000 UTC  
+Data collected: 2019-02-19 15:41:01 +0000 UTC  
 Current database: dbname  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 #### Databases ####
  Database | &#9660;&nbsp;Age | Capacity used, % | Warning | datfrozenxid
 ----------|-----|------------------|---------|--------------
-postgres |99 |0 |  |561
-dbname |99 |0 |  |561
-template1 |99 |0 |  |561
-template0 |99 |0 |  |561
-checkup_test_db |99 |0 |  |561
+postgres |100 |0 |  |561
+dbname |100 |0 |  |561
+template1 |100 |0 |  |561
+template0 |100 |0 |  |561
+checkup_test_db |100 |0 |  |561
 
 
 
 #### Tables in the observed database ####
  Relation | Age | &#9660;&nbsp;Capacity used, % | Warning |rel_relfrozenxid | toast_relfrozenxid 
 ----------|-----|------------------|---------|-----------------|--------------------
-t_red_fk_1 |63 |0 |  |597 |0 |
-t_red_fk_2 |59 |0 |  |601 |0 |
-t_slw_q |56 |0 |  |604 |0 |
-t_rar_q |88 |0 |  |572 |0 |
-t_fillfactor |80 |0 |  |580 |0 |
-t_with_unused_index |79 |0 |  |581 |0 |
-t_with_redundant_index |77 |0 |  |583 |0 |
-test_schema.t_with_invalid_index |73 |0 |  |587 |0 |
-t_fk_1 |72 |0 |  |588 |0 |
-t_fk_2 |70 |0 |  |590 |0 |
-bloated |68 |0 |  |592 |0 |
-t_with_bloat |65 |0 |  |595 |0 |
-pg_catalog.pg_class |99 |0 |  |561 |0 |
+t_red_fk_1 |63 |0 |  |598 |0 |
+t_red_fk_2 |59 |0 |  |602 |0 |
+t_slw_q |56 |0 |  |605 |0 |
+t_rar_q |89 |0 |  |572 |0 |
+t_fillfactor |81 |0 |  |580 |0 |
+t_with_unused_index |80 |0 |  |581 |0 |
+t_with_redundant_index |78 |0 |  |583 |0 |
+test_schema.t_with_invalid_index |74 |0 |  |587 |0 |
+t_fk_1 |72 |0 |  |589 |0 |
+t_fk_2 |70 |0 |  |591 |0 |
+bloated |68 |0 |  |593 |0 |
+t_with_bloat |65 |0 |  |596 |0 |
+pg_catalog.pg_class |100 |0 |  |561 |0 |
 
 
 
@@ -828,24 +828,24 @@ pg_catalog.pg_class |99 |0 |  |561 |0 |
 # F003 Autovacuum: Dead tuples #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:31 +0000 UTC  
+Data collected: 2019-02-19 15:41:01 +0000 UTC  
 Current database: dbname  
-Stats reset: 00:03:00 ago (2019-02-19 15:28:24 +0000 UTC)  
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+Stats reset: 00:03:00 ago (2019-02-19 15:38:00 +0000 UTC)  
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
  Relation | Type | Since last autovacuum | Since last vacuum | Autovacuum Count | Vacuum Count | n_tup_ins | n_tup_upd | n_tup_del | pg_class.reltuples | n_live_tup | n_dead_tup | &#9660;Dead Tuples Ratio, %
 ----------|------|-----------------------|-------------------|----------|---------|-----------|-----------|-----------|--------------------|------------|------------|-----------
-t_fk_1 |r |<no value> |00:01:33.071057 |0 |1 |1000001 |0 |0 |1000001 |1000001 |0 | 0 
-t_with_bloat |r |<no value> |00:01:29.304358 |0 |1 |1000000 |1000000 |0 |1000000 |1000000 |0 | 0 
-test_schema.t_with_invalid_index |r |<no value> |00:01:34.224696 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
-t_slw_q |r |<no value> |00:01:42.147581 |0 |1 |10000001 |0 |0 |10000048 |10000048 |0 | 0 
-bloated |r |<no value> |00:01:30.506377 |0 |1 |100000 |0 |50000 |50000 |50000 |0 | 0 
-t_red_fk_2 |r |<no value> |00:01:43.497875 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
-t_rar_q |r |<no value> |00:01:37.728159 |0 |1 |1000000 |446569 |0 |1000000 |1000000 |0 | 0 
-t_with_redundant_index |r |<no value> |00:01:35.38893 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
-t_fk_2 |r |<no value> |00:01:31.682445 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
-t_red_fk_1 |r |<no value> |00:01:43.75583 |0 |1 |1000001 |0 |0 |1000001 |1000001 |0 | 0 
-t_with_unused_index |r |<no value> |00:01:36.5376 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
+t_fk_2 |r |<no value> |00:01:27.756086 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
+t_with_bloat |r |<no value> |00:01:25.382874 |0 |1 |1000000 |1000000 |0 |1000000 |1000000 |0 | 0 
+test_schema.t_with_invalid_index |r |<no value> |00:01:30.405953 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
+bloated |r |<no value> |00:01:26.577009 |0 |1 |100000 |0 |50000 |50000 |50000 |0 | 0 
+t_fk_1 |r |<no value> |00:01:29.245017 |0 |1 |1000001 |0 |0 |1000001 |1000001 |0 | 0 
+t_red_fk_1 |r |<no value> |00:01:37.949322 |0 |1 |1000001 |0 |0 |1000001 |1000001 |0 | 0 
+t_slw_q |r |<no value> |00:01:36.605471 |0 |1 |10000001 |0 |0 |9999979 |9999979 |0 | 0 
+t_red_fk_2 |r |<no value> |00:01:37.68057 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
+t_rar_q |r |<no value> |00:01:34.039465 |0 |1 |1000000 |446569 |0 |1000000 |1000000 |0 | 0 
+t_with_redundant_index |r |<no value> |00:01:31.636472 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
+t_with_unused_index |r |<no value> |00:01:32.833696 |0 |1 |1000000 |0 |0 |1000000 |1000000 |0 | 0 
 
 
 
@@ -860,26 +860,26 @@ t_with_unused_index |r |<no value> |00:01:36.5376 |0 |1 |1000000 |0 |0 |1000000 
 :warning: This report is based on estimations. The errors in bloat estimates may be significant (in some cases, up to 15% and even more). Use it only as an indicator of potential issues.
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:31 +0000 UTC  
+Data collected: 2019-02-19 15:41:02 +0000 UTC  
 Current database: dbname  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
  Table | Size | Extra | &#9660;&nbsp;Estimated bloat | Est. bloat, bytes | Est. bloat ratio, % | Live | Last vacuum | Fillfactor
 -------|------|-------|------------------------------|------------------|--------------------|------|-------------|------------
 ===== TOTAL ===== |736.71&nbsp;MiB ||57.76&nbsp;MiB |60,563,456 |7.84|||
-t_with_bloat |69.15&nbsp;MiB |~34.71&nbsp;MiB (50.19%)|34.71&nbsp;MiB |36,388,864 | **50.19** |~34.44&nbsp;MiB | 2019-02-19 15:30:02  |100
-t_rar_q |61.10&nbsp;MiB |~19.01&nbsp;MiB (31.11%)|19.01&nbsp;MiB |19,931,136 |31.11 |~42.09&nbsp;MiB | 2019-02-19 15:29:54  |100
-bloated |3.47&nbsp;MiB |~1.74&nbsp;MiB (50.11%)|1.74&nbsp;MiB |1,818,624 | **50.11** |~1.73&nbsp;MiB | 2019-02-19 15:30:01  |100
-t_slw_q |345.69&nbsp;MiB |~1.36&nbsp;MiB (0.39%)|1.36&nbsp;MiB |1,417,216 |0.39 |~344.34&nbsp;MiB | 2019-02-19 15:29:49  |100
-t_red_fk_2 |42.24&nbsp;MiB |~152.00&nbsp;KiB (0.35%)|152.00&nbsp;KiB |155,648 |0.35 |~42.09&nbsp;MiB | 2019-02-19 15:29:48  |100
-t_fk_2 |42.24&nbsp;MiB |~152.00&nbsp;KiB (0.35%)|152.00&nbsp;KiB |155,648 |0.35 |~42.09&nbsp;MiB | 2019-02-19 15:30:00  |100
-t_with_redundant_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:29:56  |100
-t_red_fk_1 |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:29:48  |100
-test_schema.t_with_invalid_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:29:57  |100
-t_with_unused_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:29:55  |100
-t_fk_1 |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:29:58  |100
+t_with_bloat |69.15&nbsp;MiB |~34.71&nbsp;MiB (50.19%)|34.71&nbsp;MiB |36,388,864 | **50.19** |~34.44&nbsp;MiB | 2019-02-19 15:39:37  |100
+t_rar_q |61.10&nbsp;MiB |~19.01&nbsp;MiB (31.11%)|19.01&nbsp;MiB |19,931,136 |31.11 |~42.09&nbsp;MiB | 2019-02-19 15:39:28  |100
+bloated |3.47&nbsp;MiB |~1.74&nbsp;MiB (50.11%)|1.74&nbsp;MiB |1,818,624 | **50.11** |~1.73&nbsp;MiB | 2019-02-19 15:39:35  |100
+t_slw_q |345.69&nbsp;MiB |~1.36&nbsp;MiB (0.39%)|1.36&nbsp;MiB |1,417,216 |0.39 |~344.34&nbsp;MiB | 2019-02-19 15:39:25  |100
+t_fk_2 |42.24&nbsp;MiB |~152.00&nbsp;KiB (0.35%)|152.00&nbsp;KiB |155,648 |0.35 |~42.09&nbsp;MiB | 2019-02-19 15:39:34  |100
+t_red_fk_2 |42.24&nbsp;MiB |~152.00&nbsp;KiB (0.35%)|152.00&nbsp;KiB |155,648 |0.35 |~42.09&nbsp;MiB | 2019-02-19 15:39:24  |100
+t_with_redundant_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:39:30  |100
+test_schema.t_with_invalid_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:39:32  |100
+t_fk_1 |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:39:33  |100
+t_red_fk_1 |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:39:24  |100
+t_with_unused_index |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 |~34.44&nbsp;MiB | 2019-02-19 15:39:29  |100
  
 
 ## Conclusions ##
@@ -893,11 +893,11 @@ t_fk_1 |34.58&nbsp;MiB |~136.00&nbsp;KiB (0.38%)|136.00&nbsp;KiB |139,264 |0.38 
 :warning: This report is based on estimations. The errors in bloat estimates may be significant (in some cases, up to 15% and even more). Use it only as an indicator of potential issues.
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:31 +0000 UTC  
+Data collected: 2019-02-19 15:41:02 +0000 UTC  
 Current database: dbname  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
  Index (Table) | &#9660;&nbsp;Size | Extra | Estimated bloat | Est. bloat, bytes | Est. bloat ratio, % | Live | Fill factor
 ---------------|-------------------|-------|-------|-------------|-------------|------|-------------
 ===== TOTAL ===== |216.54&nbsp;MiB ||21.32&nbsp;MiB |22,347,776|9.84||
@@ -973,7 +973,7 @@ pg_aggregate_fnoid_index (pg_catalog.pg_aggregate) |16.00&nbsp;KiB | | | |0.00 |
 # F008 Autovacuum: Resource usage #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:32 +0000 UTC  
+Data collected: 2019-02-19 15:41:02 +0000 UTC  
 ### Settings ###
 
 
@@ -1014,10 +1014,10 @@ Max workers memory: 192&nbsp;MiB
 # G001 Memory-related settings #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:32 +0000 UTC  
+Data collected: 2019-02-19 15:41:02 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 Setting name | Value | Unit | Pretty value
 -------------|-------|------|--------------
@@ -1043,10 +1043,10 @@ Setting name | Value | Unit | Pretty value
 # G002 Connections and current activity #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:32 +0000 UTC  
+Data collected: 2019-02-19 15:41:03 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 \# | User | DB | Current state | Count | State changed >1m ago | State changed >1h ago
 ----|------|----|---------------|-------|-----------------------|-----------------------
 1 | ALL users | ALL databases | ALL states | 6 | 0 | 0
@@ -1070,10 +1070,10 @@ Data collected: 2019-02-19 15:31:32 +0000 UTC
 # G003 Timeouts, locks, deadlocks #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:32 +0000 UTC  
+Data collected: 2019-02-19 15:41:03 +0000 UTC  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 #### Timeouts ####
 Setting name | Value | Unit | Pretty value
 -------------|-------|------|--------------
@@ -1105,9 +1105,9 @@ checkup_test_user | [lock_timeout=3s]
 #### Databases data ####
 Database | Conflicts | &#9660;&nbsp;Deadlocks | Stats reset at | Stat reset
 -------------|-------|-----------|----------------|------------
-postgres|0|0|2019-02-19T15:28:22.242734+00:00|00:03:11
-dbname|0|0|2019-02-19T15:28:23.69693+00:00|00:03:09
-checkup_test_db|0|0|2019-02-19T15:30:47.252711+00:00|00:00:46
+postgres|0|0|2019-02-19T15:37:58.930412+00:00|00:03:05
+dbname|0|0|2019-02-19T15:38:00.381141+00:00|00:03:03
+checkup_test_db|0|0|2019-02-19T15:40:18.817151+00:00|00:00:45
 
 
 ## Conclusions ##
@@ -1120,42 +1120,58 @@ checkup_test_db|0|0|2019-02-19T15:30:47.252711+00:00|00:00:46
 # H001 Invalid indexes #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:33 +0000 UTC  
+Data collected: 2019-02-19 15:41:03 +0000 UTC  
 Current database: dbname  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
-Invalid indexes not found
+
+\# | Table | Index name | Index size | Supports FK
+---|-------|------------|------------|----------
+&nbsp;|=====TOTAL=====||0.00&nbsp;bytes |
+1 |test_schema.t_with_invalid_index |i_invalid |0.00&nbsp;bytes |
+
 
 
 ## Conclusions ##
 
 
 ## Recommendations ##
+#### Rebuild invalid indexes ####
+```
+-- Call each line separately. "CONCURRENTLY" queries cannot be
+-- combined in multi-statement requests.
+
+DROP INDEX CONCURRENTLY i_invalid; -- Invalid index, table t_with_invalid_index
+CREATE INDEX CONCURRENTLY i_invalid ON test_schema.t_with_invalid_index USING btree (i); -- table t_with_invalid_index
+
+
+```
 ---
 <a name="postgres-checkup_H002"></a>
 [Table of contents](#postgres-checkup_top)
 # H002 Unused and redundant indexes #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:33 +0000 UTC  
+Data collected: 2019-02-19 15:41:03 +0000 UTC  
 Current database: dbname  
-Stats reset: 00:03:00 ago (2019-02-19 15:28:24 +0000 UTC)  
+Stats reset: 00:03:00 ago (2019-02-19 15:38:00 +0000 UTC)  
 :warning: Statistics age is less than 30 days. Make decisions on index cleanup with caution!
 ### Never Used Indexes ###
-\#| Table | Index | runner-72989761-project-9951336-concurrent-0 usage | &#9660;&nbsp;Index size | Table size | Supports FK
+\#| Table | Index | runner-0277ea0f-project-9951336-concurrent-0 usage | &#9660;&nbsp;Index size | Table size | Supports FK
 --|-------|-------|----|-----|-----|-----
-&nbsp;|=====TOTAL=====|||130.83&nbsp;MiB|218.55&nbsp;MiB|
-1|t_red_fk_1|r_red_fk_1_id_idx|0|21.45&nbsp;MiB|34.58&nbsp;MiB|Yes
-2|t_with_redundant_index|i_redundant_1|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
-3|t_red_fk_1|r_red_fk_1_x_idx|0|21.45&nbsp;MiB|34.58&nbsp;MiB|Yes
-4|t_with_redundant_index|i_redundant_2|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
-5|t_red_fk_2|r_red_fk_2_fk_idx|0|21.45&nbsp;MiB|42.24&nbsp;MiB|
-6|t_with_unused_index|i_unused|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
+&nbsp;|=====TOTAL=====|||130.83&nbsp;MiB|253.12&nbsp;MiB|
+1|t_red_fk_2|r_red_fk_2_fk_idx|0|21.45&nbsp;MiB|42.24&nbsp;MiB|
+2|t_with_redundant_index|i_redundant_2|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
+3|t_with_redundant_index|i_redundant_1|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
+4|t_red_fk_1|r_red_fk_1_id_idx|0|21.45&nbsp;MiB|34.58&nbsp;MiB|Yes
+5|t_with_unused_index|i_unused|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
+6|t_red_fk_1|r_red_fk_1_x_idx|0|21.45&nbsp;MiB|34.58&nbsp;MiB|Yes
 7|bloated|i_bloated|0|2.16&nbsp;MiB|3.47&nbsp;MiB|
+8|test_schema.t_with_invalid_index|i_invalid|0|0.00&nbsp;bytes|34.58&nbsp;MiB|
 ### Redundant indexes ###
-\#| Table | Index | Redundant to |runner-72989761-project-9951336-concurrent-0 usage | &#9660;&nbsp;Index size | Table size | Supports FK
+\#| Table | Index | Redundant to |runner-0277ea0f-project-9951336-concurrent-0 usage | &#9660;&nbsp;Index size | Table size | Supports FK
 --|-------|-------|--------------|--|-----|-----|-----
 &nbsp;|=====TOTAL=====||||107.23&nbsp;MiB|172.86&nbsp;MiB|
 1|t_with_redundant_index|i_redundant_1|i_redundant_2<br/>|0|21.45&nbsp;MiB|34.58&nbsp;MiB|
@@ -1174,11 +1190,12 @@ Stats reset: 00:03:00 ago (2019-02-19 15:28:24 +0000 UTC)
 #### "DO" database migration code ####
 ```
 DROP INDEX CONCURRENTLY i_bloated; -- 2208 kB, Never Used Indexes, table bloated
-DROP INDEX CONCURRENTLY r_red_fk_1_id_idx; -- 21 MB, Never Used Indexes, r_red_fk_1_x_idx, table t_red_fk_1
+DROP INDEX CONCURRENTLY r_red_fk_1_id_idx; -- 21 MB, r_red_fk_1_x_idx, Never Used Indexes, table t_red_fk_1
 DROP INDEX CONCURRENTLY r_red_fk_1_x_idx; -- 21 MB, Never Used Indexes, r_red_fk_1_id_idx, table t_red_fk_1
 DROP INDEX CONCURRENTLY t_red_fk_1_pkey; -- 21 MB, r_red_fk_1_x_idx, r_red_fk_1_id_idx, table t_red_fk_1
 DROP INDEX CONCURRENTLY r_red_fk_2_fk_idx; -- 21 MB, Never Used Indexes, table t_red_fk_2
-DROP INDEX CONCURRENTLY i_redundant_1; -- 21 MB, Never Used Indexes, i_redundant_2, table t_with_redundant_index
+DROP INDEX CONCURRENTLY i_invalid; -- 0 bytes, Never Used Indexes, table t_with_invalid_index
+DROP INDEX CONCURRENTLY i_redundant_1; -- 21 MB, i_redundant_2, Never Used Indexes, table t_with_redundant_index
 DROP INDEX CONCURRENTLY i_redundant_2; -- 21 MB, i_redundant_1, Never Used Indexes, table t_with_redundant_index
 DROP INDEX CONCURRENTLY i_unused; -- 21 MB, Never Used Indexes, table t_with_unused_index
 
@@ -1191,6 +1208,7 @@ CREATE INDEX CONCURRENTLY r_red_fk_1_id_idx ON public.t_red_fk_1 USING btree (id
 CREATE INDEX CONCURRENTLY r_red_fk_1_x_idx ON public.t_red_fk_1 USING btree (id); -- table t_red_fk_1
 CREATE UNIQUE INDEX t_red_fk_1_pkey ON public.t_red_fk_1 USING btree (id); -- table t_red_fk_1
 CREATE INDEX CONCURRENTLY r_red_fk_2_fk_idx ON public.t_red_fk_2 USING btree (r_t1_id); -- table t_red_fk_2
+CREATE INDEX CONCURRENTLY i_invalid ON test_schema.t_with_invalid_index USING btree (i); -- table t_with_invalid_index
 CREATE INDEX CONCURRENTLY i_redundant_1 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index
 CREATE INDEX CONCURRENTLY i_redundant_2 ON public.t_with_redundant_index USING btree (i); -- table t_with_redundant_index
 CREATE INDEX CONCURRENTLY i_unused ON public.t_with_unused_index USING btree (i); -- table t_with_unused_index
@@ -1202,10 +1220,10 @@ CREATE INDEX CONCURRENTLY i_unused ON public.t_with_unused_index USING btree (i)
 # H003 Non indexed foreign keys (or with bad indexes) #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:33 +0000 UTC  
+Data collected: 2019-02-19 15:41:04 +0000 UTC  
 Current database: dbname  
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 
 Num | Schema name | Table name | FK name | Issue | Table mb | writes | Table scans | Parent name | Parent mb | Parent writes | Cols list | Indexdef
 ----|-------------|------------|---------|-------|----------|--------|-------------|-------------|-----------|---------------|-----------|----------
@@ -1224,23 +1242,23 @@ Num | Schema name | Table name | FK name | Issue | Table mb | writes | Table sca
 # K001 Globally aggregated query metrics
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:34 +0000 UTC  
+Data collected: 2019-02-19 15:41:04 +0000 UTC  
 Current database: dbname  
 
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
-Start: 2019-02-19T15:30:56.869648+00:00  
-End: 2019-02-19T15:31:34.270024+00:00  
-Period seconds: 37.40037  
-Period age: 00:00:37.400376  
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
+Start: 2019-02-19T15:40:27.869277+00:00  
+End: 2019-02-19T15:41:04.85859+00:00  
+Period seconds: 36.98931  
+Period age: 00:00:36.989313  
 
 Error (calls): 2.00 (14.29%)  
-Error (total time): 3.40 (1.77%)
+Error (total time): 3.37 (1.82%)
 
 Calls | Total&nbsp;time | Rows | shared_blks_hit | shared_blks_read | shared_blks_dirtied | shared_blks_written | blk_read_time | blk_write_time | kcache_reads | kcache_writes | kcache_user_time_ms | kcache_system_time 
 -------|------------|------|-----------------|------------------|---------------------|---------------------|---------------|----------------|--------------|---------------|---------------------|--------------------
-14<br/>0.37/sec<br/>1.00/call<br/>100.00% |192.17&nbsp;ms<br/>5ms/sec<br/>13ms/call<br/>100.00% |14<br/>0.37/sec<br/>1.00/call<br/>100.00% |149,886&nbsp;blks<br/>4.01K&nbsp;blks/sec<br/>10.71K&nbsp;blks/call<br/>100.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
+14<br/>0.38/sec<br/>1.00/call<br/>100.00% |185.00&nbsp;ms<br/>5ms/sec<br/>13ms/call<br/>100.00% |14<br/>0.38/sec<br/>1.00/call<br/>100.00% |150,360&nbsp;blks<br/>4.07K&nbsp;blks/sec<br/>10.74K&nbsp;blks/call<br/>100.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
 
 
 
@@ -1256,24 +1274,24 @@ Calls | Total&nbsp;time | Rows | shared_blks_hit | shared_blks_read | shared_blk
 # K002 Workload type ("first word" analysis)
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:34 +0000 UTC  
+Data collected: 2019-02-19 15:41:04 +0000 UTC  
 Current database: dbname  
 
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
-Start: 2019-02-19T15:30:56.869648+00:00  
-End: 2019-02-19T15:31:34.270024+00:00  
-Period seconds: 37.40037  
-Period age: 00:00:37.400376  
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
+Start: 2019-02-19T15:40:27.869277+00:00  
+End: 2019-02-19T15:41:04.85859+00:00  
+Period seconds: 36.98931  
+Period age: 00:00:36.989313  
 
 Error (calls): 2.00 (14.29%)  
-Error (total time): 3.40 (1.77%)
+Error (total time): 3.37 (1.82%)
 
 \# | Workload type | Calls | &#9660;&nbsp;Total&nbsp;time | Rows | shared_blks_hit | shared_blks_read | shared_blks_dirtied | shared_blks_written | blk_read_time | blk_write_time | kcache_reads | kcache_writes | kcache_user_time_ms | kcache_system_time 
 ----|-------|------------|------|-----------------|------------------|---------------------|---------------------|---------------|----------------|--------------|---------------|---------------------|--------------------|------- 
-1 |with |12<br/>0.32/sec<br/>1.00/call<br/>85.71% |184.35&nbsp;ms<br/>4ms/sec<br/>15ms/call<br/>95.93% |12<br/>0.32/sec<br/>1.00/call<br/>85.71% |149,880&nbsp;blks<br/>4.01K&nbsp;blks/sec<br/>12.49K&nbsp;blks/call<br/>100.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
-2 |select |2<br/>0.05/sec<br/>1.00/call<br/>14.29% |7.82&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>4.07% |2<br/>0.05/sec<br/>1.00/call<br/>14.29% |6&nbsp;blks<br/>0.16&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
+1 |with |12<br/>0.32/sec<br/>1.00/call<br/>85.71% |177.64&nbsp;ms<br/>4ms/sec<br/>14ms/call<br/>96.02% |12<br/>0.32/sec<br/>1.00/call<br/>85.71% |150,354&nbsp;blks<br/>4.07K&nbsp;blks/sec<br/>12.53K&nbsp;blks/call<br/>100.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
+2 |select |2<br/>0.05/sec<br/>1.00/call<br/>14.29% |7.36&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>3.98% |2<br/>0.05/sec<br/>1.00/call<br/>14.29% |6&nbsp;blks<br/>0.16&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
 3 |create |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
 4 |update |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
 5 |vacuum |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00%
@@ -1294,57 +1312,57 @@ Error (total time): 3.40 (1.77%)
 # K003 Top-50 queries by total_time
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:34 +0000 UTC  
+Data collected: 2019-02-19 15:41:04 +0000 UTC  
 Current database: dbname  
 
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
-Start: 2019-02-19T15:30:56.869648+00:00  
-End: 2019-02-19T15:31:34.270024+00:00  
-Period seconds: 37.40037  
-Period age: 00:00:37.400376  
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
+Start: 2019-02-19T15:40:27.869277+00:00  
+End: 2019-02-19T15:41:04.85859+00:00  
+Period seconds: 36.98931  
+Period age: 00:00:36.989313  
 
 Error (calls): 2.00 (14.29%)  
-Error (total time): 3.40 (1.77%)
+Error (total time): 3.37 (1.82%)
 
 \# | Calls | &#9660;&nbsp;Total&nbsp;time | Rows | shared_blks_hit | shared_blks_read | shared_blks_dirtied | shared_blks_written | blk_read_time | blk_write_time | kcache_reads | kcache_writes | kcache_user_time_ms | kcache_system_time | Query
 ----|-------|------------|------|-----------------|------------------|---------------------|---------------------|---------------|----------------|--------------|---------------|---------------------|--------------------|------- 
-1 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |95.47&nbsp;ms<br/>2ms/sec<br/>95ms/call<br/>49.68% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |138,864&nbsp;blks<br/>3.72K&nbsp;blks/sec<br/>138.87K&nbsp;blks/call<br/>92.65% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;step1&nbsp;as&nbsp;(&nbsp;select&nbsp;i.nspname&nbsp;as&nbsp;schema_name,&nbsp;i.tblname&nbsp;as&nbsp;table_name,&nbsp;i.idxname&nbsp;as&nbsp;index_name,&nbsp;i.reltuples,&nbsp;i.relpages,&nbsp;i.relam,&nbsp;a.attrelid&nbsp;AS&nbsp;table_oid,&nbsp;current_setting($1)::numeric&nbsp;AS&nbsp;bs,&nbsp;fillfactor,&nbsp;&nbsp;case&nbsp;when&nbsp;version()&nbsp;~&nbsp;$2&nbsp;then&nbsp;$3&nbsp;else&nbsp;$4&nbsp;end&nbsp;as&nbsp;maxalign,&nbsp;/*&nbsp;per&nbsp;page&nbsp;header,&nbsp;fixed&nbsp;size:&nbsp;20&nbsp;for&nbsp;7.X,&nbsp;24&nbsp;for&nbsp;others&nbsp;*/&nbsp;$5&nbsp;AS&nbsp;pagehdr,&nbsp;/*&nbsp;per&nbsp;page&nbsp;btree&nbsp;opaque&nbsp;data&nbsp;*/&nbsp;$6&nbsp;AS&nbsp;pageopqdata,&nbsp;/*&nbsp;per&nbsp;tuple&nbsp;header:&nbsp;add&nbsp;IndexAttributeBitMapData&nbsp;if&nbsp;some&nbsp;cols&nbsp;are&nbsp;null-able&nbsp;*/&nbsp;case&nbsp;when&nbsp;max(coalesce(s.null_frac,$7))&nbsp;=&nbsp;$8&nbsp;then&nbsp;$9&nbsp;&nbsp;else&nbsp;$10&nbsp;+&nbsp;((&nbsp;$11&nbsp;+&nbsp;$12&nbsp;-&nbsp;$13&nbsp;)&nbsp;/&nbsp;$14)&nbsp;&nbsp;end&nbsp;as&nbsp;index_tuple_hdr_bm,&nbsp;/*&nbsp;data&nbsp;len:&nbsp;we&nbsp;remove&nbsp;null&nbsp;values&nbsp;save&nbsp;space&nbsp;using&nbsp;it&nbsp;fractionnal&nbsp;part&nbsp;from&nbsp;stats&nbsp;*/&nbsp;sum(($15&nbsp;-&nbsp;coalesce(s.null_frac,&nbsp;$16))&nbsp;*&nbsp;coalesce(s.avg_width,&nbsp;$17))&nbsp;as&nbsp;nulldatawidth,&nbsp;max(case&nbsp;when&nbsp;a.atttypid&nbsp;=&nbsp;$18::regtype&nbsp;then&nbsp;$19&nbsp;else&nbsp;$20&nbsp;end)&nbsp;>&nbsp;$21&nbsp;as&nbsp;is_na&nbsp;from&nbsp;pg_attribute&nbsp;as&nbsp;a&nbsp;join&nbsp;(&nbsp;select&nbsp;nspname,&nbsp;tbl.relname&nbsp;AS&nbsp;tblname,&nbsp;idx.relname&nbsp;AS&nbsp;idxname,&nbsp;idx.reltuples,&nbsp;idx.relpages,&nbsp;idx.relam,&nbsp;indrelid,&nbsp;indexrelid,&nbsp;indkey::smallint[]&nbsp;AS&nbsp;attnum,&nbsp;coalesce(substring(array_to_string(idx.reloptions,&nbsp;$22)&nbsp;from&nbsp;$23)::smallint,&nbsp;$24)&nbsp;as&nbsp;fillfactor&nbsp;from&nbsp;pg_index&nbsp;join&nbsp;pg_class&nbsp;idx&nbsp;on&nbsp;idx.oid&nbsp;=&nbsp;pg_index.indexrelid&nbsp;join&nbsp;pg_class&nbsp;tbl&nbsp;on&nbsp;tbl.oid&nbsp;=&nbsp;pg_index.indrelid&nbsp;join&nbsp;pg_namespace&nbsp;on&nbsp;pg_namespace.oid&nbsp;=&nbsp;idx.relnamespace&nbsp;where&nbsp;pg_index.indisvalid&nbsp;AND&nbsp;tbl.relkind&nbsp;=&nbsp;$25&nbsp;AND&nbsp;idx.relpages&nbsp;>&nbsp;$26&nbsp;)&nbsp;as&nbsp;i&nbsp;on&nbsp;a.attrelid&nbsp;=&nbsp;i.indexrelid&nbsp;join&nbsp;pg_stats&nbsp;as&nbsp;s&nbsp;on&nbsp;s.schemaname&nbsp;=&nbsp;i.nspname&nbsp;and&nbsp;(&nbsp;(s.tablename&nbsp;=&nbsp;i.tblname&nbsp;and&nbsp;s.attname&nbsp;=&nbsp;pg_catalog.pg_get_indexdef(a.attrelid,&nbsp;a.attnum,&nbsp;$27))&nbsp;&nbsp;OR&nbsp;(s.tablename&nbsp;=&nbsp;i.idxname&nbsp;AND&nbsp;s.attname&nbsp;=&nbsp;a.attname)&nbsp;&nbsp;)&nbsp;join&nbsp;pg_type&nbsp;as&nbsp;t&nbsp;on&nbsp;a.atttypid&nbsp;=&nbsp;t.oid&nbsp;where&nbsp;a.attnum&nbsp;>&nbsp;$28&nbsp;group&nbsp;by&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9&nbsp;),&nbsp;step2&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;(&nbsp;index_tuple_hdr_bm&nbsp;+&nbsp;maxalign&nbsp;&nbsp;-&nbsp;case&nbsp;when&nbsp;index_tuple_hdr_bm&nbsp;%&nbsp;maxalign&nbsp;=&nbsp;$29&nbsp;THEN&nbsp;maxalign&nbsp;else&nbsp;index_tuple_hdr_bm&nbsp;%&nbsp;maxalign&nbsp;end&nbsp;+&nbsp;nulldatawidth&nbsp;+&nbsp;maxalign&nbsp;&nbsp;-&nbsp;case&nbsp;when&nbsp;nulldatawidth&nbsp;=&nbsp;$30&nbsp;...
-2 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |21.91&nbsp;ms<br/>0s/sec<br/>21ms/call<br/>11.40% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |5,451&nbsp;blks<br/>145.75&nbsp;blks/sec<br/>5.46K&nbsp;blks/call<br/>3.64% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;fk_actions&nbsp;(&nbsp;code,&nbsp;action&nbsp;)&nbsp;as&nbsp;(&nbsp;values&nbsp;($1,&nbsp;$2),&nbsp;($3,&nbsp;$4),&nbsp;($5,&nbsp;$6),&nbsp;($7,&nbsp;$8),&nbsp;($9,&nbsp;$10)),&nbsp;fk_list&nbsp;as&nbsp;(&nbsp;select&nbsp;pg_constraint.oid&nbsp;as&nbsp;fkoid,&nbsp;conrelid,&nbsp;confrelid&nbsp;as&nbsp;parentid,&nbsp;conname,&nbsp;relname,&nbsp;nspname,&nbsp;fk_actions_update.action&nbsp;as&nbsp;update_action,&nbsp;fk_actions_delete.action&nbsp;as&nbsp;delete_action,&nbsp;conkey&nbsp;as&nbsp;key_cols&nbsp;from&nbsp;pg_constraint&nbsp;join&nbsp;pg_class&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;pg_class.oid&nbsp;join&nbsp;pg_namespace&nbsp;on&nbsp;pg_class.relnamespace&nbsp;=&nbsp;pg_namespace.oid&nbsp;join&nbsp;fk_actions&nbsp;as&nbsp;fk_actions_update&nbsp;on&nbsp;confupdtype&nbsp;=&nbsp;fk_actions_update.code&nbsp;join&nbsp;fk_actions&nbsp;as&nbsp;fk_actions_delete&nbsp;on&nbsp;confdeltype&nbsp;=&nbsp;fk_actions_delete.code&nbsp;where&nbsp;contype&nbsp;=&nbsp;$11),&nbsp;fk_attributes&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid,&nbsp;conrelid,&nbsp;attname,&nbsp;attnum&nbsp;from&nbsp;fk_list&nbsp;join&nbsp;pg_attribute&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;attrelid&nbsp;and&nbsp;attnum&nbsp;=&nbsp;any(key_cols)&nbsp;order&nbsp;by&nbsp;fkoid,&nbsp;attnum),&nbsp;fk_cols_list&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid,&nbsp;array_agg(attname)&nbsp;as&nbsp;cols_list&nbsp;from&nbsp;fk_attributes&nbsp;group&nbsp;by&nbsp;fkoid),&nbsp;index_list&nbsp;as&nbsp;(&nbsp;select&nbsp;indexrelid&nbsp;as&nbsp;indexid,&nbsp;pg_class.relname&nbsp;as&nbsp;indexname,&nbsp;indrelid,&nbsp;indkey,&nbsp;indpred&nbsp;is&nbsp;not&nbsp;null&nbsp;as&nbsp;has_predicate,&nbsp;pg_get_indexdef(indexrelid)&nbsp;as&nbsp;indexdef&nbsp;from&nbsp;pg_index&nbsp;join&nbsp;pg_class&nbsp;on&nbsp;indexrelid&nbsp;=&nbsp;pg_class.oid&nbsp;where&nbsp;indisvalid),&nbsp;fk_index_match&nbsp;as&nbsp;(&nbsp;select&nbsp;fk_list.*,&nbsp;indexid,&nbsp;indexname,&nbsp;indkey::int[]&nbsp;as&nbsp;indexatts,&nbsp;has_predicate,&nbsp;indexdef,&nbsp;array_length(key_cols,&nbsp;$12)&nbsp;as&nbsp;fk_colcount,&nbsp;array_length(indkey,$13)&nbsp;as&nbsp;index_colcount,&nbsp;round(pg_relation_size(conrelid)/($14^$15)::numeric)&nbsp;as&nbsp;table_mb,&nbsp;cols_list&nbsp;from&nbsp;fk_list&nbsp;join&nbsp;fk_cols_list&nbsp;using&nbsp;(fkoid)&nbsp;left&nbsp;join&nbsp;index_list&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;indrelid&nbsp;and&nbsp;(indkey::int2[])[$16:(array_length(key_cols,$17)&nbsp;-$18)]&nbsp;operator(pg_catalog.@>)&nbsp;key_cols),&nbsp;fk_perfect_match&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;(index_colcount&nbsp;-&nbsp;$19)&nbsp;<=&nbsp;fk_colcount&nbsp;and&nbsp;not&nbsp;has_predicate&nbsp;and&nbsp;indexdef&nbsp;like&nbsp;$20),&nbsp;fk_index_check&nbsp;as&nbsp;(&nbsp;select&nbsp;$21&nbsp;as&nbsp;issue,&nbsp;*,&nbsp;$22&nbsp;as&nbsp;issue_sort&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;indexid&nbsp;is&nbsp;null&nbsp;union&nbsp;all&nbsp;select&nbsp;$23&nbsp;as&nbsp;issue,&nbsp;*,&nbsp;$24&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;indexid&nbsp;is&nbsp;...
-3 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |20.38&nbsp;ms<br/>0s/sec<br/>20ms/call<br/>10.60% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |24&nbsp;blks<br/>0.64&nbsp;blks/sec<br/>24.00&nbsp;blks/call<br/>0.02% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;/*For&nbsp;Postgres&nbsp;versions&nbsp;older&nbsp;than&nbsp;10,&nbsp;run&nbsp;this&nbsp;first:&nbsp;\set&nbsp;postgres_dba_last_wal_receive_lsn&nbsp;pg_last_xlog_receive_location&nbsp;\set&nbsp;postgres_dba_last_wal_replay_lsn&nbsp;pg_last_xlog_replay_location&nbsp;\set&nbsp;postgres_dba_is_wal_replay_paused&nbsp;pg_is_xlog_replay_paused*/with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;s.*&nbsp;from&nbsp;pg_stat_database&nbsp;s&nbsp;where&nbsp;s.datname&nbsp;=&nbsp;current_database())select&nbsp;$1&nbsp;as&nbsp;metric,&nbsp;version()&nbsp;as&nbsp;valueunion&nbsp;allselect&nbsp;$2&nbsp;as&nbsp;metric,&nbsp;(select&nbsp;setting&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;=&nbsp;$3)&nbsp;as&nbsp;valueunion&nbsp;allselect&nbsp;$4&nbsp;as&nbsp;metric,&nbsp;case&nbsp;when&nbsp;pg_is_in_recovery()&nbsp;then&nbsp;$5&nbsp;||&nbsp;$6&nbsp;||&nbsp;((((case&nbsp;when&nbsp;pg_last_wal_receive_lsn()&nbsp;=&nbsp;pg_last_wal_replay_lsn()&nbsp;then&nbsp;$7&nbsp;else&nbsp;extract&nbsp;($8&nbsp;from&nbsp;now()&nbsp;-&nbsp;pg_last_xact_replay_timestamp())&nbsp;end)::int)::text&nbsp;||&nbsp;$9)::interval)::text&nbsp;||&nbsp;$10&nbsp;||&nbsp;pg_is_wal_replay_paused()::text&nbsp;||&nbsp;$11&nbsp;else&nbsp;$12&nbsp;end&nbsp;as&nbsp;valueunion&nbsp;all(&nbsp;with&nbsp;repl_groups&nbsp;as&nbsp;(&nbsp;select&nbsp;sync_state,&nbsp;state,&nbsp;string_agg(host(client_addr),&nbsp;$13)&nbsp;as&nbsp;hosts&nbsp;from&nbsp;pg_stat_replication&nbsp;group&nbsp;by&nbsp;1,&nbsp;2&nbsp;)&nbsp;select&nbsp;$14,&nbsp;string_agg(sync_state&nbsp;||&nbsp;$15&nbsp;||&nbsp;state&nbsp;||&nbsp;$16&nbsp;||&nbsp;hosts,&nbsp;$17)&nbsp;from&nbsp;repl_groups)union&nbsp;allselect&nbsp;$18,&nbsp;pg_postmaster_start_time()::timestamptz(0)::textunion&nbsp;allselect&nbsp;$19,&nbsp;(now()&nbsp;-&nbsp;pg_postmaster_start_time())::interval(0)::textunion&nbsp;allselect&nbsp;$20,&nbsp;(select&nbsp;(checkpoints_timed&nbsp;+&nbsp;checkpoints_req)::text&nbsp;from&nbsp;pg_stat_bgwriter)union&nbsp;allselect&nbsp;$21,&nbsp;(&nbsp;select&nbsp;round($22&nbsp;*&nbsp;checkpoints_req::numeric&nbsp;/&nbsp;(nullif(checkpoints_timed&nbsp;+&nbsp;checkpoints_req,&nbsp;$23)),&nbsp;$24)::text&nbsp;||&nbsp;$25&nbsp;from&nbsp;pg_stat_bgwriter&nbsp;)union&nbsp;allselect&nbsp;$26,&nbsp;(&nbsp;select&nbsp;round((nullif(buffers_checkpoint::numeric,&nbsp;$27)&nbsp;/&nbsp;(($28&nbsp;*&nbsp;$29&nbsp;/&nbsp;(current_setting($30)::numeric))&nbsp;*&nbsp;extract($31&nbsp;from&nbsp;now()&nbsp;-&nbsp;stats_reset)&nbsp;))::numeric,&nbsp;$32)::text&nbsp;from&nbsp;pg_stat_bgwriter&nbsp;)union&nbsp;allselect&nbsp;repeat($33,&nbsp;$34),&nbsp;repeat($35,&nbsp;$36)union&nbsp;allselect&nbsp;$37&nbsp;as&nbsp;metric,&nbsp;datname&nbsp;as&nbsp;value&nbsp;from&nbsp;dataunion&nbsp;allselect&nbsp;$38,&nbsp;pg_size_pretty(pg_database_size(current_database()))union&nbsp;allselect&nbsp;$39,&nbsp;stats_reset::timestamptz(0)::text&nbsp;from&nbsp;dataunion&nbsp;allselect...
-4 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |12.95&nbsp;ms<br/>0s/sec<br/>12ms/call<br/>6.74% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |16&nbsp;blks<br/>0.43&nbsp;blks/sec<br/>16.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;timeouts&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,s&nbsp;)&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;where&nbsp;name&nbsp;in&nbsp;($1,&nbsp;$2,&nbsp;$3)),&nbsp;locks&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,s&nbsp;)&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;where&nbsp;name&nbsp;in&nbsp;($4,&nbsp;$5,&nbsp;$6,&nbsp;$7,&nbsp;$8,&nbsp;$9)),&nbsp;databases_stat&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;((now()&nbsp;-&nbsp;sd.stats_reset)::interval(0)::text)&nbsp;as&nbsp;stats_reset_age&nbsp;from&nbsp;pg_stat_database&nbsp;sd&nbsp;where&nbsp;datname&nbsp;in&nbsp;(SELECT&nbsp;datname&nbsp;FROM&nbsp;pg_database&nbsp;WHERE&nbsp;datistemplate&nbsp;=&nbsp;$10)&nbsp;order&nbsp;by&nbsp;deadlocks&nbsp;desc),&nbsp;dbs_data&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(sd.datname,&nbsp;sd)&nbsp;from&nbsp;databases_stat&nbsp;sd),&nbsp;db_specified_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(dbs.database,&nbsp;dbs)&nbsp;from&nbsp;(select&nbsp;(select&nbsp;datname&nbsp;from&nbsp;pg_database&nbsp;where&nbsp;oid&nbsp;=&nbsp;pd.setdatabase)&nbsp;as&nbsp;database,&nbsp;*&nbsp;from&nbsp;pg_db_role_setting&nbsp;pd&nbsp;where&nbsp;setconfig::text&nbsp;~&nbsp;$11&nbsp;and&nbsp;setdatabase&nbsp;is&nbsp;not&nbsp;null&nbsp;and&nbsp;setdatabase&nbsp;<>&nbsp;$12)&nbsp;dbs),&nbsp;user_specified_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pr.rolname,&nbsp;pr)&nbsp;from&nbsp;pg_roles&nbsp;pr&nbsp;where&nbsp;rolconfig::text&nbsp;~&nbsp;$13)select&nbsp;json_build_object(&nbsp;$14,&nbsp;(select&nbsp;*&nbsp;from&nbsp;timeouts),&nbsp;$15,&nbsp;(select&nbsp;*&nbsp;from&nbsp;locks),&nbsp;$16,&nbsp;(select&nbsp;*&nbsp;from&nbsp;dbs_data),&nbsp;$17,&nbsp;(select&nbsp;*&nbsp;from&nbsp;db_specified_settings),&nbsp;$18,&nbsp;(select&nbsp;*&nbsp;from&nbsp;user_specified_settings)&nbsp;)
-5 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |11.87&nbsp;ms<br/>0s/sec<br/>11ms/call<br/>6.18% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |33&nbsp;blks<br/>0.88&nbsp;blks/sec<br/>33.00&nbsp;blks/call<br/>0.02% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;coalesce(nullif(schemaname&nbsp;||&nbsp;$1,&nbsp;$2),&nbsp;$3)&nbsp;||&nbsp;c.relname&nbsp;as&nbsp;"relation",&nbsp;c.relkind,&nbsp;now()&nbsp;-&nbsp;last_autovacuum&nbsp;as&nbsp;since_last_autovacuum,&nbsp;now()&nbsp;-&nbsp;last_vacuum&nbsp;as&nbsp;since_last_vacuum,&nbsp;autovacuum_count&nbsp;as&nbsp;av_count,&nbsp;vacuum_count&nbsp;as&nbsp;v_count,&nbsp;n_tup_ins,&nbsp;&nbsp;n_tup_upd,&nbsp;&nbsp;n_tup_del,&nbsp;reltuples::int8&nbsp;as&nbsp;pg_class_reltuples,&nbsp;n_live_tup,&nbsp;n_dead_tup,&nbsp;round((n_dead_tup::numeric&nbsp;*&nbsp;$4&nbsp;/&nbsp;nullif(n_dead_tup&nbsp;+&nbsp;n_live_tup,&nbsp;$5))::numeric,&nbsp;$6)&nbsp;as&nbsp;dead_ratio&nbsp;from&nbsp;pg_stat_all_tables&nbsp;join&nbsp;pg_class&nbsp;c&nbsp;on&nbsp;c.oid&nbsp;=&nbsp;relid&nbsp;where&nbsp;reltuples&nbsp;>&nbsp;$7&nbsp;order&nbsp;by&nbsp;13&nbsp;desc&nbsp;limit&nbsp;$8),&nbsp;dead_tuples&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(data."relation",&nbsp;data)&nbsp;as&nbsp;json&nbsp;from&nbsp;data),&nbsp;database_stat&nbsp;as&nbsp;(&nbsp;select&nbsp;row_to_json(dbstat)&nbsp;from&nbsp;(&nbsp;select&nbsp;sd.stats_reset::timestamptz(0),&nbsp;age(&nbsp;date_trunc($9,now()),&nbsp;date_trunc($10,sd.stats_reset)&nbsp;)&nbsp;as&nbsp;stats_age&nbsp;from&nbsp;pg_stat_database&nbsp;sd&nbsp;where&nbsp;datname&nbsp;=&nbsp;current_database()&nbsp;)&nbsp;dbstat)select&nbsp;json_build_object(&nbsp;$11,&nbsp;(select&nbsp;*&nbsp;from&nbsp;dead_tuples),&nbsp;$12,&nbsp;(select&nbsp;*&nbsp;from&nbsp;database_stat)&nbsp;)
-6 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |6.40&nbsp;ms<br/>0s/sec<br/>6ms/call<br/>3.33% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |4,129&nbsp;blks<br/>110.40&nbsp;blks/sec<br/>4.13K&nbsp;blks/call<br/>2.75% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;fk_indexes&nbsp;as&nbsp;(&nbsp;select&nbsp;schemaname&nbsp;as&nbsp;schema_name,&nbsp;(indexrelid::regclass)::text&nbsp;as&nbsp;index_name,&nbsp;(relid::regclass)::text&nbsp;as&nbsp;table_name,&nbsp;(confrelid::regclass)::text&nbsp;as&nbsp;fk_table_ref,&nbsp;array_to_string(indclass,&nbsp;$1)&nbsp;as&nbsp;opclasses&nbsp;from&nbsp;pg_stat_user_indexes&nbsp;join&nbsp;pg_index&nbsp;using&nbsp;(indexrelid)&nbsp;left&nbsp;join&nbsp;pg_constraint&nbsp;on&nbsp;array_to_string(indkey,&nbsp;$2)&nbsp;=&nbsp;array_to_string(conkey,&nbsp;$3)&nbsp;and&nbsp;schemaname&nbsp;=&nbsp;(connamespace::regnamespace)::text&nbsp;and&nbsp;conrelid&nbsp;=&nbsp;relid&nbsp;and&nbsp;contype&nbsp;=&nbsp;$4&nbsp;where&nbsp;idx_scan&nbsp;=&nbsp;$5&nbsp;and&nbsp;indisunique&nbsp;is&nbsp;false&nbsp;and&nbsp;conkey&nbsp;is&nbsp;not&nbsp;null&nbsp;),&nbsp;table_scans&nbsp;as&nbsp;(&nbsp;select&nbsp;relid,&nbsp;tables.idx_scan&nbsp;+&nbsp;tables.seq_scan&nbsp;as&nbsp;all_scans,&nbsp;(&nbsp;tables.n_tup_ins&nbsp;+&nbsp;tables.n_tup_upd&nbsp;+&nbsp;tables.n_tup_del&nbsp;)&nbsp;as&nbsp;writes,&nbsp;pg_relation_size(relid)&nbsp;as&nbsp;table_size&nbsp;from&nbsp;pg_stat_user_tables&nbsp;as&nbsp;tables),&nbsp;all_writes&nbsp;as&nbsp;(&nbsp;select&nbsp;sum(writes)&nbsp;as&nbsp;total_writes&nbsp;from&nbsp;table_scans),&nbsp;indexes&nbsp;as&nbsp;(&nbsp;select&nbsp;idx_stat.relid,&nbsp;idx_stat.indexrelid,&nbsp;idx_stat.schemaname&nbsp;as&nbsp;schema_name,&nbsp;idx_stat.relname&nbsp;as&nbsp;table_name,&nbsp;idx_stat.indexrelname&nbsp;as&nbsp;index_name,&nbsp;quote_ident(idx_stat.schemaname)&nbsp;as&nbsp;formated_schema_name,&nbsp;quote_ident(idx_stat.indexrelname)&nbsp;as&nbsp;formated_index_name,&nbsp;quote_ident(idx_stat.relname)&nbsp;as&nbsp;formated_table_name,&nbsp;coalesce(nullif(quote_ident(idx_stat.schemaname),&nbsp;$6)&nbsp;||&nbsp;$7,&nbsp;$8)&nbsp;||&nbsp;quote_ident(idx_stat.relname)&nbsp;as&nbsp;formated_relation_name,&nbsp;idx_stat.idx_scan,&nbsp;pg_relation_size(idx_stat.indexrelid)&nbsp;as&nbsp;index_bytes,&nbsp;indexdef&nbsp;~*&nbsp;$9&nbsp;as&nbsp;idx_is_btree,&nbsp;pg_get_indexdef(pg_index.indexrelid)&nbsp;as&nbsp;index_def,&nbsp;array_to_string(pg_index.indclass,&nbsp;$10)&nbsp;as&nbsp;opclasses&nbsp;from&nbsp;pg_stat_user_indexes&nbsp;as&nbsp;idx_stat&nbsp;join&nbsp;pg_index&nbsp;using&nbsp;(indexrelid)&nbsp;join&nbsp;pg_indexes&nbsp;as&nbsp;indexes&nbsp;on&nbsp;idx_stat.schemaname&nbsp;=&nbsp;indexes.schemaname&nbsp;and&nbsp;idx_stat.relname&nbsp;=&nbsp;indexes.tablename&nbsp;and&nbsp;idx_stat.indexrelname&nbsp;=&nbsp;indexes.indexname&nbsp;where&nbsp;pg_index.indisunique&nbsp;=&nbsp;$11),&nbsp;index_ratios&nbsp;as&nbsp;(&nbsp;select&nbsp;i.indexrelid&nbsp;as&nbsp;index_id,&nbsp;i.schema_name,&nbsp;i.table_name,&nbsp;i.index_name,&nbsp;idx_scan,&nbsp;all_scans,&nbsp;round((&nbsp;case&nbsp;when&nbsp;all_scans&nbsp;=&nbsp;$12&nbsp;then&nbsp;$13::numeric&nbsp;else&nbsp;idx_scan::n...
-7 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |4.20&nbsp;ms<br/>0s/sec<br/>4ms/call<br/>2.18% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;order&nbsp;by&nbsp;name)&nbsp;s
-8 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |4.07&nbsp;ms<br/>0s/sec<br/>4ms/call<br/>2.12% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |10&nbsp;blks<br/>0.27&nbsp;blks/sec<br/>10.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;ae.name,&nbsp;installed_version,&nbsp;default_version,&nbsp;case&nbsp;when&nbsp;installed_version&nbsp;<>&nbsp;default_version&nbsp;then&nbsp;$1&nbsp;end&nbsp;as&nbsp;is_oldfrom&nbsp;pg_extension&nbsp;ejoin&nbsp;pg_available_extensions&nbsp;ae&nbsp;on&nbsp;extname&nbsp;=&nbsp;ae.nameorder&nbsp;by&nbsp;ae.name&nbsp;),&nbsp;withsettins&nbsp;as&nbsp;(&nbsp;select&nbsp;data.*,&nbsp;(select&nbsp;json_object_agg(name,&nbsp;setting)&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;data.name)&nbsp;as&nbsp;settings&nbsp;from&nbsp;data&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;select&nbsp;json_object_agg(withsettins.name,&nbsp;withsettins)&nbsp;as&nbsp;json&nbsp;from&nbsp;withsettins
-9 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3.75&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>1.95% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1,323&nbsp;blks<br/>35.37&nbsp;blks/sec<br/>1.33K&nbsp;blks/call<br/>0.88% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;step1&nbsp;as&nbsp;(&nbsp;select&nbsp;tbl.oid&nbsp;tblid,&nbsp;ns.nspname&nbsp;as&nbsp;schema_name,&nbsp;tbl.relname&nbsp;as&nbsp;table_name,&nbsp;tbl.reltuples,&nbsp;tbl.relpages&nbsp;as&nbsp;heappages,&nbsp;coalesce(toast.relpages,&nbsp;$1)&nbsp;as&nbsp;toastpages,&nbsp;coalesce(toast.reltuples,&nbsp;$2)&nbsp;as&nbsp;toasttuples,&nbsp;coalesce(substring(array_to_string(tbl.reloptions,&nbsp;$3)&nbsp;from&nbsp;$4&nbsp;for&nbsp;$5)::int2,&nbsp;$6)&nbsp;as&nbsp;fillfactor,&nbsp;current_setting($7)::numeric&nbsp;as&nbsp;bs,&nbsp;case&nbsp;when&nbsp;version()&nbsp;~&nbsp;$8&nbsp;then&nbsp;$9&nbsp;else&nbsp;$10&nbsp;end&nbsp;as&nbsp;ma,&nbsp;&nbsp;$11&nbsp;as&nbsp;page_hdr,&nbsp;$12&nbsp;+&nbsp;case&nbsp;when&nbsp;max(coalesce(null_frac,&nbsp;$13))&nbsp;>&nbsp;$14&nbsp;then&nbsp;($15&nbsp;+&nbsp;count(*))&nbsp;/&nbsp;$16&nbsp;else&nbsp;$17::int&nbsp;end&nbsp;+&nbsp;case&nbsp;when&nbsp;tbl.relhasoids&nbsp;then&nbsp;$18&nbsp;else&nbsp;$19&nbsp;end&nbsp;as&nbsp;tpl_hdr_size,&nbsp;sum(($20&nbsp;-&nbsp;coalesce(s.null_frac,&nbsp;$21))&nbsp;*&nbsp;coalesce(s.avg_width,&nbsp;$22))&nbsp;as&nbsp;tpl_data_size,&nbsp;bool_or(att.atttypid&nbsp;=&nbsp;$23::regtype)&nbsp;or&nbsp;count(att.attname)&nbsp;<>&nbsp;count(s.attname)&nbsp;as&nbsp;is_na&nbsp;from&nbsp;pg_attribute&nbsp;as&nbsp;att&nbsp;join&nbsp;pg_class&nbsp;as&nbsp;tbl&nbsp;on&nbsp;att.attrelid&nbsp;=&nbsp;tbl.oid&nbsp;and&nbsp;tbl.relkind&nbsp;=&nbsp;$24&nbsp;join&nbsp;pg_namespace&nbsp;as&nbsp;ns&nbsp;on&nbsp;ns.oid&nbsp;=&nbsp;tbl.relnamespace&nbsp;join&nbsp;pg_stats&nbsp;as&nbsp;s&nbsp;on&nbsp;s.schemaname&nbsp;=&nbsp;ns.nspname&nbsp;and&nbsp;s.tablename&nbsp;=&nbsp;tbl.relname&nbsp;and&nbsp;not&nbsp;s.inherited&nbsp;and&nbsp;s.attname&nbsp;=&nbsp;att.attname&nbsp;left&nbsp;join&nbsp;pg_class&nbsp;as&nbsp;toast&nbsp;on&nbsp;tbl.reltoastrelid&nbsp;=&nbsp;toast.oid&nbsp;where&nbsp;att.attnum&nbsp;>&nbsp;$25&nbsp;and&nbsp;not&nbsp;att.attisdropped&nbsp;and&nbsp;s.schemaname&nbsp;not&nbsp;in&nbsp;($26,&nbsp;$27)&nbsp;group&nbsp;by&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9,&nbsp;10,&nbsp;tbl.relhasoids&nbsp;order&nbsp;by&nbsp;2,&nbsp;3&nbsp;),&nbsp;step2&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;(&nbsp;$28&nbsp;+&nbsp;tpl_hdr_size&nbsp;+&nbsp;tpl_data_size&nbsp;+&nbsp;($29&nbsp;*&nbsp;ma)&nbsp;-&nbsp;case&nbsp;when&nbsp;tpl_hdr_size&nbsp;%&nbsp;ma&nbsp;=&nbsp;$30&nbsp;then&nbsp;ma&nbsp;else&nbsp;tpl_hdr_size&nbsp;%&nbsp;ma&nbsp;end&nbsp;-&nbsp;case&nbsp;when&nbsp;ceil(tpl_data_size)::int&nbsp;%&nbsp;ma&nbsp;=&nbsp;$31&nbsp;then&nbsp;ma&nbsp;else&nbsp;ceil(tpl_data_size)::int&nbsp;%&nbsp;ma&nbsp;end&nbsp;)&nbsp;as&nbsp;tpl_size,&nbsp;bs&nbsp;-&nbsp;page_hdr&nbsp;as&nbsp;size_per_block,&nbsp;(heappages&nbsp;+&nbsp;toastpages)&nbsp;as&nbsp;tblpages&nbsp;from&nbsp;step1&nbsp;),&nbsp;step3&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;ceil(reltuples&nbsp;/&nbsp;((bs&nbsp;-&nbsp;page_hdr)&nbsp;/&nbsp;tpl_size))&nbsp;+&nbsp;ceil(toasttuples&nbsp;/&nbsp;$32)&nbsp;as&nbsp;est_tblpages,&nbsp;ceil(reltuples&nbsp;/&nbsp;((bs&nbsp;-&nbsp;page_hdr)&nbsp;*&nbsp;fillfactor&nbsp;/&nbsp;(tpl_size&nbsp;*&nbsp;$33)))&nbsp;+&nbsp;ceil(toasttuples&nbsp;/&nbsp;$34)&nbsp;as&nbsp;est_tblpages_ff&nbsp;&nbsp;from&nbsp;step2&nbsp;),&nbsp;step4&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;tblpages&nbsp;*&nbsp;bs&nbsp;as&nbsp;real_size,&nbsp;(tblpages&nbsp;-&nbsp;est_tblpages)&nbsp;*&nbsp;bs&nbsp;as&nbsp;extra_size,&nbsp;case&nbsp;when...
-10 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3.62&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>1.88% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;order&nbsp;by&nbsp;category,&nbsp;name)&nbsp;s
-11 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |2.19&nbsp;ms<br/>0s/sec<br/>2ms/call<br/>1.14% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;stat_statements&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pg_settings.name,&nbsp;pg_settings)&nbsp;as&nbsp;json&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;$1),&nbsp;kcache&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pg_settings.name,&nbsp;pg_settings)&nbsp;as&nbsp;json&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;$2)select&nbsp;json_build_object($3,&nbsp;(select&nbsp;*&nbsp;from&nbsp;stat_statements),&nbsp;$4,&nbsp;(select&nbsp;*&nbsp;from&nbsp;kcache))
-12 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |2.03&nbsp;ms<br/>0s/sec<br/>2ms/call<br/>1.06% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |6&nbsp;blks<br/>0.16&nbsp;blks/sec<br/>6.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;ae.name,&nbsp;installed_version,&nbsp;default_version,&nbsp;case&nbsp;when&nbsp;installed_version&nbsp;<>&nbsp;default_version&nbsp;then&nbsp;$1&nbsp;end&nbsp;as&nbsp;is_oldfrom&nbsp;pg_extension&nbsp;ejoin&nbsp;pg_available_extensions&nbsp;ae&nbsp;on&nbsp;extname&nbsp;=&nbsp;ae.nameorder&nbsp;by&nbsp;ae.name&nbsp;),&nbsp;withsettins&nbsp;as&nbsp;(&nbsp;select&nbsp;data.*,&nbsp;(select&nbsp;json_object_agg(name,&nbsp;setting)&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;data.name)&nbsp;as&nbsp;settings&nbsp;from&nbsp;data&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;select&nbsp;json_object_agg(withsettins.name,&nbsp;withsettins)&nbsp;as&nbsp;json&nbsp;from&nbsp;withsettins
-13 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1.87&nbsp;ms<br/>0s/sec<br/>1ms/call<br/>0.98% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;settings_count&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(coalesce(s.sourcefile,&nbsp;$1),&nbsp;s.count)&nbsp;from&nbsp;(select&nbsp;sourcefile,&nbsp;count(ps.*)&nbsp;as&nbsp;count&nbsp;from&nbsp;pg_settings&nbsp;ps&nbsp;group&nbsp;by&nbsp;1)&nbsp;s),&nbsp;changes&nbsp;as&nbsp;(&nbsp;select&nbsp;json_agg(json_build_object(&nbsp;$2,&nbsp;s.sourcefile,&nbsp;$3,&nbsp;s.count,&nbsp;$4,&nbsp;s.examples&nbsp;))&nbsp;from&nbsp;(&nbsp;select&nbsp;sourcefile,&nbsp;count(ps.*)&nbsp;as&nbsp;count,&nbsp;(json_agg(name&nbsp;order&nbsp;by&nbsp;name)&nbsp;filter&nbsp;(where&nbsp;sourcefile&nbsp;is&nbsp;not&nbsp;null))&nbsp;as&nbsp;examples&nbsp;from&nbsp;pg_settings&nbsp;ps&nbsp;group&nbsp;by&nbsp;1&nbsp;)&nbsp;s)select&nbsp;json_build_object($5,&nbsp;(select&nbsp;*&nbsp;from&nbsp;settings_count),&nbsp;$6,&nbsp;(select&nbsp;*&nbsp;from&nbsp;changes))
-14 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1.46&nbsp;ms<br/>0s/sec<br/>1ms/call<br/>0.76% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |18&nbsp;blks<br/>0.48&nbsp;blks/sec<br/>18.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;global_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(&nbsp;select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;(&nbsp;name&nbsp;~&nbsp;$1&nbsp;or&nbsp;name&nbsp;in&nbsp;(&nbsp;$2,&nbsp;$3&nbsp;)&nbsp;)&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;s),&nbsp;table_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.namespace&nbsp;||&nbsp;$4&nbsp;||&nbsp;s.relname,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;(select&nbsp;nspname&nbsp;from&nbsp;pg_namespace&nbsp;where&nbsp;oid&nbsp;=&nbsp;relnamespace)&nbsp;namespace,&nbsp;relname,&nbsp;reloptions&nbsp;from&nbsp;pg_class&nbsp;where&nbsp;reloptions::text&nbsp;~&nbsp;$5&nbsp;order&nbsp;by&nbsp;namespace,&nbsp;relname&nbsp;)&nbsp;s)select&nbsp;json_build_object($6,&nbsp;(select&nbsp;*&nbsp;from&nbsp;global_settings),&nbsp;$7,&nbsp;(select&nbsp;*&nbsp;from&nbsp;table_settings))
-15 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;count($1)&nbsp;from&nbsp;t_slw_q&nbsp;where&nbsp;id&nbsp;between&nbsp;$2&nbsp;and&nbsp;$3
-16 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;r_red_fk_1_id_idx&nbsp;on&nbsp;t_red_fk_1(id)
-17 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_fk_2&nbsp;as&nbsp;select&nbsp;id,&nbsp;(random()&nbsp;*&nbsp;1000000)::int8&nbsp;as&nbsp;t1_id&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(id)
-18 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;concurrently&nbsp;i_redundant_2&nbsp;on&nbsp;t_with_redundant_index(i)
-19 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |update&nbsp;t_with_bloat&nbsp;set&nbsp;i&nbsp;=&nbsp;i
-20 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_with_unused_index&nbsp;as&nbsp;select&nbsp;i&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(i)
-21 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;extension&nbsp;if&nbsp;not&nbsp;exists&nbsp;pg_stat_kcache
-22 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;concurrently&nbsp;i_redundant_1&nbsp;on&nbsp;t_with_redundant_index(i)
-23 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;r_red_fk_1_X_idx&nbsp;on&nbsp;t_red_fk_1(id)
+1 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |93.01&nbsp;ms<br/>2ms/sec<br/>93ms/call<br/>50.28% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |138,867&nbsp;blks<br/>3.76K&nbsp;blks/sec<br/>138.87K&nbsp;blks/call<br/>92.36% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;step1&nbsp;as&nbsp;(&nbsp;select&nbsp;i.nspname&nbsp;as&nbsp;schema_name,&nbsp;i.tblname&nbsp;as&nbsp;table_name,&nbsp;i.idxname&nbsp;as&nbsp;index_name,&nbsp;i.reltuples,&nbsp;i.relpages,&nbsp;i.relam,&nbsp;a.attrelid&nbsp;AS&nbsp;table_oid,&nbsp;current_setting($1)::numeric&nbsp;AS&nbsp;bs,&nbsp;fillfactor,&nbsp;&nbsp;case&nbsp;when&nbsp;version()&nbsp;~&nbsp;$2&nbsp;then&nbsp;$3&nbsp;else&nbsp;$4&nbsp;end&nbsp;as&nbsp;maxalign,&nbsp;/*&nbsp;per&nbsp;page&nbsp;header,&nbsp;fixed&nbsp;size:&nbsp;20&nbsp;for&nbsp;7.X,&nbsp;24&nbsp;for&nbsp;others&nbsp;*/&nbsp;$5&nbsp;AS&nbsp;pagehdr,&nbsp;/*&nbsp;per&nbsp;page&nbsp;btree&nbsp;opaque&nbsp;data&nbsp;*/&nbsp;$6&nbsp;AS&nbsp;pageopqdata,&nbsp;/*&nbsp;per&nbsp;tuple&nbsp;header:&nbsp;add&nbsp;IndexAttributeBitMapData&nbsp;if&nbsp;some&nbsp;cols&nbsp;are&nbsp;null-able&nbsp;*/&nbsp;case&nbsp;when&nbsp;max(coalesce(s.null_frac,$7))&nbsp;=&nbsp;$8&nbsp;then&nbsp;$9&nbsp;&nbsp;else&nbsp;$10&nbsp;+&nbsp;((&nbsp;$11&nbsp;+&nbsp;$12&nbsp;-&nbsp;$13&nbsp;)&nbsp;/&nbsp;$14)&nbsp;&nbsp;end&nbsp;as&nbsp;index_tuple_hdr_bm,&nbsp;/*&nbsp;data&nbsp;len:&nbsp;we&nbsp;remove&nbsp;null&nbsp;values&nbsp;save&nbsp;space&nbsp;using&nbsp;it&nbsp;fractionnal&nbsp;part&nbsp;from&nbsp;stats&nbsp;*/&nbsp;sum(($15&nbsp;-&nbsp;coalesce(s.null_frac,&nbsp;$16))&nbsp;*&nbsp;coalesce(s.avg_width,&nbsp;$17))&nbsp;as&nbsp;nulldatawidth,&nbsp;max(case&nbsp;when&nbsp;a.atttypid&nbsp;=&nbsp;$18::regtype&nbsp;then&nbsp;$19&nbsp;else&nbsp;$20&nbsp;end)&nbsp;>&nbsp;$21&nbsp;as&nbsp;is_na&nbsp;from&nbsp;pg_attribute&nbsp;as&nbsp;a&nbsp;join&nbsp;(&nbsp;select&nbsp;nspname,&nbsp;tbl.relname&nbsp;AS&nbsp;tblname,&nbsp;idx.relname&nbsp;AS&nbsp;idxname,&nbsp;idx.reltuples,&nbsp;idx.relpages,&nbsp;idx.relam,&nbsp;indrelid,&nbsp;indexrelid,&nbsp;indkey::smallint[]&nbsp;AS&nbsp;attnum,&nbsp;coalesce(substring(array_to_string(idx.reloptions,&nbsp;$22)&nbsp;from&nbsp;$23)::smallint,&nbsp;$24)&nbsp;as&nbsp;fillfactor&nbsp;from&nbsp;pg_index&nbsp;join&nbsp;pg_class&nbsp;idx&nbsp;on&nbsp;idx.oid&nbsp;=&nbsp;pg_index.indexrelid&nbsp;join&nbsp;pg_class&nbsp;tbl&nbsp;on&nbsp;tbl.oid&nbsp;=&nbsp;pg_index.indrelid&nbsp;join&nbsp;pg_namespace&nbsp;on&nbsp;pg_namespace.oid&nbsp;=&nbsp;idx.relnamespace&nbsp;where&nbsp;pg_index.indisvalid&nbsp;AND&nbsp;tbl.relkind&nbsp;=&nbsp;$25&nbsp;AND&nbsp;idx.relpages&nbsp;>&nbsp;$26&nbsp;)&nbsp;as&nbsp;i&nbsp;on&nbsp;a.attrelid&nbsp;=&nbsp;i.indexrelid&nbsp;join&nbsp;pg_stats&nbsp;as&nbsp;s&nbsp;on&nbsp;s.schemaname&nbsp;=&nbsp;i.nspname&nbsp;and&nbsp;(&nbsp;(s.tablename&nbsp;=&nbsp;i.tblname&nbsp;and&nbsp;s.attname&nbsp;=&nbsp;pg_catalog.pg_get_indexdef(a.attrelid,&nbsp;a.attnum,&nbsp;$27))&nbsp;&nbsp;OR&nbsp;(s.tablename&nbsp;=&nbsp;i.idxname&nbsp;AND&nbsp;s.attname&nbsp;=&nbsp;a.attname)&nbsp;&nbsp;)&nbsp;join&nbsp;pg_type&nbsp;as&nbsp;t&nbsp;on&nbsp;a.atttypid&nbsp;=&nbsp;t.oid&nbsp;where&nbsp;a.attnum&nbsp;>&nbsp;$28&nbsp;group&nbsp;by&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9&nbsp;),&nbsp;step2&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;(&nbsp;index_tuple_hdr_bm&nbsp;+&nbsp;maxalign&nbsp;&nbsp;-&nbsp;case&nbsp;when&nbsp;index_tuple_hdr_bm&nbsp;%&nbsp;maxalign&nbsp;=&nbsp;$29&nbsp;THEN&nbsp;maxalign&nbsp;else&nbsp;index_tuple_hdr_bm&nbsp;%&nbsp;maxalign&nbsp;end&nbsp;+&nbsp;nulldatawidth&nbsp;+&nbsp;maxalign&nbsp;&nbsp;-&nbsp;case&nbsp;when&nbsp;nulldatawidth&nbsp;=&nbsp;$30&nbsp;...
+2 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |19.28&nbsp;ms<br/>0s/sec<br/>19ms/call<br/>10.42% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |24&nbsp;blks<br/>0.65&nbsp;blks/sec<br/>24.00&nbsp;blks/call<br/>0.02% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;/*For&nbsp;Postgres&nbsp;versions&nbsp;older&nbsp;than&nbsp;10,&nbsp;run&nbsp;this&nbsp;first:&nbsp;\set&nbsp;postgres_dba_last_wal_receive_lsn&nbsp;pg_last_xlog_receive_location&nbsp;\set&nbsp;postgres_dba_last_wal_replay_lsn&nbsp;pg_last_xlog_replay_location&nbsp;\set&nbsp;postgres_dba_is_wal_replay_paused&nbsp;pg_is_xlog_replay_paused*/with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;s.*&nbsp;from&nbsp;pg_stat_database&nbsp;s&nbsp;where&nbsp;s.datname&nbsp;=&nbsp;current_database())select&nbsp;$1&nbsp;as&nbsp;metric,&nbsp;version()&nbsp;as&nbsp;valueunion&nbsp;allselect&nbsp;$2&nbsp;as&nbsp;metric,&nbsp;(select&nbsp;setting&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;=&nbsp;$3)&nbsp;as&nbsp;valueunion&nbsp;allselect&nbsp;$4&nbsp;as&nbsp;metric,&nbsp;case&nbsp;when&nbsp;pg_is_in_recovery()&nbsp;then&nbsp;$5&nbsp;||&nbsp;$6&nbsp;||&nbsp;((((case&nbsp;when&nbsp;pg_last_wal_receive_lsn()&nbsp;=&nbsp;pg_last_wal_replay_lsn()&nbsp;then&nbsp;$7&nbsp;else&nbsp;extract&nbsp;($8&nbsp;from&nbsp;now()&nbsp;-&nbsp;pg_last_xact_replay_timestamp())&nbsp;end)::int)::text&nbsp;||&nbsp;$9)::interval)::text&nbsp;||&nbsp;$10&nbsp;||&nbsp;pg_is_wal_replay_paused()::text&nbsp;||&nbsp;$11&nbsp;else&nbsp;$12&nbsp;end&nbsp;as&nbsp;valueunion&nbsp;all(&nbsp;with&nbsp;repl_groups&nbsp;as&nbsp;(&nbsp;select&nbsp;sync_state,&nbsp;state,&nbsp;string_agg(host(client_addr),&nbsp;$13)&nbsp;as&nbsp;hosts&nbsp;from&nbsp;pg_stat_replication&nbsp;group&nbsp;by&nbsp;1,&nbsp;2&nbsp;)&nbsp;select&nbsp;$14,&nbsp;string_agg(sync_state&nbsp;||&nbsp;$15&nbsp;||&nbsp;state&nbsp;||&nbsp;$16&nbsp;||&nbsp;hosts,&nbsp;$17)&nbsp;from&nbsp;repl_groups)union&nbsp;allselect&nbsp;$18,&nbsp;pg_postmaster_start_time()::timestamptz(0)::textunion&nbsp;allselect&nbsp;$19,&nbsp;(now()&nbsp;-&nbsp;pg_postmaster_start_time())::interval(0)::textunion&nbsp;allselect&nbsp;$20,&nbsp;(select&nbsp;(checkpoints_timed&nbsp;+&nbsp;checkpoints_req)::text&nbsp;from&nbsp;pg_stat_bgwriter)union&nbsp;allselect&nbsp;$21,&nbsp;(&nbsp;select&nbsp;round($22&nbsp;*&nbsp;checkpoints_req::numeric&nbsp;/&nbsp;(nullif(checkpoints_timed&nbsp;+&nbsp;checkpoints_req,&nbsp;$23)),&nbsp;$24)::text&nbsp;||&nbsp;$25&nbsp;from&nbsp;pg_stat_bgwriter&nbsp;)union&nbsp;allselect&nbsp;$26,&nbsp;(&nbsp;select&nbsp;round((nullif(buffers_checkpoint::numeric,&nbsp;$27)&nbsp;/&nbsp;(($28&nbsp;*&nbsp;$29&nbsp;/&nbsp;(current_setting($30)::numeric))&nbsp;*&nbsp;extract($31&nbsp;from&nbsp;now()&nbsp;-&nbsp;stats_reset)&nbsp;))::numeric,&nbsp;$32)::text&nbsp;from&nbsp;pg_stat_bgwriter&nbsp;)union&nbsp;allselect&nbsp;repeat($33,&nbsp;$34),&nbsp;repeat($35,&nbsp;$36)union&nbsp;allselect&nbsp;$37&nbsp;as&nbsp;metric,&nbsp;datname&nbsp;as&nbsp;value&nbsp;from&nbsp;dataunion&nbsp;allselect&nbsp;$38,&nbsp;pg_size_pretty(pg_database_size(current_database()))union&nbsp;allselect&nbsp;$39,&nbsp;stats_reset::timestamptz(0)::text&nbsp;from&nbsp;dataunion&nbsp;allselect...
+3 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |19.22&nbsp;ms<br/>0s/sec<br/>19ms/call<br/>10.39% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |5,451&nbsp;blks<br/>147.37&nbsp;blks/sec<br/>5.46K&nbsp;blks/call<br/>3.63% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;fk_actions&nbsp;(&nbsp;code,&nbsp;action&nbsp;)&nbsp;as&nbsp;(&nbsp;values&nbsp;($1,&nbsp;$2),&nbsp;($3,&nbsp;$4),&nbsp;($5,&nbsp;$6),&nbsp;($7,&nbsp;$8),&nbsp;($9,&nbsp;$10)),&nbsp;fk_list&nbsp;as&nbsp;(&nbsp;select&nbsp;pg_constraint.oid&nbsp;as&nbsp;fkoid,&nbsp;conrelid,&nbsp;confrelid&nbsp;as&nbsp;parentid,&nbsp;conname,&nbsp;relname,&nbsp;nspname,&nbsp;fk_actions_update.action&nbsp;as&nbsp;update_action,&nbsp;fk_actions_delete.action&nbsp;as&nbsp;delete_action,&nbsp;conkey&nbsp;as&nbsp;key_cols&nbsp;from&nbsp;pg_constraint&nbsp;join&nbsp;pg_class&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;pg_class.oid&nbsp;join&nbsp;pg_namespace&nbsp;on&nbsp;pg_class.relnamespace&nbsp;=&nbsp;pg_namespace.oid&nbsp;join&nbsp;fk_actions&nbsp;as&nbsp;fk_actions_update&nbsp;on&nbsp;confupdtype&nbsp;=&nbsp;fk_actions_update.code&nbsp;join&nbsp;fk_actions&nbsp;as&nbsp;fk_actions_delete&nbsp;on&nbsp;confdeltype&nbsp;=&nbsp;fk_actions_delete.code&nbsp;where&nbsp;contype&nbsp;=&nbsp;$11),&nbsp;fk_attributes&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid,&nbsp;conrelid,&nbsp;attname,&nbsp;attnum&nbsp;from&nbsp;fk_list&nbsp;join&nbsp;pg_attribute&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;attrelid&nbsp;and&nbsp;attnum&nbsp;=&nbsp;any(key_cols)&nbsp;order&nbsp;by&nbsp;fkoid,&nbsp;attnum),&nbsp;fk_cols_list&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid,&nbsp;array_agg(attname)&nbsp;as&nbsp;cols_list&nbsp;from&nbsp;fk_attributes&nbsp;group&nbsp;by&nbsp;fkoid),&nbsp;index_list&nbsp;as&nbsp;(&nbsp;select&nbsp;indexrelid&nbsp;as&nbsp;indexid,&nbsp;pg_class.relname&nbsp;as&nbsp;indexname,&nbsp;indrelid,&nbsp;indkey,&nbsp;indpred&nbsp;is&nbsp;not&nbsp;null&nbsp;as&nbsp;has_predicate,&nbsp;pg_get_indexdef(indexrelid)&nbsp;as&nbsp;indexdef&nbsp;from&nbsp;pg_index&nbsp;join&nbsp;pg_class&nbsp;on&nbsp;indexrelid&nbsp;=&nbsp;pg_class.oid&nbsp;where&nbsp;indisvalid),&nbsp;fk_index_match&nbsp;as&nbsp;(&nbsp;select&nbsp;fk_list.*,&nbsp;indexid,&nbsp;indexname,&nbsp;indkey::int[]&nbsp;as&nbsp;indexatts,&nbsp;has_predicate,&nbsp;indexdef,&nbsp;array_length(key_cols,&nbsp;$12)&nbsp;as&nbsp;fk_colcount,&nbsp;array_length(indkey,$13)&nbsp;as&nbsp;index_colcount,&nbsp;round(pg_relation_size(conrelid)/($14^$15)::numeric)&nbsp;as&nbsp;table_mb,&nbsp;cols_list&nbsp;from&nbsp;fk_list&nbsp;join&nbsp;fk_cols_list&nbsp;using&nbsp;(fkoid)&nbsp;left&nbsp;join&nbsp;index_list&nbsp;on&nbsp;conrelid&nbsp;=&nbsp;indrelid&nbsp;and&nbsp;(indkey::int2[])[$16:(array_length(key_cols,$17)&nbsp;-$18)]&nbsp;operator(pg_catalog.@>)&nbsp;key_cols),&nbsp;fk_perfect_match&nbsp;as&nbsp;(&nbsp;select&nbsp;fkoid&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;(index_colcount&nbsp;-&nbsp;$19)&nbsp;<=&nbsp;fk_colcount&nbsp;and&nbsp;not&nbsp;has_predicate&nbsp;and&nbsp;indexdef&nbsp;like&nbsp;$20),&nbsp;fk_index_check&nbsp;as&nbsp;(&nbsp;select&nbsp;$21&nbsp;as&nbsp;issue,&nbsp;*,&nbsp;$22&nbsp;as&nbsp;issue_sort&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;indexid&nbsp;is&nbsp;null&nbsp;union&nbsp;all&nbsp;select&nbsp;$23&nbsp;as&nbsp;issue,&nbsp;*,&nbsp;$24&nbsp;from&nbsp;fk_index_match&nbsp;where&nbsp;indexid&nbsp;is&nbsp;...
+4 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |12.80&nbsp;ms<br/>0s/sec<br/>12ms/call<br/>6.92% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |16&nbsp;blks<br/>0.43&nbsp;blks/sec<br/>16.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;timeouts&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,s&nbsp;)&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;where&nbsp;name&nbsp;in&nbsp;($1,&nbsp;$2,&nbsp;$3)),&nbsp;locks&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,s&nbsp;)&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;where&nbsp;name&nbsp;in&nbsp;($4,&nbsp;$5,&nbsp;$6,&nbsp;$7,&nbsp;$8,&nbsp;$9)),&nbsp;databases_stat&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;((now()&nbsp;-&nbsp;sd.stats_reset)::interval(0)::text)&nbsp;as&nbsp;stats_reset_age&nbsp;from&nbsp;pg_stat_database&nbsp;sd&nbsp;where&nbsp;datname&nbsp;in&nbsp;(SELECT&nbsp;datname&nbsp;FROM&nbsp;pg_database&nbsp;WHERE&nbsp;datistemplate&nbsp;=&nbsp;$10)&nbsp;order&nbsp;by&nbsp;deadlocks&nbsp;desc),&nbsp;dbs_data&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(sd.datname,&nbsp;sd)&nbsp;from&nbsp;databases_stat&nbsp;sd),&nbsp;db_specified_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(dbs.database,&nbsp;dbs)&nbsp;from&nbsp;(select&nbsp;(select&nbsp;datname&nbsp;from&nbsp;pg_database&nbsp;where&nbsp;oid&nbsp;=&nbsp;pd.setdatabase)&nbsp;as&nbsp;database,&nbsp;*&nbsp;from&nbsp;pg_db_role_setting&nbsp;pd&nbsp;where&nbsp;setconfig::text&nbsp;~&nbsp;$11&nbsp;and&nbsp;setdatabase&nbsp;is&nbsp;not&nbsp;null&nbsp;and&nbsp;setdatabase&nbsp;<>&nbsp;$12)&nbsp;dbs),&nbsp;user_specified_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pr.rolname,&nbsp;pr)&nbsp;from&nbsp;pg_roles&nbsp;pr&nbsp;where&nbsp;rolconfig::text&nbsp;~&nbsp;$13)select&nbsp;json_build_object(&nbsp;$14,&nbsp;(select&nbsp;*&nbsp;from&nbsp;timeouts),&nbsp;$15,&nbsp;(select&nbsp;*&nbsp;from&nbsp;locks),&nbsp;$16,&nbsp;(select&nbsp;*&nbsp;from&nbsp;dbs_data),&nbsp;$17,&nbsp;(select&nbsp;*&nbsp;from&nbsp;db_specified_settings),&nbsp;$18,&nbsp;(select&nbsp;*&nbsp;from&nbsp;user_specified_settings)&nbsp;)
+5 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |11.74&nbsp;ms<br/>0s/sec<br/>11ms/call<br/>6.35% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |33&nbsp;blks<br/>0.89&nbsp;blks/sec<br/>33.00&nbsp;blks/call<br/>0.02% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;coalesce(nullif(schemaname&nbsp;||&nbsp;$1,&nbsp;$2),&nbsp;$3)&nbsp;||&nbsp;c.relname&nbsp;as&nbsp;"relation",&nbsp;c.relkind,&nbsp;now()&nbsp;-&nbsp;last_autovacuum&nbsp;as&nbsp;since_last_autovacuum,&nbsp;now()&nbsp;-&nbsp;last_vacuum&nbsp;as&nbsp;since_last_vacuum,&nbsp;autovacuum_count&nbsp;as&nbsp;av_count,&nbsp;vacuum_count&nbsp;as&nbsp;v_count,&nbsp;n_tup_ins,&nbsp;&nbsp;n_tup_upd,&nbsp;&nbsp;n_tup_del,&nbsp;reltuples::int8&nbsp;as&nbsp;pg_class_reltuples,&nbsp;n_live_tup,&nbsp;n_dead_tup,&nbsp;round((n_dead_tup::numeric&nbsp;*&nbsp;$4&nbsp;/&nbsp;nullif(n_dead_tup&nbsp;+&nbsp;n_live_tup,&nbsp;$5))::numeric,&nbsp;$6)&nbsp;as&nbsp;dead_ratio&nbsp;from&nbsp;pg_stat_all_tables&nbsp;join&nbsp;pg_class&nbsp;c&nbsp;on&nbsp;c.oid&nbsp;=&nbsp;relid&nbsp;where&nbsp;reltuples&nbsp;>&nbsp;$7&nbsp;order&nbsp;by&nbsp;13&nbsp;desc&nbsp;limit&nbsp;$8),&nbsp;dead_tuples&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(data."relation",&nbsp;data)&nbsp;as&nbsp;json&nbsp;from&nbsp;data),&nbsp;database_stat&nbsp;as&nbsp;(&nbsp;select&nbsp;row_to_json(dbstat)&nbsp;from&nbsp;(&nbsp;select&nbsp;sd.stats_reset::timestamptz(0),&nbsp;age(&nbsp;date_trunc($9,now()),&nbsp;date_trunc($10,sd.stats_reset)&nbsp;)&nbsp;as&nbsp;stats_age&nbsp;from&nbsp;pg_stat_database&nbsp;sd&nbsp;where&nbsp;datname&nbsp;=&nbsp;current_database()&nbsp;)&nbsp;dbstat)select&nbsp;json_build_object(&nbsp;$11,&nbsp;(select&nbsp;*&nbsp;from&nbsp;dead_tuples),&nbsp;$12,&nbsp;(select&nbsp;*&nbsp;from&nbsp;database_stat)&nbsp;)
+6 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |6.63&nbsp;ms<br/>0s/sec<br/>6ms/call<br/>3.59% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |4,600&nbsp;blks<br/>124.36&nbsp;blks/sec<br/>4.60K&nbsp;blks/call<br/>3.06% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;fk_indexes&nbsp;as&nbsp;(&nbsp;select&nbsp;schemaname&nbsp;as&nbsp;schema_name,&nbsp;(indexrelid::regclass)::text&nbsp;as&nbsp;index_name,&nbsp;(relid::regclass)::text&nbsp;as&nbsp;table_name,&nbsp;(confrelid::regclass)::text&nbsp;as&nbsp;fk_table_ref,&nbsp;array_to_string(indclass,&nbsp;$1)&nbsp;as&nbsp;opclasses&nbsp;from&nbsp;pg_stat_user_indexes&nbsp;join&nbsp;pg_index&nbsp;using&nbsp;(indexrelid)&nbsp;left&nbsp;join&nbsp;pg_constraint&nbsp;on&nbsp;array_to_string(indkey,&nbsp;$2)&nbsp;=&nbsp;array_to_string(conkey,&nbsp;$3)&nbsp;and&nbsp;schemaname&nbsp;=&nbsp;(connamespace::regnamespace)::text&nbsp;and&nbsp;conrelid&nbsp;=&nbsp;relid&nbsp;and&nbsp;contype&nbsp;=&nbsp;$4&nbsp;where&nbsp;idx_scan&nbsp;=&nbsp;$5&nbsp;and&nbsp;indisunique&nbsp;is&nbsp;false&nbsp;and&nbsp;conkey&nbsp;is&nbsp;not&nbsp;null&nbsp;),&nbsp;table_scans&nbsp;as&nbsp;(&nbsp;select&nbsp;relid,&nbsp;tables.idx_scan&nbsp;+&nbsp;tables.seq_scan&nbsp;as&nbsp;all_scans,&nbsp;(&nbsp;tables.n_tup_ins&nbsp;+&nbsp;tables.n_tup_upd&nbsp;+&nbsp;tables.n_tup_del&nbsp;)&nbsp;as&nbsp;writes,&nbsp;pg_relation_size(relid)&nbsp;as&nbsp;table_size&nbsp;from&nbsp;pg_stat_user_tables&nbsp;as&nbsp;tables),&nbsp;all_writes&nbsp;as&nbsp;(&nbsp;select&nbsp;sum(writes)&nbsp;as&nbsp;total_writes&nbsp;from&nbsp;table_scans),&nbsp;indexes&nbsp;as&nbsp;(&nbsp;select&nbsp;idx_stat.relid,&nbsp;idx_stat.indexrelid,&nbsp;idx_stat.schemaname&nbsp;as&nbsp;schema_name,&nbsp;idx_stat.relname&nbsp;as&nbsp;table_name,&nbsp;idx_stat.indexrelname&nbsp;as&nbsp;index_name,&nbsp;quote_ident(idx_stat.schemaname)&nbsp;as&nbsp;formated_schema_name,&nbsp;quote_ident(idx_stat.indexrelname)&nbsp;as&nbsp;formated_index_name,&nbsp;quote_ident(idx_stat.relname)&nbsp;as&nbsp;formated_table_name,&nbsp;coalesce(nullif(quote_ident(idx_stat.schemaname),&nbsp;$6)&nbsp;||&nbsp;$7,&nbsp;$8)&nbsp;||&nbsp;quote_ident(idx_stat.relname)&nbsp;as&nbsp;formated_relation_name,&nbsp;idx_stat.idx_scan,&nbsp;pg_relation_size(idx_stat.indexrelid)&nbsp;as&nbsp;index_bytes,&nbsp;indexdef&nbsp;~*&nbsp;$9&nbsp;as&nbsp;idx_is_btree,&nbsp;pg_get_indexdef(pg_index.indexrelid)&nbsp;as&nbsp;index_def,&nbsp;array_to_string(pg_index.indclass,&nbsp;$10)&nbsp;as&nbsp;opclasses&nbsp;from&nbsp;pg_stat_user_indexes&nbsp;as&nbsp;idx_stat&nbsp;join&nbsp;pg_index&nbsp;using&nbsp;(indexrelid)&nbsp;join&nbsp;pg_indexes&nbsp;as&nbsp;indexes&nbsp;on&nbsp;idx_stat.schemaname&nbsp;=&nbsp;indexes.schemaname&nbsp;and&nbsp;idx_stat.relname&nbsp;=&nbsp;indexes.tablename&nbsp;and&nbsp;idx_stat.indexrelname&nbsp;=&nbsp;indexes.indexname&nbsp;where&nbsp;pg_index.indisunique&nbsp;=&nbsp;$11),&nbsp;index_ratios&nbsp;as&nbsp;(&nbsp;select&nbsp;i.indexrelid&nbsp;as&nbsp;index_id,&nbsp;i.schema_name,&nbsp;i.table_name,&nbsp;i.index_name,&nbsp;idx_scan,&nbsp;all_scans,&nbsp;round((&nbsp;case&nbsp;when&nbsp;all_scans&nbsp;=&nbsp;$12&nbsp;then&nbsp;$13::numeric&nbsp;else&nbsp;idx_scan::n...
+7 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |4.60&nbsp;ms<br/>0s/sec<br/>4ms/call<br/>2.49% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1,323&nbsp;blks<br/>35.77&nbsp;blks/sec<br/>1.33K&nbsp;blks/call<br/>0.88% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;with&nbsp;step1&nbsp;as&nbsp;(&nbsp;select&nbsp;tbl.oid&nbsp;tblid,&nbsp;ns.nspname&nbsp;as&nbsp;schema_name,&nbsp;tbl.relname&nbsp;as&nbsp;table_name,&nbsp;tbl.reltuples,&nbsp;tbl.relpages&nbsp;as&nbsp;heappages,&nbsp;coalesce(toast.relpages,&nbsp;$1)&nbsp;as&nbsp;toastpages,&nbsp;coalesce(toast.reltuples,&nbsp;$2)&nbsp;as&nbsp;toasttuples,&nbsp;coalesce(substring(array_to_string(tbl.reloptions,&nbsp;$3)&nbsp;from&nbsp;$4&nbsp;for&nbsp;$5)::int2,&nbsp;$6)&nbsp;as&nbsp;fillfactor,&nbsp;current_setting($7)::numeric&nbsp;as&nbsp;bs,&nbsp;case&nbsp;when&nbsp;version()&nbsp;~&nbsp;$8&nbsp;then&nbsp;$9&nbsp;else&nbsp;$10&nbsp;end&nbsp;as&nbsp;ma,&nbsp;&nbsp;$11&nbsp;as&nbsp;page_hdr,&nbsp;$12&nbsp;+&nbsp;case&nbsp;when&nbsp;max(coalesce(null_frac,&nbsp;$13))&nbsp;>&nbsp;$14&nbsp;then&nbsp;($15&nbsp;+&nbsp;count(*))&nbsp;/&nbsp;$16&nbsp;else&nbsp;$17::int&nbsp;end&nbsp;+&nbsp;case&nbsp;when&nbsp;tbl.relhasoids&nbsp;then&nbsp;$18&nbsp;else&nbsp;$19&nbsp;end&nbsp;as&nbsp;tpl_hdr_size,&nbsp;sum(($20&nbsp;-&nbsp;coalesce(s.null_frac,&nbsp;$21))&nbsp;*&nbsp;coalesce(s.avg_width,&nbsp;$22))&nbsp;as&nbsp;tpl_data_size,&nbsp;bool_or(att.atttypid&nbsp;=&nbsp;$23::regtype)&nbsp;or&nbsp;count(att.attname)&nbsp;<>&nbsp;count(s.attname)&nbsp;as&nbsp;is_na&nbsp;from&nbsp;pg_attribute&nbsp;as&nbsp;att&nbsp;join&nbsp;pg_class&nbsp;as&nbsp;tbl&nbsp;on&nbsp;att.attrelid&nbsp;=&nbsp;tbl.oid&nbsp;and&nbsp;tbl.relkind&nbsp;=&nbsp;$24&nbsp;join&nbsp;pg_namespace&nbsp;as&nbsp;ns&nbsp;on&nbsp;ns.oid&nbsp;=&nbsp;tbl.relnamespace&nbsp;join&nbsp;pg_stats&nbsp;as&nbsp;s&nbsp;on&nbsp;s.schemaname&nbsp;=&nbsp;ns.nspname&nbsp;and&nbsp;s.tablename&nbsp;=&nbsp;tbl.relname&nbsp;and&nbsp;not&nbsp;s.inherited&nbsp;and&nbsp;s.attname&nbsp;=&nbsp;att.attname&nbsp;left&nbsp;join&nbsp;pg_class&nbsp;as&nbsp;toast&nbsp;on&nbsp;tbl.reltoastrelid&nbsp;=&nbsp;toast.oid&nbsp;where&nbsp;att.attnum&nbsp;>&nbsp;$25&nbsp;and&nbsp;not&nbsp;att.attisdropped&nbsp;and&nbsp;s.schemaname&nbsp;not&nbsp;in&nbsp;($26,&nbsp;$27)&nbsp;group&nbsp;by&nbsp;1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9,&nbsp;10,&nbsp;tbl.relhasoids&nbsp;order&nbsp;by&nbsp;2,&nbsp;3&nbsp;),&nbsp;step2&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;(&nbsp;$28&nbsp;+&nbsp;tpl_hdr_size&nbsp;+&nbsp;tpl_data_size&nbsp;+&nbsp;($29&nbsp;*&nbsp;ma)&nbsp;-&nbsp;case&nbsp;when&nbsp;tpl_hdr_size&nbsp;%&nbsp;ma&nbsp;=&nbsp;$30&nbsp;then&nbsp;ma&nbsp;else&nbsp;tpl_hdr_size&nbsp;%&nbsp;ma&nbsp;end&nbsp;-&nbsp;case&nbsp;when&nbsp;ceil(tpl_data_size)::int&nbsp;%&nbsp;ma&nbsp;=&nbsp;$31&nbsp;then&nbsp;ma&nbsp;else&nbsp;ceil(tpl_data_size)::int&nbsp;%&nbsp;ma&nbsp;end&nbsp;)&nbsp;as&nbsp;tpl_size,&nbsp;bs&nbsp;-&nbsp;page_hdr&nbsp;as&nbsp;size_per_block,&nbsp;(heappages&nbsp;+&nbsp;toastpages)&nbsp;as&nbsp;tblpages&nbsp;from&nbsp;step1&nbsp;),&nbsp;step3&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;ceil(reltuples&nbsp;/&nbsp;((bs&nbsp;-&nbsp;page_hdr)&nbsp;/&nbsp;tpl_size))&nbsp;+&nbsp;ceil(toasttuples&nbsp;/&nbsp;$32)&nbsp;as&nbsp;est_tblpages,&nbsp;ceil(reltuples&nbsp;/&nbsp;((bs&nbsp;-&nbsp;page_hdr)&nbsp;*&nbsp;fillfactor&nbsp;/&nbsp;(tpl_size&nbsp;*&nbsp;$33)))&nbsp;+&nbsp;ceil(toasttuples&nbsp;/&nbsp;$34)&nbsp;as&nbsp;est_tblpages_ff&nbsp;&nbsp;from&nbsp;step2&nbsp;),&nbsp;step4&nbsp;as&nbsp;(&nbsp;select&nbsp;*,&nbsp;tblpages&nbsp;*&nbsp;bs&nbsp;as&nbsp;real_size,&nbsp;(tblpages&nbsp;-&nbsp;est_tblpages)&nbsp;*&nbsp;bs&nbsp;as&nbsp;extra_size,&nbsp;case&nbsp;when...
+8 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3.80&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>2.05% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;order&nbsp;by&nbsp;name)&nbsp;s
+9 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3.56&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>1.92% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;s&nbsp;order&nbsp;by&nbsp;category,&nbsp;name)&nbsp;s
+10 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3.02&nbsp;ms<br/>0s/sec<br/>3ms/call<br/>1.63% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |10&nbsp;blks<br/>0.27&nbsp;blks/sec<br/>10.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;ae.name,&nbsp;installed_version,&nbsp;default_version,&nbsp;case&nbsp;when&nbsp;installed_version&nbsp;<>&nbsp;default_version&nbsp;then&nbsp;$1&nbsp;end&nbsp;as&nbsp;is_oldfrom&nbsp;pg_extension&nbsp;ejoin&nbsp;pg_available_extensions&nbsp;ae&nbsp;on&nbsp;extname&nbsp;=&nbsp;ae.nameorder&nbsp;by&nbsp;ae.name&nbsp;),&nbsp;withsettins&nbsp;as&nbsp;(&nbsp;select&nbsp;data.*,&nbsp;(select&nbsp;json_object_agg(name,&nbsp;setting)&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;data.name)&nbsp;as&nbsp;settings&nbsp;from&nbsp;data&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;select&nbsp;json_object_agg(withsettins.name,&nbsp;withsettins)&nbsp;as&nbsp;json&nbsp;from&nbsp;withsettins
+11 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |2.17&nbsp;ms<br/>0s/sec<br/>2ms/call<br/>1.17% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;stat_statements&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pg_settings.name,&nbsp;pg_settings)&nbsp;as&nbsp;json&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;$1),&nbsp;kcache&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(pg_settings.name,&nbsp;pg_settings)&nbsp;as&nbsp;json&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;$2)select&nbsp;json_build_object($3,&nbsp;(select&nbsp;*&nbsp;from&nbsp;stat_statements),&nbsp;$4,&nbsp;(select&nbsp;*&nbsp;from&nbsp;kcache))
+12 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1.88&nbsp;ms<br/>0s/sec<br/>1ms/call<br/>1.02% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |6&nbsp;blks<br/>0.16&nbsp;blks/sec<br/>6.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;data&nbsp;as&nbsp;(&nbsp;select&nbsp;ae.name,&nbsp;installed_version,&nbsp;default_version,&nbsp;case&nbsp;when&nbsp;installed_version&nbsp;<>&nbsp;default_version&nbsp;then&nbsp;$1&nbsp;end&nbsp;as&nbsp;is_oldfrom&nbsp;pg_extension&nbsp;ejoin&nbsp;pg_available_extensions&nbsp;ae&nbsp;on&nbsp;extname&nbsp;=&nbsp;ae.nameorder&nbsp;by&nbsp;ae.name&nbsp;),&nbsp;withsettins&nbsp;as&nbsp;(&nbsp;select&nbsp;data.*,&nbsp;(select&nbsp;json_object_agg(name,&nbsp;setting)&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;name&nbsp;~&nbsp;data.name)&nbsp;as&nbsp;settings&nbsp;from&nbsp;data&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;select&nbsp;json_object_agg(withsettins.name,&nbsp;withsettins)&nbsp;as&nbsp;json&nbsp;from&nbsp;withsettins
+13 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1.84&nbsp;ms<br/>0s/sec<br/>1ms/call<br/>0.99% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |3&nbsp;blks<br/>0.08&nbsp;blks/sec<br/>3.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;settings_count&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(coalesce(s.sourcefile,&nbsp;$1),&nbsp;s.count)&nbsp;from&nbsp;(select&nbsp;sourcefile,&nbsp;count(ps.*)&nbsp;as&nbsp;count&nbsp;from&nbsp;pg_settings&nbsp;ps&nbsp;group&nbsp;by&nbsp;1)&nbsp;s),&nbsp;changes&nbsp;as&nbsp;(&nbsp;select&nbsp;json_agg(json_build_object(&nbsp;$2,&nbsp;s.sourcefile,&nbsp;$3,&nbsp;s.count,&nbsp;$4,&nbsp;s.examples&nbsp;))&nbsp;from&nbsp;(&nbsp;select&nbsp;sourcefile,&nbsp;count(ps.*)&nbsp;as&nbsp;count,&nbsp;(json_agg(name&nbsp;order&nbsp;by&nbsp;name)&nbsp;filter&nbsp;(where&nbsp;sourcefile&nbsp;is&nbsp;not&nbsp;null))&nbsp;as&nbsp;examples&nbsp;from&nbsp;pg_settings&nbsp;ps&nbsp;group&nbsp;by&nbsp;1&nbsp;)&nbsp;s)select&nbsp;json_build_object($5,&nbsp;(select&nbsp;*&nbsp;from&nbsp;settings_count),&nbsp;$6,&nbsp;(select&nbsp;*&nbsp;from&nbsp;changes))
+14 |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |1.44&nbsp;ms<br/>0s/sec<br/>1ms/call<br/>0.78% |1<br/>0.03/sec<br/>1.00/call<br/>7.14% |18&nbsp;blks<br/>0.49&nbsp;blks/sec<br/>18.00&nbsp;blks/call<br/>0.01% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |with&nbsp;global_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.name,&nbsp;s)&nbsp;from&nbsp;(&nbsp;select&nbsp;*&nbsp;from&nbsp;pg_settings&nbsp;where&nbsp;(&nbsp;name&nbsp;~&nbsp;$1&nbsp;or&nbsp;name&nbsp;in&nbsp;(&nbsp;$2,&nbsp;$3&nbsp;)&nbsp;)&nbsp;order&nbsp;by&nbsp;name&nbsp;)&nbsp;s),&nbsp;table_settings&nbsp;as&nbsp;(&nbsp;select&nbsp;json_object_agg(s.namespace&nbsp;||&nbsp;$4&nbsp;||&nbsp;s.relname,&nbsp;s)&nbsp;from&nbsp;(select&nbsp;(select&nbsp;nspname&nbsp;from&nbsp;pg_namespace&nbsp;where&nbsp;oid&nbsp;=&nbsp;relnamespace)&nbsp;namespace,&nbsp;relname,&nbsp;reloptions&nbsp;from&nbsp;pg_class&nbsp;where&nbsp;reloptions::text&nbsp;~&nbsp;$5&nbsp;order&nbsp;by&nbsp;namespace,&nbsp;relname&nbsp;)&nbsp;s)select&nbsp;json_build_object($6,&nbsp;(select&nbsp;*&nbsp;from&nbsp;global_settings),&nbsp;$7,&nbsp;(select&nbsp;*&nbsp;from&nbsp;table_settings))
+15 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;r_red_fk_1_id_idx&nbsp;on&nbsp;t_red_fk_1(id)
+16 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_fk_2&nbsp;as&nbsp;select&nbsp;id,&nbsp;(random()&nbsp;*&nbsp;1000000)::int8&nbsp;as&nbsp;t1_id&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(id)
+17 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;concurrently&nbsp;i_redundant_2&nbsp;on&nbsp;t_with_redundant_index(i)
+18 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_with_unused_index&nbsp;as&nbsp;select&nbsp;i&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(i)
+19 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;extension&nbsp;if&nbsp;not&nbsp;exists&nbsp;pg_stat_kcache
+20 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;concurrently&nbsp;i_redundant_1&nbsp;on&nbsp;t_with_redundant_index(i)
+21 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |alter&nbsp;system&nbsp;set&nbsp;random_page_cost&nbsp;=&nbsp;2.22
+22 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;r_red_fk_1_X_idx&nbsp;on&nbsp;t_red_fk_1(id)
+23 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |update&nbsp;t_with_bloat&nbsp;set&nbsp;i&nbsp;=&nbsp;i
 24 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_with_redundant_index&nbsp;as&nbsp;select&nbsp;i&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(i)
 25 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;extension&nbsp;if&nbsp;not&nbsp;exists&nbsp;pg_stat_statements
 26 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;i_bloated&nbsp;on&nbsp;bloated(i)
 27 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;index&nbsp;r_red_fk_2_fk_idx&nbsp;on&nbsp;t_red_fk_2(r_t1_id)
 28 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;test_schema.t_with_invalid_index&nbsp;as&nbsp;select&nbsp;i&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(i)
 29 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;database&nbsp;checkup_test_db
-30 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |alter&nbsp;system&nbsp;set&nbsp;random_page_cost&nbsp;=&nbsp;2.22
-31 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |VACUUM&nbsp;(ANALYZE)
-32 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;pg_reload_conf()
-33 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |delete&nbsp;from&nbsp;bloated&nbsp;where&nbsp;i&nbsp;%&nbsp;$1&nbsp;=&nbsp;$2
+30 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;count($1)&nbsp;from&nbsp;t_slw_q&nbsp;where&nbsp;id&nbsp;between&nbsp;$2&nbsp;and&nbsp;$3
+31 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |alter&nbsp;table&nbsp;t_fk_1&nbsp;add&nbsp;primary&nbsp;key&nbsp;(id)
+32 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |VACUUM&nbsp;(ANALYZE)
+33 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |select&nbsp;pg_reload_conf()
 34 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_red_fk_1&nbsp;as&nbsp;select&nbsp;id::int8&nbsp;from&nbsp;generate_series(0,&nbsp;1000000)&nbsp;_(id)
-35 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |alter&nbsp;table&nbsp;t_fk_1&nbsp;add&nbsp;primary&nbsp;key&nbsp;(id)
+35 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |delete&nbsp;from&nbsp;bloated&nbsp;where&nbsp;i&nbsp;%&nbsp;$1&nbsp;=&nbsp;$2
 36 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;database&nbsp;dbname
 37 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |create&nbsp;table&nbsp;t_rar_q&nbsp;as&nbsp;select&nbsp;id,&nbsp;(random()&nbsp;*&nbsp;1000000)::int8&nbsp;as&nbsp;t_dat&nbsp;from&nbsp;generate_series(1,&nbsp;1000000)&nbsp;_(id)
 38 |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0<br/>0.00/sec<br/>0.00/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0&nbsp;blks<br/>0.00&nbsp;blks/sec<br/>0.00&nbsp;blks/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;bytes<br/>0.00&nbsp;bytes/sec<br/>0.00&nbsp;bytes/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |0.00&nbsp;ms<br/>0s/sec<br/>0s/call<br/>0.00% |update&nbsp;t_rar_q&nbsp;set&nbsp;t_dat=$1&nbsp;where&nbsp;id&nbsp;between&nbsp;$2&nbsp;and&nbsp;$3
@@ -1373,11 +1391,11 @@ Error (total time): 3.40 (1.77%)
 # L001 Table sizes #
 
 ## Observations ##
-Data collected: 2019-02-19 15:31:35 +0000 UTC  
+Data collected: 2019-02-19 15:41:06 +0000 UTC  
 Current database: dbname  
 
 
-### Master (`runner-72989761-project-9951336-concurrent-0`) ###
+### Master (`runner-0277ea0f-project-9951336-concurrent-0`) ###
 Table | Rows | &#9660;&nbsp;Total size | Table size | Index(es) Size | TOAST Size
 ------|------|------------|------------|----------------|------------
 *** TOTAL *** | ~19M | 952 MB (100.00%) | 737 MB (100.00%) | 214 MB (100.00%) | 56 kB (100.00%)
