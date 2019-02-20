@@ -1,0 +1,166 @@
+{
+  "project": "test",
+  "name": "autovacuum_wraparound",
+  "checkId": "F002",
+  "timestamptz": "2019-02-20 11:43:29.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-0277ea0f-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-20 11:43:29.0+0000",
+      "dir": "1_2019_02_20T11_42_39_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-0277ea0f-project-9951336-concurrent-0": {
+      "data": {
+        "per_instance": {
+          "postgres": {
+            "datname": "postgres",
+            "age": 85,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "dbname": {
+            "datname": "dbname",
+            "age": 85,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template1": {
+            "datname": "template1",
+            "age": 85,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template0": {
+            "datname": "template0",
+            "age": 85,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "checkup_test_db": {
+            "datname": "checkup_test_db",
+            "age": 85,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          }
+        },
+        "per_database": {
+          "t_fillfactor": {
+            "relation": "t_fillfactor",
+            "age": 69,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "577",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_unused_index": {
+            "relation": "t_with_unused_index",
+            "age": 68,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "578",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_index": {
+            "relation": "t_with_redundant_index",
+            "age": 66,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "580",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_invalid_index": {
+            "relation": "t_with_invalid_index",
+            "age": 63,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "583",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fk_1": {
+            "relation": "t_fk_1",
+            "age": 61,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "585",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fk_2": {
+            "relation": "t_fk_2",
+            "age": 59,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "587",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "relation": "bloated",
+            "age": 57,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "589",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_bloat": {
+            "relation": "t_with_bloat",
+            "age": 54,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "592",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": true
+          },
+          "pg_catalog.pg_class": {
+            "relation": "pg_catalog.pg_class",
+            "age": 85,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "561",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-0277ea0f-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-20 11:43:29.0+0000",
+          "dir": "1_2019_02_20T11_42_39_+0000"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "project": "test",
+  "name": "disk_usage_fstype",
+  "checkId": "A008",
+  "timestamptz": "2019-02-20 11:43:28.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-0277ea0f-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-20 11:43:28.0+0000",
+      "dir": "1_2019_02_20T11_42_39_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-0277ea0f-project-9951336-concurrent-0": {
+      "data": {
+        "PGDATA": {
+          "fstype": "overlay",
+          "size": "22G",
+          "avail": "15G",
+          "used": "6.6G",
+          "use_percent": "32%",
+          "mount_point": "/",
+          "path": "/var/lib/postgresql/11/main",
+          "device": "overlay"
+        },
+        "WAL directory": {
+          "fstype": "overlay",
+          "size": "22G",
+          "avail": "15G",
+          "used": "6.6G",
+          "use_percent": "32%",
+          "mount_point": "/",
+          "path": "/var/lib/postgresql/11/main/pg_wal",
+          "device": "overlay"
+        },
+        "stats_temp_directory": {
+          "fstype": "overlay",
+          "size": "22G",
+          "avail": "15G",
+          "used": "6.6G",
+          "use_percent": "32%",
+          "mount_point": "/",
+          "path": "/var/run/postgresql/11-main.pg_stat_tmp",
+          "device": "overlay"
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-0277ea0f-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-20 11:43:28.0+0000",
+          "dir": "1_2019_02_20T11_42_39_+0000"
+        }
+      }
+    }
+  }
+}
