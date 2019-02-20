@@ -1,1 +1,0 @@
-create database checkup_test_db
