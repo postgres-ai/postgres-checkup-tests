@@ -1,0 +1,189 @@
+{
+  "project": "test",
+  "name": "autovacuum_wraparound",
+  "checkId": "F002",
+  "timestamptz": "2019-02-20 06:14:21.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-20 06:14:21.0+0000",
+      "dir": "1_2019_02_20T06_13_31_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": {
+        "per_instance": {
+          "postgres": {
+            "datname": "postgres",
+            "age": 155,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "dbname": {
+            "datname": "dbname",
+            "age": 155,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template1": {
+            "datname": "template1",
+            "age": 155,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template0": {
+            "datname": "template0",
+            "age": 155,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "checkup_test_db": {
+            "datname": "checkup_test_db",
+            "age": 155,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          }
+        },
+        "per_database": {
+          "t_rar_q": {
+            "relation": "t_rar_q",
+            "age": 139,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "577",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_fillfactor": {
+            "relation": "t_fillfactor",
+            "age": 137,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "579",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_with_unused_index": {
+            "relation": "t_with_unused_index",
+            "age": 136,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "580",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_with_redundant_index": {
+            "relation": "t_with_redundant_index",
+            "age": 134,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "582",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "test_schema.t_with_invalid_index": {
+            "relation": "test_schema.t_with_invalid_index",
+            "age": 130,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "586",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_fk_1": {
+            "relation": "t_fk_1",
+            "age": 128,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "588",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_fk_2": {
+            "relation": "t_fk_2",
+            "age": 126,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "590",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "bloated": {
+            "relation": "bloated",
+            "age": 124,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "592",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_with_bloat": {
+            "relation": "t_with_bloat",
+            "age": 121,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "595",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_red_fk_1": {
+            "relation": "t_red_fk_1",
+            "age": 120,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "596",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_red_fk_2": {
+            "relation": "t_red_fk_2",
+            "age": 116,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "600",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "t_slw_q": {
+            "relation": "t_slw_q",
+            "age": 113,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "603",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          },
+          "pg_catalog.pg_class": {
+            "relation": "pg_catalog.pg_class",
+            "age": 155,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "561",
+            "toast_relfrozenxid": null,
+            "warning": 0
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-20 06:14:21.0+0000",
+          "dir": "1_2019_02_20T06_13_31_+0000"
+        }
+      }
+    }
+  }
+}
