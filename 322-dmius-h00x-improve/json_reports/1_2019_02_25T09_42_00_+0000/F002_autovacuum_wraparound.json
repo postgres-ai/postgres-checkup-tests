@@ -1,0 +1,203 @@
+{
+  "project": "test",
+  "name": "autovacuum_wraparound",
+  "checkId": "F002",
+  "timestamptz": "2019-02-25 09:42:46.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-25 09:42:46.0+0000",
+      "dir": "1_2019_02_25T09_42_00_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "per_instance": {
+          "postgres": {
+            "datname": "postgres",
+            "age": 163,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "dbname": {
+            "datname": "dbname",
+            "age": 163,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template1": {
+            "datname": "template1",
+            "age": 163,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template0": {
+            "datname": "template0",
+            "age": 163,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "checkup_test_db": {
+            "datname": "checkup_test_db",
+            "age": 163,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          }
+        },
+        "per_database": {
+          "t_rar_q": {
+            "relation": "t_rar_q",
+            "age": 147,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "577",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fillfactor": {
+            "relation": "t_fillfactor",
+            "age": 145,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "579",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_unused_index": {
+            "relation": "t_with_unused_index",
+            "age": 144,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "580",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_index": {
+            "relation": "t_with_redundant_index",
+            "age": 142,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "582",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "test_schema.t_with_invalid_index": {
+            "relation": "test_schema.t_with_invalid_index",
+            "age": 138,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "586",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fk_1": {
+            "relation": "t_fk_1",
+            "age": 136,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "588",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fk_2": {
+            "relation": "t_fk_2",
+            "age": 134,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "590",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "relation": "bloated",
+            "age": 132,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "592",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_1": {
+            "relation": "t_red_fk_1",
+            "age": 128,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "596",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_2": {
+            "relation": "t_red_fk_2",
+            "age": 124,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "600",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_slw_q": {
+            "relation": "t_slw_q",
+            "age": 121,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "603",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_bloat": {
+            "relation": "t_with_bloat",
+            "age": 129,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "595",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": true
+          },
+          "pg_catalog.pg_class": {
+            "relation": "pg_catalog.pg_class",
+            "age": 163,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "561",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          }
+        },
+        "overrided_settings_count": 1
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-25 09:42:46.0+0000",
+          "dir": "1_2019_02_25T09_42_00_+0000"
+        }
+      }
+    }
+  }
+}
