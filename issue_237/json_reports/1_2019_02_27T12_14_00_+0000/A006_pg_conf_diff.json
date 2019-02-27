@@ -1,0 +1,45 @@
+{
+  "project": "test",
+  "name": "pg_conf_diff",
+  "checkId": "A006",
+  "timestamptz": "2019-02-27 12:14:35.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-27 12:14:35.0+0000",
+      "dir": "1_2019_02_27T12_14_00_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": [],
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-27 12:14:35.0+0000",
+          "dir": "1_2019_02_27T12_14_00_+0000"
+        }
+      }
+    }
+  }
+}
