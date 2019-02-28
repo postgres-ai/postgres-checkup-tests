@@ -1,0 +1,150 @@
+{
+  "project": "test",
+  "name": "table_sizes",
+  "checkId": "L001",
+  "timestamptz": "2019-02-28 08:07:06.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-02-28 08:07:06.0+0000",
+      "dir": "1_2019_02_28T08_06_11_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": {
+        "*** TOTAL ***": {
+          "Table": "*** TOTAL ***",
+          "Rows": "~19M",
+          "Total Size": "943 MB (100.00%)",
+          "Table Size": "726 MB (100.00%)",
+          "Index(es) Size": "217 MB (100.00%)",
+          "TOAST Size": "56 kB (100.00%)"
+        },
+        "t_slw_q": {
+          "Table": "t_slw_q",
+          "Rows": "~10M",
+          "Total Size": "346 MB (36.69%)",
+          "Table Size": "346 MB (47.63%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_red_fk_1": {
+          "Table": "t_red_fk_1",
+          "Rows": "~1M",
+          "Total Size": "99 MB (10.50%)",
+          "Table Size": "35 MB (4.77%)",
+          "Index(es) Size": "64 MB (29.71%)",
+          "TOAST Size": null
+        },
+        "t_rar_q": {
+          "Table": "t_rar_q",
+          "Rows": "~1000k",
+          "Total Size": "93 MB (9.84%)",
+          "Table Size": "50 MB (6.88%)",
+          "Index(es) Size": "43 MB (19.79%)",
+          "TOAST Size": null
+        },
+        "t_with_redundant_index": {
+          "Table": "t_with_redundant_index",
+          "Rows": "~1000k",
+          "Total Size": "78 MB (8.22%)",
+          "Table Size": "35 MB (4.77%)",
+          "Index(es) Size": "43 MB (19.80%)",
+          "TOAST Size": null
+        },
+        "t_with_bloat": {
+          "Table": "t_with_bloat",
+          "Rows": "~1000k",
+          "Total Size": "69 MB (7.34%)",
+          "Table Size": "69 MB (9.53%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_red_fk_2": {
+          "Table": "t_red_fk_2",
+          "Rows": "~1000k",
+          "Total Size": "64 MB (6.76%)",
+          "Table Size": "42 MB (5.82%)",
+          "Index(es) Size": "21 MB (9.90%)",
+          "TOAST Size": null
+        },
+        "t_fk_1": {
+          "Table": "t_fk_1",
+          "Rows": "~1M",
+          "Total Size": "56 MB (5.95%)",
+          "Table Size": "35 MB (4.77%)",
+          "Index(es) Size": "21 MB (9.90%)",
+          "TOAST Size": null
+        },
+        "t_with_unused_index": {
+          "Table": "t_with_unused_index",
+          "Rows": "~1000k",
+          "Total Size": "56 MB (5.95%)",
+          "Table Size": "35 MB (4.77%)",
+          "Index(es) Size": "21 MB (9.90%)",
+          "TOAST Size": null
+        },
+        "t_fk_2": {
+          "Table": "t_fk_2",
+          "Rows": "~1000k",
+          "Total Size": "42 MB (4.48%)",
+          "Table Size": "42 MB (5.82%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "test_schema.t_with_invalid_index": {
+          "Table": "test_schema.t_with_invalid_index",
+          "Rows": "~1000k",
+          "Total Size": "35 MB (3.67%)",
+          "Table Size": "35 MB (4.77%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "bloated": {
+          "Table": "bloated",
+          "Rows": "~50k",
+          "Total Size": "5784 kB (0.60%)",
+          "Table Size": "3576 kB (0.48%)",
+          "Index(es) Size": "2208 kB (1.00%)",
+          "TOAST Size": null
+        },
+        "t_fillfactor": {
+          "Table": "t_fillfactor",
+          "Rows": "~0",
+          "Total Size": "0 bytes (0.00%)",
+          "Table Size": "0 bytes (0.00%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-02-28 08:07:06.0+0000",
+          "dir": "1_2019_02_28T08_06_11_+0000"
+        }
+      }
+    }
+  }
+}
