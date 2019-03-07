@@ -1,0 +1,2 @@
+-- queryid: 2970500937162639000
+SELECT version()
