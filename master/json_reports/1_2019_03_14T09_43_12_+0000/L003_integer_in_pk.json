@@ -1,0 +1,53 @@
+{
+  "project": "test",
+  "name": "integer_in_pk",
+  "checkId": "L003",
+  "timestamptz": "2019-03-14 09:44:17.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-03-14 09:44:17.0+0000",
+      "dir": "1_2019_03_14T09_43_12_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "order": {
+          "Table": "test_schema.\"order\"",
+          "PK": "id",
+          "Type": "int4",
+          "Current max value": 1000001,
+          "Capacity used, %": 0.05
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-03-14 09:44:17.0+0000",
+          "dir": "1_2019_03_14T09_43_12_+0000"
+        }
+      }
+    }
+  }
+}
