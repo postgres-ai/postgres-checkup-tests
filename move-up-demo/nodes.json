@@ -1,0 +1,15 @@
+{
+  "hosts": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "internal_alias": "node1",
+      "index": "1",
+      "role": "master",
+      "role_change_detected_at": "never"
+    }
+  },
+  "last_check": {
+    "epoch": "1",
+    "timestamptz": "2019-03-19 14:12:59.0+0000",
+    "dir": "1_2019_03_19T14_11_50_+0000"
+  }
+}
