@@ -1,0 +1,15 @@
+{
+  "hosts": {
+    "runner-ed2dce3a-project-9951336-concurrent-0": {
+      "internal_alias": "node1",
+      "index": "1",
+      "role": "master",
+      "role_change_detected_at": "never"
+    }
+  },
+  "last_check": {
+    "epoch": "1",
+    "timestamptz": "2019-03-19 12:09:33.0+0000",
+    "dir": "1_2019_03_19T12_08_30_+0000"
+  }
+}
