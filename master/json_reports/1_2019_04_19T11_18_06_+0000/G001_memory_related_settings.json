@@ -1,0 +1,179 @@
+{
+  "project": "test",
+  "name": "memory_related_settings",
+  "checkId": "G001",
+  "timestamptz": "2019-04-19 11:18:54.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-0277ea0f-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-19 11:18:54.0+0000",
+      "dir": "1_2019_04_19T11_18_06_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-0277ea0f-project-9951336-concurrent-0": {
+      "data": {
+        "autovacuum_work_mem": {
+          "name": "autovacuum_work_mem",
+          "setting": "-1",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used by each autovacuum worker process.",
+          "extra_desc": null,
+          "context": "sighup",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "-1",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "-1",
+          "reset_val": "-1",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "effective_cache_size": {
+          "name": "effective_cache_size",
+          "setting": "524288",
+          "unit": "8kB",
+          "category": "Query Tuning / Planner Cost Constants",
+          "short_desc": "Sets the planner's assumption about the total size of the data caches.",
+          "extra_desc": "That is, the total size of the caches (kernel cache and shared buffers) used for PostgreSQL data files. This is measured in disk pages, which are normally 8 kB each.",
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "1",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "524288",
+          "reset_val": "524288",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "maintenance_work_mem": {
+          "name": "maintenance_work_mem",
+          "setting": "65536",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used for maintenance operations.",
+          "extra_desc": "This includes operations such as VACUUM and CREATE INDEX.",
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "1024",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "65536",
+          "reset_val": "65536",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "max_connections": {
+          "name": "max_connections",
+          "setting": "100",
+          "unit": null,
+          "category": "Connections and Authentication / Connection Settings",
+          "short_desc": "Sets the maximum number of concurrent connections.",
+          "extra_desc": null,
+          "context": "postmaster",
+          "vartype": "integer",
+          "source": "configuration file",
+          "min_val": "1",
+          "max_val": "262143",
+          "enumvals": null,
+          "boot_val": "100",
+          "reset_val": "100",
+          "sourcefile": "/etc/postgresql/11/main/postgresql.conf",
+          "sourceline": 64,
+          "pending_restart": false
+        },
+        "shared_buffers": {
+          "name": "shared_buffers",
+          "setting": "16384",
+          "unit": "8kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the number of shared memory buffers used by the server.",
+          "extra_desc": null,
+          "context": "postmaster",
+          "vartype": "integer",
+          "source": "configuration file",
+          "min_val": "16",
+          "max_val": "1073741823",
+          "enumvals": null,
+          "boot_val": "1024",
+          "reset_val": "16384",
+          "sourcefile": "/etc/postgresql/11/main/postgresql.conf",
+          "sourceline": 117,
+          "pending_restart": false
+        },
+        "temp_buffers": {
+          "name": "temp_buffers",
+          "setting": "1024",
+          "unit": "8kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum number of temporary buffers used by each session.",
+          "extra_desc": null,
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "100",
+          "max_val": "1073741823",
+          "enumvals": null,
+          "boot_val": "1024",
+          "reset_val": "1024",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "work_mem": {
+          "name": "work_mem",
+          "setting": "4096",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used for query workspaces.",
+          "extra_desc": "This much memory can be used by each internal sort operation and hash table before switching to temporary disk files.",
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "64",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "4096",
+          "reset_val": "4096",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-0277ea0f-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-19 11:18:54.0+0000",
+          "dir": "1_2019_04_19T11_18_06_+0000"
+        }
+      }
+    }
+  }
+}
