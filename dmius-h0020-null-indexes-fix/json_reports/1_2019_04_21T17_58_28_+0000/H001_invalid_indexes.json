@@ -1,0 +1,65 @@
+{
+  "project": "test",
+  "name": "invalid_indexes",
+  "checkId": "H001",
+  "timestamptz": "2019-04-21 17:59:16.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-ed2dce3a-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-21 17:59:16.0+0000",
+      "dir": "1_2019_04_21T17_58_28_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-ed2dce3a-project-9951336-concurrent-0": {
+      "data": {
+        "invalid_indexes": {
+          "test_schema.i_invalid": {
+            "num": 1,
+            "index_name": "i_invalid",
+            "schema_name": "test_schema",
+            "table_name": "t_with_invalid_index",
+            "formated_schema_name": "test_schema",
+            "formated_index_name": "i_invalid",
+            "formated_table_name": "t_with_invalid_index",
+            "formated_relation_name": "test_schema.t_with_invalid_index",
+            "index_size_bytes": 0,
+            "drop_code": "DROP INDEX CONCURRENTLY i_invalid; -- Invalid index, table t_with_invalid_index",
+            "revert_code": "CREATE INDEX CONCURRENTLY i_invalid ON test_schema.t_with_invalid_index USING btree (i); -- table t_with_invalid_index",
+            "supports_fk": false
+          }
+        },
+        "invalid_indexes_total": {
+          "index_size_bytes_sum": 0
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-ed2dce3a-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-21 17:59:16.0+0000",
+          "dir": "1_2019_04_21T17_58_28_+0000"
+        }
+      }
+    }
+  }
+}
