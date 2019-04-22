@@ -1,0 +1,321 @@
+{
+  "project": "test",
+  "name": "timeouts_locks",
+  "checkId": "G003",
+  "timestamptz": "2019-04-22 21:46:29.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-22 21:46:29.0+0000",
+      "dir": "1_2019_04_22T21_45_41_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "timeouts": {
+          "authentication_timeout": {
+            "name": "authentication_timeout",
+            "setting": "60",
+            "unit": "s",
+            "category": "Connections and Authentication / Authentication",
+            "short_desc": "Sets the maximum allowed time to complete client authentication.",
+            "extra_desc": null,
+            "context": "sighup",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "1",
+            "max_val": "600",
+            "enumvals": null,
+            "boot_val": "60",
+            "reset_val": "60",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "idle_in_transaction_session_timeout": {
+            "name": "idle_in_transaction_session_timeout",
+            "setting": "0",
+            "unit": "ms",
+            "category": "Client Connection Defaults / Statement Behavior",
+            "short_desc": "Sets the maximum allowed duration of any idling transaction.",
+            "extra_desc": "A value of 0 turns off the timeout.",
+            "context": "user",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "0",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "0",
+            "reset_val": "0",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "statement_timeout": {
+            "name": "statement_timeout",
+            "setting": "30000",
+            "unit": "ms",
+            "category": "Client Connection Defaults / Statement Behavior",
+            "short_desc": "Sets the maximum allowed duration of any statement.",
+            "extra_desc": "A value of 0 turns off the timeout.",
+            "context": "user",
+            "vartype": "integer",
+            "source": "client",
+            "min_val": "0",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "0",
+            "reset_val": "30000",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          }
+        },
+        "locks": {
+          "deadlock_timeout": {
+            "name": "deadlock_timeout",
+            "setting": "1000",
+            "unit": "ms",
+            "category": "Lock Management",
+            "short_desc": "Sets the time to wait on a lock before checking for deadlock.",
+            "extra_desc": null,
+            "context": "superuser",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "1",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "1000",
+            "reset_val": "1000",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "lock_timeout": {
+            "name": "lock_timeout",
+            "setting": "0",
+            "unit": "ms",
+            "category": "Client Connection Defaults / Statement Behavior",
+            "short_desc": "Sets the maximum allowed duration of any wait for a lock.",
+            "extra_desc": "A value of 0 turns off the timeout.",
+            "context": "user",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "0",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "0",
+            "reset_val": "0",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "max_locks_per_transaction": {
+            "name": "max_locks_per_transaction",
+            "setting": "64",
+            "unit": null,
+            "category": "Lock Management",
+            "short_desc": "Sets the maximum number of locks per transaction.",
+            "extra_desc": "The shared lock table is sized on the assumption that at most max_locks_per_transaction * max_connections distinct objects will need to be locked at any one time.",
+            "context": "postmaster",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "10",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "64",
+            "reset_val": "64",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "max_pred_locks_per_page": {
+            "name": "max_pred_locks_per_page",
+            "setting": "2",
+            "unit": null,
+            "category": "Lock Management",
+            "short_desc": "Sets the maximum number of predicate-locked tuples per page.",
+            "extra_desc": "If more than this number of tuples on the same page are locked by a connection, those locks are replaced by a page-level lock.",
+            "context": "sighup",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "0",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "2",
+            "reset_val": "2",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "max_pred_locks_per_relation": {
+            "name": "max_pred_locks_per_relation",
+            "setting": "-2",
+            "unit": null,
+            "category": "Lock Management",
+            "short_desc": "Sets the maximum number of predicate-locked pages and tuples per relation.",
+            "extra_desc": "If more than this total of pages and tuples in the same relation are locked by a connection, those locks are replaced by a relation-level lock.",
+            "context": "sighup",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "-2147483648",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "-2",
+            "reset_val": "-2",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          },
+          "max_pred_locks_per_transaction": {
+            "name": "max_pred_locks_per_transaction",
+            "setting": "64",
+            "unit": null,
+            "category": "Lock Management",
+            "short_desc": "Sets the maximum number of predicate locks per transaction.",
+            "extra_desc": "The shared predicate lock table is sized on the assumption that at most max_pred_locks_per_transaction * max_connections distinct objects will need to be locked at any one time.",
+            "context": "postmaster",
+            "vartype": "integer",
+            "source": "default",
+            "min_val": "10",
+            "max_val": "2147483647",
+            "enumvals": null,
+            "boot_val": "64",
+            "reset_val": "64",
+            "sourcefile": null,
+            "sourceline": null,
+            "pending_restart": false
+          }
+        },
+        "databases_stat": {
+          "postgres": {
+            "num": 1,
+            "datid": "13051",
+            "datname": "postgres",
+            "numbackends": 0,
+            "xact_commit": 16,
+            "xact_rollback": 0,
+            "blks_read": 192,
+            "blks_hit": 2110,
+            "tup_returned": 4510,
+            "tup_fetched": 1294,
+            "tup_inserted": 0,
+            "tup_updated": 7,
+            "tup_deleted": 0,
+            "conflicts": 0,
+            "temp_files": 0,
+            "temp_bytes": 0,
+            "deadlocks": 0,
+            "blk_read_time": 0,
+            "blk_write_time": 0,
+            "stats_reset": "2019-04-22T21:42:45.061755+00:00",
+            "stats_reset_age": "00:03:45"
+          },
+          "dbname": {
+            "num": 2,
+            "datid": "16384",
+            "datname": "dbname",
+            "numbackends": 1,
+            "xact_commit": 1756,
+            "xact_rollback": 5,
+            "blks_read": 579770,
+            "blks_hit": 4011194,
+            "tup_returned": 57647099,
+            "tup_fetched": 78815,
+            "tup_inserted": 20211753,
+            "tup_updated": 1745737,
+            "tup_deleted": 50026,
+            "conflicts": 0,
+            "temp_files": 64,
+            "temp_bytes": 742503132,
+            "deadlocks": 0,
+            "blk_read_time": 0,
+            "blk_write_time": 0,
+            "stats_reset": "2019-04-22T21:42:48.7019+00:00",
+            "stats_reset_age": "00:03:41"
+          },
+          "checkup_test_db": {
+            "num": 3,
+            "datid": "16405",
+            "datname": "checkup_test_db",
+            "numbackends": 0,
+            "xact_commit": 6,
+            "xact_rollback": 0,
+            "blks_read": 136,
+            "blks_hit": 1608,
+            "tup_returned": 2115,
+            "tup_fetched": 991,
+            "tup_inserted": 0,
+            "tup_updated": 0,
+            "tup_deleted": 0,
+            "conflicts": 0,
+            "temp_files": 0,
+            "temp_bytes": 0,
+            "deadlocks": 0,
+            "blk_read_time": 0,
+            "blk_write_time": 0,
+            "stats_reset": "2019-04-22T21:45:46.198816+00:00",
+            "stats_reset_age": "00:00:43"
+          }
+        },
+        "db_specified_settings": {
+          "checkup_test_db": {
+            "database": "checkup_test_db",
+            "setdatabase": "16405",
+            "setrole": "0",
+            "setconfig": [
+              "lock_timeout=4s"
+            ]
+          }
+        },
+        "user_specified_settings": {
+          "checkup_test_user": {
+            "rolname": "checkup_test_user",
+            "rolsuper": false,
+            "rolinherit": true,
+            "rolcreaterole": false,
+            "rolcreatedb": false,
+            "rolcanlogin": true,
+            "rolreplication": false,
+            "rolconnlimit": -1,
+            "rolpassword": "********",
+            "rolvaliduntil": null,
+            "rolbypassrls": false,
+            "rolconfig": [
+              "lock_timeout=3s"
+            ],
+            "oid": "16406"
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-22 21:46:29.0+0000",
+          "dir": "1_2019_04_22T21_45_41_+0000"
+        }
+      }
+    }
+  }
+}
