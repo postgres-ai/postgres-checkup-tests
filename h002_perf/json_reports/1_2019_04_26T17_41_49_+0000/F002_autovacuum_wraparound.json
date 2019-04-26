@@ -1,0 +1,105 @@
+{
+  "project": "test",
+  "name": "autovacuum_wraparound",
+  "checkId": "F002",
+  "timestamptz": "2019-04-26 17:42:40.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-26 17:42:40.0+0000",
+      "dir": "1_2019_04_26T17_41_49_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "per_instance": {
+          "postgres": {
+            "num": 1,
+            "datname": "postgres",
+            "age": 518,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "dbname": {
+            "num": 2,
+            "datname": "dbname",
+            "age": 518,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template1": {
+            "num": 3,
+            "datname": "template1",
+            "age": 518,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          }
+        },
+        "per_database": {
+          "test_schema.t_with_invalid_index": {
+            "num": 1,
+            "relation": "test_schema.t_with_invalid_index",
+            "age": 474,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "605",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "num": 2,
+            "relation": "bloated",
+            "age": 472,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "607",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "exp_redundant.t_with_redundant_ref_idx": {
+            "num": 3,
+            "relation": "exp_redundant.t_with_redundant_ref_idx",
+            "age": 479,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "600",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          }
+        },
+        "overrided_settings_count": 0
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-26 17:42:40.0+0000",
+          "dir": "1_2019_04_26T17_41_49_+0000"
+        }
+      }
+    }
+  }
+}

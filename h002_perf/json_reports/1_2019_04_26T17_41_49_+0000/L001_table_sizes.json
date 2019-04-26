@@ -1,0 +1,82 @@
+{
+  "project": "test",
+  "name": "table_sizes",
+  "checkId": "L001",
+  "timestamptz": "2019-04-26 17:42:43.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-26 17:42:43.0+0000",
+      "dir": "1_2019_04_26T17_41_49_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "=====TOTAL=====": {
+          "num": null,
+          "Table": "=====TOTAL=====",
+          "Rows": "~12M",
+          "Total Size": "508 MB (100.00%)",
+          "Table Size": "465 MB (100.00%)",
+          "Index(es) Size": "43 MB (100.00%)",
+          "TOAST Size": null
+        },
+        "t_slw_q": {
+          "num": 1,
+          "Table": "t_slw_q",
+          "Rows": "~10M",
+          "Total Size": "346 MB (68.10%)",
+          "Table Size": "346 MB (74.38%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_rar_q": {
+          "num": 2,
+          "Table": "t_rar_q",
+          "Rows": "~1000k",
+          "Total Size": "93 MB (18.27%)",
+          "Table Size": "50 MB (10.74%)",
+          "Index(es) Size": "43 MB (100.00%)",
+          "TOAST Size": null
+        },
+        "t_with_bloat": {
+          "num": 3,
+          "Table": "t_with_bloat",
+          "Rows": "~1000k",
+          "Total Size": "69 MB (13.63%)",
+          "Table Size": "69 MB (14.88%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-26 17:42:43.0+0000",
+          "dir": "1_2019_04_26T17_41_49_+0000"
+        }
+      }
+    }
+  }
+}

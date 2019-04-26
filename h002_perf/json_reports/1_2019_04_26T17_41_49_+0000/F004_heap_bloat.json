@@ -1,0 +1,110 @@
+{
+  "project": "test",
+  "name": "heap_bloat",
+  "checkId": "F004",
+  "timestamptz": "2019-04-26 17:42:41.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-04-26 17:42:41.0+0000",
+      "dir": "1_2019_04_26T17_41_49_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "heap_bloat": {
+          "t_with_bloat": {
+            "num": 1,
+            "Is N/A": "",
+            "Table": "t_with_bloat",
+            "Size": "69 MB",
+            "Extra size bytes": 36388864,
+            "Extra_ratio": 50.1920903954802,
+            "Extra": "~35 MB (50.19%)",
+            "Bloat size bytes": 36388864,
+            "Bloat ratio": 50.1920903954802,
+            "Bloat estimate": "~35 MB (50.19%)",
+            "Real size bytes": 72499200,
+            "Live": "~34 MB",
+            "Live bytes": 36110336,
+            "Last Vaccuum": "2019-04-26 17:41:10",
+            "Fillfactor": 100,
+            "overrided_settings": true
+          },
+          "t_rar_q": {
+            "num": 2,
+            "Is N/A": "",
+            "Table": "t_rar_q",
+            "Size": "50 MB",
+            "Extra size bytes": 8175616,
+            "Extra_ratio": 15.6303837118246,
+            "Extra": "~7984 kB (15.63%)",
+            "Bloat size bytes": 8175616,
+            "Bloat ratio": 15.6303837118246,
+            "Bloat estimate": "~7984 kB (15.63%)",
+            "Real size bytes": 52305920,
+            "Live": "~42 MB",
+            "Live bytes": 44130304,
+            "Last Vaccuum": "2019-04-26 17:41:13",
+            "Fillfactor": 100,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "num": 3,
+            "Is N/A": "",
+            "Table": "bloated",
+            "Size": "3544 kB",
+            "Extra size bytes": 1818624,
+            "Extra_ratio": 50.1128668171558,
+            "Extra": "~1776 kB (50.11%)",
+            "Bloat size bytes": 1818624,
+            "Bloat ratio": 50.1128668171558,
+            "Bloat estimate": "~1776 kB (50.11%)",
+            "Real size bytes": 3629056,
+            "Live": "~1768 kB",
+            "Live bytes": 1810432,
+            "Last Vaccuum": "2019-04-26 17:41:09",
+            "Fillfactor": 100,
+            "overrided_settings": false
+          }
+        },
+        "heap_bloat_total": {
+          "count": 12,
+          "Extra size bytes sum": 48816128,
+          "Real size bytes sum": 804880384,
+          "Bloat size bytes sum": 48816128,
+          "Bloat ratio": 6.06501648821398
+        },
+        "overrided_settings_count": 1
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-04-26 17:42:41.0+0000",
+          "dir": "1_2019_04_26T17_41_49_+0000"
+        }
+      }
+    }
+  }
+}
