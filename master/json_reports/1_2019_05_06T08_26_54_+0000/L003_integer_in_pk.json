@@ -1,0 +1,60 @@
+{
+  "project": "test",
+  "name": "integer_in_pk",
+  "checkId": "L003",
+  "timestamptz": "2019-05-06 08:27:59.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-0277ea0f-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-05-06 08:27:59.0+0000",
+      "dir": "1_2019_05_06T08_26_54_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-0277ea0f-project-9951336-concurrent-0": {
+      "data": {
+        "orders": {
+          "Table": "test_schema.orders",
+          "PK": "id",
+          "Type": "int4",
+          "Current max value": 800000000,
+          "Capacity used, %": 37.25
+        },
+        "orders_A": {
+          "Table": "test_schema.\"orders_A\"",
+          "PK": "id",
+          "Type": "int4",
+          "Current max value": 300000000,
+          "Capacity used, %": 13.97
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-0277ea0f-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-05-06 08:27:59.0+0000",
+          "dir": "1_2019_05_06T08_26_54_+0000"
+        }
+      }
+    }
+  }
+}
