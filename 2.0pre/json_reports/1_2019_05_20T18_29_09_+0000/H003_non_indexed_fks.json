@@ -1,0 +1,45 @@
+{
+  "project": "test",
+  "name": "non_indexed_fks",
+  "checkId": "H003",
+  "timestamptz": "2019-05-20 18:30:01.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-0277ea0f-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-05-20 18:30:01.0+0000",
+      "dir": "1_2019_05_20T18_29_09_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-0277ea0f-project-9951336-concurrent-0": {
+      "data": [],
+      "nodes.json": {
+        "hosts": {
+          "runner-0277ea0f-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-05-20 18:30:01.0+0000",
+          "dir": "1_2019_05_20T18_29_09_+0000"
+        }
+      }
+    }
+  }
+}
