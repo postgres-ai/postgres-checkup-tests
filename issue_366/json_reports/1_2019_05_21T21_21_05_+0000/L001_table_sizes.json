@@ -1,0 +1,496 @@
+{
+  "project": "test",
+  "name": "table_sizes",
+  "checkId": "L001",
+  "timestamptz": "2019-05-21 21:22:07.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-ed2dce3a-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-05-21 21:22:07.0+0000",
+      "dir": "1_2019_05_21T21_21_05_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-ed2dce3a-project-9951336-concurrent-0": {
+      "data": {
+        "=====TOTAL=====": {
+          "num": null,
+          "Table": "=====TOTAL=====",
+          "Rows": "~20M",
+          "Total Size": "1289 MB (100.00%)",
+          "Table Size": "771 MB (100.00%)",
+          "Index(es) Size": "518 MB (100.00%)",
+          "TOAST Size": "8192 bytes (100.00%)"
+        },
+        "t_slw_q": {
+          "num": 1,
+          "Table": "t_slw_q",
+          "Rows": "~10M",
+          "Total Size": "346 MB (26.83%)",
+          "Table Size": "346 MB (44.87%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_with_redundant_idx": {
+          "num": 2,
+          "Table": "t_with_redundant_idx",
+          "Rows": "~1000k",
+          "Total Size": "243 MB (18.84%)",
+          "Table Size": "50 MB (6.46%)",
+          "Index(es) Size": "193 MB (37.24%)",
+          "TOAST Size": null
+        },
+        "t_red_fk_1": {
+          "num": 3,
+          "Table": "t_red_fk_1",
+          "Rows": "~1M",
+          "Total Size": "99 MB (7.68%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "64 MB (12.41%)",
+          "TOAST Size": null
+        },
+        "exp_redundant.t_with_redundant_ref_idx": {
+          "num": 4,
+          "Table": "exp_redundant.t_with_redundant_ref_idx",
+          "Rows": "~1000k",
+          "Total Size": "99 MB (7.68%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "64 MB (12.41%)",
+          "TOAST Size": null
+        },
+        "t_with_redundant_ref_idx": {
+          "num": 5,
+          "Table": "t_with_redundant_ref_idx",
+          "Rows": "~1000k",
+          "Total Size": "99 MB (7.68%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "64 MB (12.41%)",
+          "TOAST Size": null
+        },
+        "t_rar_q": {
+          "num": 6,
+          "Table": "t_rar_q",
+          "Rows": "~1000k",
+          "Total Size": "93 MB (7.20%)",
+          "Table Size": "50 MB (6.48%)",
+          "Index(es) Size": "43 MB (8.27%)",
+          "TOAST Size": null
+        },
+        "t_with_redundant_index": {
+          "num": 7,
+          "Table": "t_with_redundant_index",
+          "Rows": "~1000k",
+          "Total Size": "78 MB (6.01%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "43 MB (8.28%)",
+          "TOAST Size": null
+        },
+        "t_with_bloat": {
+          "num": 8,
+          "Table": "t_with_bloat",
+          "Rows": "~1000k",
+          "Total Size": "69 MB (5.37%)",
+          "Table Size": "69 MB (8.98%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "t_red_fk_2": {
+          "num": 9,
+          "Table": "t_red_fk_2",
+          "Rows": "~1000k",
+          "Total Size": "64 MB (4.94%)",
+          "Table Size": "42 MB (5.48%)",
+          "Index(es) Size": "21 MB (4.14%)",
+          "TOAST Size": null
+        },
+        "t_with_unused_index": {
+          "num": 10,
+          "Table": "t_with_unused_index",
+          "Rows": "~1000k",
+          "Total Size": "56 MB (4.35%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "21 MB (4.14%)",
+          "TOAST Size": null
+        },
+        "test_schema.t_with_invalid_index": {
+          "num": 11,
+          "Table": "test_schema.t_with_invalid_index",
+          "Rows": "~1000k",
+          "Total Size": "35 MB (2.68%)",
+          "Table Size": "35 MB (4.49%)",
+          "Index(es) Size": "0 bytes (0.00%)",
+          "TOAST Size": null
+        },
+        "bloated": {
+          "num": 12,
+          "Table": "bloated",
+          "Rows": "~50k",
+          "Total Size": "5784 kB (0.44%)",
+          "Table Size": "3576 kB (0.45%)",
+          "Index(es) Size": "2208 kB (0.42%)",
+          "TOAST Size": null
+        },
+        "t_28": {
+          "num": 13,
+          "Table": "t_28",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_31": {
+          "num": 14,
+          "Table": "t_31",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_4": {
+          "num": 15,
+          "Table": "t_4",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_29": {
+          "num": 16,
+          "Table": "t_29",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_20": {
+          "num": 17,
+          "Table": "t_20",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_27": {
+          "num": 18,
+          "Table": "t_27",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_18": {
+          "num": 19,
+          "Table": "t_18",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_13": {
+          "num": 20,
+          "Table": "t_13",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_8": {
+          "num": 21,
+          "Table": "t_8",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_5": {
+          "num": 22,
+          "Table": "t_5",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_22": {
+          "num": 23,
+          "Table": "t_22",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_24": {
+          "num": 24,
+          "Table": "t_24",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_26": {
+          "num": 25,
+          "Table": "t_26",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_25": {
+          "num": 26,
+          "Table": "t_25",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_30": {
+          "num": 27,
+          "Table": "t_30",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_33": {
+          "num": 28,
+          "Table": "t_33",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_36": {
+          "num": 29,
+          "Table": "t_36",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_45": {
+          "num": 30,
+          "Table": "t_45",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_3": {
+          "num": 31,
+          "Table": "t_3",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_47": {
+          "num": 32,
+          "Table": "t_47",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_48": {
+          "num": 33,
+          "Table": "t_48",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_23": {
+          "num": 34,
+          "Table": "t_23",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_16": {
+          "num": 35,
+          "Table": "t_16",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_11": {
+          "num": 36,
+          "Table": "t_11",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_46": {
+          "num": 37,
+          "Table": "t_46",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_21": {
+          "num": 38,
+          "Table": "t_21",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_19": {
+          "num": 39,
+          "Table": "t_19",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_17": {
+          "num": 40,
+          "Table": "t_17",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_49": {
+          "num": 41,
+          "Table": "t_49",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_10": {
+          "num": 42,
+          "Table": "t_10",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_12": {
+          "num": 43,
+          "Table": "t_12",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_1": {
+          "num": 44,
+          "Table": "t_1",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_37": {
+          "num": 45,
+          "Table": "t_37",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_7": {
+          "num": 46,
+          "Table": "t_7",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_2": {
+          "num": 47,
+          "Table": "t_2",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_15": {
+          "num": 48,
+          "Table": "t_15",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        },
+        "t_34": {
+          "num": 49,
+          "Table": "t_34",
+          "Rows": "~1000",
+          "Total Size": "112 kB (0.01%)",
+          "Table Size": "72 kB (0.01%)",
+          "Index(es) Size": "40 kB (0.01%)",
+          "TOAST Size": null
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-ed2dce3a-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-05-21 21:22:07.0+0000",
+          "dir": "1_2019_05_21T21_21_05_+0000"
+        }
+      }
+    }
+  }
+}
