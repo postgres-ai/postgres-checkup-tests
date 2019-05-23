@@ -1,0 +1,82 @@
+{
+  "project": "test",
+  "name": "useful_linux_tools",
+  "checkId": "D002",
+  "timestamptz": "2019-05-23 09:45:50.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-fa6cab46-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-05-23 09:45:50.0+0000",
+      "dir": "1_2019_05_23T09_44_57_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
+      "data": {
+        "cpu": {
+          "ps": "yes",
+          "htop": "",
+          "top": "yes",
+          "mpstat": "yes",
+          "lscpu": "yes"
+        },
+        "free_space": {
+          "df": "yes",
+          "du": "yes"
+        },
+        "io": {
+          "pidstat": "yes",
+          "iostat": "yes",
+          "iotop": "",
+          "ftrace": "",
+          "blktrace": ""
+        },
+        "memory": {
+          "free": "yes",
+          "vmstat": "yes"
+        },
+        "network": {
+          "tcpdump": "",
+          "netstat": "",
+          "ss": "yes",
+          "iptraf": "",
+          "ethtool": ""
+        },
+        "misc": {
+          "dstat": "",
+          "strace": "",
+          "ltrace": "",
+          "perf": "",
+          "numastat": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-fa6cab46-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-05-23 09:45:50.0+0000",
+          "dir": "1_2019_05_23T09_44_57_+0000"
+        }
+      }
+    }
+  }
+}
