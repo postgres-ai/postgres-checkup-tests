@@ -1,0 +1,74 @@
+{
+  "project": "test",
+  "name": "pgversion",
+  "checkId": "A002",
+  "timestamptz": "2019-06-19 15:41:45.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "runner-72989761-project-9951336-concurrent-0": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-06-19 15:41:45.0+0000",
+      "dir": "1_2019_06_19T15_41_24_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "runner-72989761-project-9951336-concurrent-0": {
+      "data": {
+        "version": "PostgreSQL 11.3 (Ubuntu 11.3-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110003",
+        "server_major_ver": "11.3 (Ubuntu 11.3-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "runner-72989761-project-9951336-concurrent-0": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-06-19 15:41:45.0+0000",
+          "dir": "1_2019_06_19T15_41_24_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": [
+    {
+      "Id": "A002_ALL_VERSIONS_SAME",
+      "Message": "All nodes have the same Postgres version (`11.3`).  \n"
+    },
+    {
+      "Id": "A002_NOT_LAST_MINOR_VERSION",
+      "Message": "[P2] The minor version being used (`11.3`) is not up-to-date (the newest version: `11.4`).  \n"
+    }
+  ],
+  "recommendations": [
+    {
+      "Id": "A002_NOT_LAST_MINOR_VERSION",
+      "Message": "[P2] Consider performing upgrade to the newest minor version: `11.4`.  \n"
+    },
+    {
+      "Id": "A002_GENERAL_OFFICIAL",
+      "Message": "For more information about minor and major upgrades see:  \n    - Official documentation: https://www.postgresql.org/docs/current/upgrading.html  \n"
+    }
+  ],
+  "p1": false,
+  "p2": true,
+  "p3": false
+}
