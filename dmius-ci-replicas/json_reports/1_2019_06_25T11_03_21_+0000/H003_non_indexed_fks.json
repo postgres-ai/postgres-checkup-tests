@@ -1,0 +1,57 @@
+{
+  "project": "test",
+  "name": "non_indexed_fks",
+  "checkId": "H003",
+  "timestamptz": "2019-06-25 11:04:28.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.master.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      },
+      "postgres.replica.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-06-25 11:04:28.0+0000",
+      "dir": "1_2019_06_25T11_03_21_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.master.node": {
+      "data": [],
+      "nodes.json": {
+        "hosts": {
+          "postgres.master.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          },
+          "postgres.replica.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-06-25 11:04:28.0+0000",
+          "dir": "1_2019_06_25T11_03_21_+0000"
+        }
+      }
+    }
+  }
+}
