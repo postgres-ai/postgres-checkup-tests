@@ -1,6 +1,6 @@
 {
   "hosts": {
-    "runner-0277ea0f-project-9951336-concurrent-0": {
+    "runner-fa6cab46-project-9951336-concurrent-0": {
       "internal_alias": "node1",
       "index": "1",
       "role": "master",
@@ -9,7 +9,7 @@
   },
   "last_check": {
     "epoch": "1",
-    "timestamptz": "2019-06-28 21:56:09.0+0000",
-    "dir": "1_2019_06_28T21_55_17_+0000"
+    "timestamptz": "2019-06-29 08:07:26.0+0000",
+    "dir": "1_2019_06_29T08_06_38_+0000"
   }
 }
