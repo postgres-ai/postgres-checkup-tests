@@ -1,0 +1,15 @@
+{
+  "hosts": {
+    "localhost": {
+      "internal_alias": "node1",
+      "index": "1",
+      "role": "master",
+      "role_change_detected_at": "never"
+    }
+  },
+  "last_check": {
+    "epoch": "1",
+    "timestamptz": "2019-07-03 16:32:53.0+0000",
+    "dir": "1_2019_07_03T16_32_02_+0000"
+  }
+}
