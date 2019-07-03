@@ -1,21 +1,27 @@
 {
   "hosts": {
-    "postgres.master.node": {
+    "postgres.test1.node": {
       "internal_alias": "node1",
       "index": "1",
-      "role": "master",
+      "role": "standby",
       "role_change_detected_at": "never"
     },
-    "postgres.replica.node": {
+    "postgres.test2.node": {
       "internal_alias": "node2",
       "index": "2",
       "role": "standby",
+      "role_change_detected_at": "never"
+    },
+    "postgres.test3.node": {
+      "internal_alias": "node3",
+      "index": "3",
+      "role": "master",
       "role_change_detected_at": "never"
     }
   },
   "last_check": {
     "epoch": "1",
-    "timestamptz": "2019-07-01 18:05:14.0+0000",
-    "dir": "1_2019_07_01T18_03_33_+0000"
+    "timestamptz": "2019-07-03 08:36:19.0+0000",
+    "dir": "1_2019_07_03T08_34_39_+0000"
   }
 }
