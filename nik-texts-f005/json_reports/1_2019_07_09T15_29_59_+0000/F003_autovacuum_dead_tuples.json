@@ -1,0 +1,257 @@
+{
+  "project": "test",
+  "name": "autovacuum_dead_tuples",
+  "checkId": "F003",
+  "timestamptz": "2019-07-09 15:30:29.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "localhost": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-07-09 15:30:29.0+0000",
+      "dir": "1_2019_07_09T15_29_59_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "localhost": {
+      "data": {
+        "dead_tuples": {
+          "t_with_redundant_index": {
+            "num": 1,
+            "relation": "t_with_redundant_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:50.238536",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_unused_index": {
+            "num": 2,
+            "relation": "t_with_unused_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:50.295074",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_1": {
+            "num": 3,
+            "relation": "t_red_fk_1",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.366351",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000001,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000001,
+            "n_live_tup": 1000001,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_bloat": {
+            "num": 4,
+            "relation": "t_with_bloat",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:51.77309",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 1000000,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": true
+          },
+          "test_schema.t_with_invalid_index": {
+            "num": 5,
+            "relation": "test_schema.t_with_invalid_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.433906",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_idx": {
+            "num": 6,
+            "relation": "t_with_redundant_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:50.143017",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_slw_q": {
+            "num": 7,
+            "relation": "t_slw_q",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.240745",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 10000001,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 9999979,
+            "n_live_tup": 9999979,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_ref_idx": {
+            "num": 8,
+            "relation": "t_with_redundant_ref_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:50.060726",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "num": 9,
+            "relation": "bloated",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.378563",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 100000,
+            "n_tup_upd": 0,
+            "n_tup_del": 50000,
+            "pg_class_reltuples": 50000,
+            "n_live_tup": 50000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_2": {
+            "num": 10,
+            "relation": "t_red_fk_2",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.307639",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_rar_q": {
+            "num": 11,
+            "relation": "t_rar_q",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:50.381547",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 744811,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "exp_redundant.t_with_redundant_ref_idx": {
+            "num": 12,
+            "relation": "exp_redundant.t_with_redundant_ref_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:00:52.493813",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          }
+        },
+        "database_stat": {
+          "stats_reset": "2019-07-09T15:27:24+00:00",
+          "stats_age": "00:03:00"
+        },
+        "overrided_settings_count": 1
+      },
+      "nodes.json": {
+        "hosts": {
+          "localhost": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-09 15:30:29.0+0000",
+          "dir": "1_2019_07_09T15_29_59_+0000"
+        }
+      }
+    }
+  }
+}
