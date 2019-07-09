@@ -1,0 +1,256 @@
+{
+  "project": "test",
+  "name": "autovacuum_resource_usage",
+  "checkId": "F008",
+  "timestamptz": "2019-07-09 06:20:28.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "localhost": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-07-09 06:20:28.0+0000",
+      "dir": "1_2019_07_09T06_19_57_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "localhost": {
+      "data": {
+        "autovacuum_max_workers": {
+          "name": "autovacuum_max_workers",
+          "setting": "3",
+          "unit": null,
+          "category": "Autovacuum",
+          "short_desc": "Sets the maximum number of simultaneously running autovacuum worker processes.",
+          "extra_desc": null,
+          "context": "postmaster",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "1",
+          "max_val": "262143",
+          "enumvals": null,
+          "boot_val": "3",
+          "reset_val": "3",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "autovacuum_vacuum_cost_delay": {
+          "name": "autovacuum_vacuum_cost_delay",
+          "setting": "20",
+          "unit": "ms",
+          "category": "Autovacuum",
+          "short_desc": "Vacuum cost delay in milliseconds, for autovacuum.",
+          "extra_desc": null,
+          "context": "sighup",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "-1",
+          "max_val": "100",
+          "enumvals": null,
+          "boot_val": "20",
+          "reset_val": "20",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "autovacuum_vacuum_cost_limit": {
+          "name": "autovacuum_vacuum_cost_limit",
+          "setting": "-1",
+          "unit": null,
+          "category": "Autovacuum",
+          "short_desc": "Vacuum cost amount available before napping, for autovacuum.",
+          "extra_desc": null,
+          "context": "sighup",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "-1",
+          "max_val": "10000",
+          "enumvals": null,
+          "boot_val": "-1",
+          "reset_val": "-1",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "autovacuum_work_mem": {
+          "name": "autovacuum_work_mem",
+          "setting": "-1",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used by each autovacuum worker process.",
+          "extra_desc": null,
+          "context": "sighup",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "-1",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "-1",
+          "reset_val": "-1",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "log_autovacuum_min_duration": {
+          "name": "log_autovacuum_min_duration",
+          "setting": "-1",
+          "unit": "ms",
+          "category": "Reporting and Logging / What to Log",
+          "short_desc": "Sets the minimum execution time above which autovacuum actions will be logged.",
+          "extra_desc": "Zero prints all actions. -1 turns autovacuum logging off.",
+          "context": "sighup",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "-1",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "-1",
+          "reset_val": "-1",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "maintenance_work_mem": {
+          "name": "maintenance_work_mem",
+          "setting": "65536",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used for maintenance operations.",
+          "extra_desc": "This includes operations such as VACUUM and CREATE INDEX.",
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "1024",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "65536",
+          "reset_val": "65536",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "max_connections": {
+          "name": "max_connections",
+          "setting": "100",
+          "unit": null,
+          "category": "Connections and Authentication / Connection Settings",
+          "short_desc": "Sets the maximum number of concurrent connections.",
+          "extra_desc": null,
+          "context": "postmaster",
+          "vartype": "integer",
+          "source": "configuration file",
+          "min_val": "1",
+          "max_val": "262143",
+          "enumvals": null,
+          "boot_val": "100",
+          "reset_val": "100",
+          "sourcefile": "/etc/postgresql/11/main/postgresql.conf",
+          "sourceline": 64,
+          "pending_restart": false
+        },
+        "shared_buffers": {
+          "name": "shared_buffers",
+          "setting": "16384",
+          "unit": "8kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the number of shared memory buffers used by the server.",
+          "extra_desc": null,
+          "context": "postmaster",
+          "vartype": "integer",
+          "source": "configuration file",
+          "min_val": "16",
+          "max_val": "1073741823",
+          "enumvals": null,
+          "boot_val": "1024",
+          "reset_val": "16384",
+          "sourcefile": "/etc/postgresql/11/main/postgresql.conf",
+          "sourceline": 117,
+          "pending_restart": false
+        },
+        "vacuum_cost_limit": {
+          "name": "vacuum_cost_limit",
+          "setting": "200",
+          "unit": null,
+          "category": "Resource Usage / Cost-Based Vacuum Delay",
+          "short_desc": "Vacuum cost amount available before napping.",
+          "extra_desc": null,
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "1",
+          "max_val": "10000",
+          "enumvals": null,
+          "boot_val": "200",
+          "reset_val": "200",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        },
+        "work_mem": {
+          "name": "work_mem",
+          "setting": "4096",
+          "unit": "kB",
+          "category": "Resource Usage / Memory",
+          "short_desc": "Sets the maximum memory to be used for query workspaces.",
+          "extra_desc": "This much memory can be used by each internal sort operation and hash table before switching to temporary disk files.",
+          "context": "user",
+          "vartype": "integer",
+          "source": "default",
+          "min_val": "64",
+          "max_val": "2147483647",
+          "enumvals": null,
+          "boot_val": "4096",
+          "reset_val": "4096",
+          "sourcefile": null,
+          "sourceline": null,
+          "pending_restart": false
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "localhost": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-09 06:20:28.0+0000",
+          "dir": "1_2019_07_09T06_19_57_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": [
+    {
+      "Id": "F008_DELAY_NOT_TUNED",
+      "Message": "[P1] Autovacuum cost delay and limit are not tuned. In Postgres versions prior to version 12, the effective values of `autovacuum_vacuum_cost_limit` and `autovacuum_vacuum_cost_delay` are too conservative, so autovacuum is throttled. Roughly speaking, the default settings mean, that all autovacuum workers (except those which process tables with individual, per-table settings) can read data with combined read throughput only up to ~8 MiB/s. This is extremely low for modern disk systems, and with growing sizes of tables and indexes it might lead to cases when some objects are processed by autovacuum during many hours: it will take ~30 hours to read 1 TiB of data if the allowed throughput is just 8 MiB/s. In some cases, it might lead to serious issues such as performance degradation due to inability to process big tables in timed fashion and growing bloat, and even to such critical issues as transaction ID wraparound. At the same time, if disk system is powerful enough these risks can be easily mitigated by reducing throttling for autovacuum. In Postgres 12, it was decided to reduce `autovacuum_vacuum_cost_delay` 10 times (from 20 ms to 2 ms)."
+    }
+  ],
+  "recommendations": [
+    {
+      "Id": "F008_DELAY_NOT_TUNED",
+      "Message": "[P1] Autovacuum cost delay and limit are not tuned. Consider raising `autovacuum_vacuum_cost_limit` or reducing `autovacuum_vacuum_cost_delay`: for example, consider reducing `autovacuum_vacuum_cost_delay` to 2 milliseconds, as it was done with default  settings in Postgres 12. For more fine-grained tuning, analyze disk capabilities (first of all, random read and random write troughput) and logs with `log_autovacuum_min_duration = 0`, and do a few iterations of tuning."
+    },
+    {
+      "Id": "F008_DELAY_TUNE",
+      "Message": "Useful links related to autovacuum tuning:  \n    - [PostgreSQL Documentation. 19.10. Automatic Vacuuming](https://www.postgresql.org/docs/11.0/runtime-config-autovacuum.html)  \n    - [Autovacuum Tuning Basics](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/) (2ndQuadrant, 2017)  \n    - [Visualizing \u0026 Tuning Postgres Autovacuum](https://pganalyze.com/blog/visualizing-and-tuning-postgres-autovacuum) (pganalyze, 2017)  \n    - [A Case Study of Tuning Autovacuum in Amazon RDS for PostgreSQL](https://aws.amazon.com/ru/blogs/database/a-case-study-of-tuning-autovacuum-in-amazon-rds-for-postgresql/) (AWS, 2018)  \n    - [Understanding Autovacuum](https://www.youtube.com/watch?v=GqrBp0gyNHs) (video, 55 min, Citus Data, 2016)"
+    }
+  ],
+  "p1": true,
+  "p2": false,
+  "p3": false
+}
