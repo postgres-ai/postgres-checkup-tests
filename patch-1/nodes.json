@@ -1,15 +1,27 @@
 {
   "hosts": {
-    "runner-72989761-project-9951336-concurrent-0": {
+    "postgres.test1.node": {
       "internal_alias": "node1",
       "index": "1",
+      "role": "standby",
+      "role_change_detected_at": "never"
+    },
+    "postgres.test2.node": {
+      "internal_alias": "node2",
+      "index": "2",
+      "role": "standby",
+      "role_change_detected_at": "never"
+    },
+    "postgres.test3.node": {
+      "internal_alias": "node3",
+      "index": "3",
       "role": "master",
       "role_change_detected_at": "never"
     }
   },
   "last_check": {
     "epoch": "1",
-    "timestamptz": "2019-05-29 14:59:53.0+0000",
-    "dir": "1_2019_05_29T14_59_04_+0000"
+    "timestamptz": "2019-07-11 15:11:22.0+0000",
+    "dir": "1_2019_07_11T15_09_45_+0000"
   }
 }
