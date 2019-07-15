@@ -1,0 +1,281 @@
+{
+  "project": "test",
+  "name": "autovacuum_dead_tuples",
+  "checkId": "F003",
+  "timestamptz": "2019-07-15 19:42:26.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-07-15 19:42:26.0+0000",
+      "dir": "1_2019_07_15T19_41_09_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test3.node": {
+      "data": {
+        "dead_tuples": {
+          "t_with_redundant_idx": {
+            "num": 1,
+            "relation": "t_with_redundant_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:33.413918",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_ref_idx": {
+            "num": 2,
+            "relation": "t_with_redundant_ref_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:33.332847",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "exp_redundant.t_with_redundant_ref_idx": {
+            "num": 3,
+            "relation": "exp_redundant.t_with_redundant_ref_idx",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:38.753777",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "num": 4,
+            "relation": "bloated",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:37.722455",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 100000,
+            "n_tup_upd": 0,
+            "n_tup_del": 50000,
+            "pg_class_reltuples": 50000,
+            "n_live_tup": 50000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_rar_q": {
+            "num": 5,
+            "relation": "t_rar_q",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:33.643218",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 744657,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_2": {
+            "num": 6,
+            "relation": "t_red_fk_2",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:37.522969",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_bloat": {
+            "num": 7,
+            "relation": "t_with_bloat",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:36.7224",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 1000000,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": true
+          },
+          "t_with_redundant_index": {
+            "num": 8,
+            "relation": "t_with_redundant_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:33.495874",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_with_unused_index": {
+            "num": 9,
+            "relation": "t_with_unused_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:33.557252",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_1": {
+            "num": 10,
+            "relation": "t_red_fk_1",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:37.585849",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000001,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000001,
+            "n_live_tup": 1000001,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "test_schema.t_with_invalid_index": {
+            "num": 11,
+            "relation": "test_schema.t_with_invalid_index",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:38.177147",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 1000000,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 1000000,
+            "n_live_tup": 1000000,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          },
+          "t_slw_q": {
+            "num": 12,
+            "relation": "t_slw_q",
+            "relkind": "r",
+            "since_last_autovacuum": null,
+            "since_last_vacuum": "00:01:37.449547",
+            "av_count": 0,
+            "v_count": 2,
+            "n_tup_ins": 10000001,
+            "n_tup_upd": 0,
+            "n_tup_del": 0,
+            "pg_class_reltuples": 9999979,
+            "n_live_tup": 9999979,
+            "n_dead_tup": 0,
+            "dead_ratio": 0,
+            "overrided_settings": false
+          }
+        },
+        "database_stat": {
+          "stats_reset": "2019-07-15T19:38:11+00:00",
+          "stats_age": "00:04:00"
+        },
+        "overrided_settings_count": 1
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-15 19:42:26.0+0000",
+          "dir": "1_2019_07_15T19_41_09_+0000"
+        }
+      }
+    }
+  }
+}
