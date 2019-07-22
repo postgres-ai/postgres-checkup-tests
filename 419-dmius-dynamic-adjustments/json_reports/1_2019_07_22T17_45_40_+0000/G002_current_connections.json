@@ -1,0 +1,325 @@
+{
+  "project": "test",
+  "name": "current_connections",
+  "checkId": "G002",
+  "timestamptz": "2019-07-22 17:47:08.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-07-22 17:47:08.0+0000",
+      "dir": "1_2019_07_22T17_45_40_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "1": {
+          "num": 1,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 4,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "2": {
+          "num": 2,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 3,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "3": {
+          "num": 3,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 3,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "4": {
+          "num": 4,
+          "user": "test_user",
+          "database": "** ALL databases **",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "5": {
+          "num": 5,
+          "user": "test_user",
+          "database": "dbname",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-22 17:46:02.0+0000",
+          "dir": "1_2019_07_22T17_45_40_+0000"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "1": {
+          "num": 1,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 4,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "2": {
+          "num": 2,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 3,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "3": {
+          "num": 3,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 3,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "4": {
+          "num": 4,
+          "user": "test_user",
+          "database": "** ALL databases **",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "5": {
+          "num": 5,
+          "user": "test_user",
+          "database": "dbname",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-22 17:46:26.0+0000",
+          "dir": "1_2019_07_22T17_45_40_+0000"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "1": {
+          "num": 1,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 6,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "2": {
+          "num": 2,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 4,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "3": {
+          "num": 3,
+          "user": "** ALL users **",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 4,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "4": {
+          "num": 4,
+          "user": "postgres",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "5": {
+          "num": 5,
+          "user": "postgres",
+          "database": "** ALL databases **",
+          "current_state": "** ALL states **",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "6": {
+          "num": 6,
+          "user": "test_user",
+          "database": "** ALL databases **",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        },
+        "7": {
+          "num": 7,
+          "user": "test_user",
+          "database": "dbname",
+          "current_state": "active",
+          "count": 1,
+          "state_changed_more_1m_ago": 0,
+          "state_changed_more_1h_ago": 0,
+          "tx_age_more_1m": 0,
+          "tx_age_more_1h": 0
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-07-22 17:47:08.0+0000",
+          "dir": "1_2019_07_22T17_45_40_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": null,
+  "recommendations": null,
+  "p1": false,
+  "p2": false,
+  "p3": false
+}
