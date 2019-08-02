@@ -1,0 +1,405 @@
+{
+  "project": "test",
+  "name": "system_info",
+  "checkId": "A001",
+  "timestamptz": "2019-08-02 11:35:33.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-02 11:35:33.0+0000",
+      "dir": "1_2019_08_02T11_34_44_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "cpu": {
+          "cmd2check": "lscpu",
+          "Architecture": "x86_64",
+          "CPU op-mode(s)": "32-bit, 64-bit",
+          "Byte Order": "Little Endian",
+          "CPU(s)": "1",
+          "On-line CPU(s) list": "0",
+          "Thread(s) per core": "1",
+          "Core(s) per socket": "1",
+          "Socket(s)": "1",
+          "NUMA node(s)": "1",
+          "Vendor ID": "GenuineIntel",
+          "CPU family": "6",
+          "Model": "63",
+          "Model name": "Intel(R) Xeon(R) CPU @ 2.30GHz",
+          "Stepping": "0",
+          "CPU MHz": "2300.000",
+          "BogoMIPS": "4600.00",
+          "Hypervisor vendor": "KVM",
+          "Virtualization type": "full",
+          "L1d cache": "32K",
+          "L1i cache": "32K",
+          "L2 cache": "256K",
+          "L3 cache": "46080K",
+          "NUMA node0 CPU(s)": "0",
+          "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities",
+          "raw": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                1\nOn-line CPU(s) list:   0\nThread(s) per core:    1\nCore(s) per socket:    1\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 63\nModel name:            Intel(R) Xeon(R) CPU @ 2.30GHz\nStepping:              0\nCPU MHz:               2300.000\nBogoMIPS:              4600.00\nHypervisor vendor:     KVM\nVirtualization type:   full\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              46080K\nNUMA node0 CPU(s):     0\nFlags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities"
+        },
+        "ram": {
+          "cmd2check": "cat /proc/meminfo",
+          "MemTotal": "3783504 kB",
+          "MemFree": "220648 kB",
+          "MemAvailable": "2628636 kB",
+          "Buffers": "83888 kB",
+          "Cached": "2853668 kB",
+          "SwapCached": "312 kB",
+          "Active": "1384160 kB",
+          "Inactive": "1970252 kB",
+          "Active(anon)": "436732 kB",
+          "Inactive(anon)": "356672 kB",
+          "Active(file)": "947428 kB",
+          "Inactive(file)": "1613580 kB",
+          "Unevictable": "0 kB",
+          "Mlocked": "0 kB",
+          "SwapTotal": "2097148 kB",
+          "SwapFree": "2092272 kB",
+          "Dirty": "101340 kB",
+          "Writeback": "0 kB",
+          "AnonPages": "416792 kB",
+          "Mapped": "307948 kB",
+          "Shmem": "376480 kB",
+          "Slab": "130272 kB",
+          "SReclaimable": "100292 kB",
+          "SUnreclaim": "29980 kB",
+          "KernelStack": "3088 kB",
+          "PageTables": "11164 kB",
+          "NFS_Unstable": "0 kB",
+          "Bounce": "0 kB",
+          "WritebackTmp": "0 kB",
+          "CommitLimit": "3988900 kB",
+          "Committed_AS": "1894148 kB",
+          "VmallocTotal": "34359738367 kB",
+          "VmallocUsed": "0 kB",
+          "VmallocChunk": "0 kB",
+          "Percpu": "440 kB",
+          "HardwareCorrupted": "0 kB",
+          "AnonHugePages": "118784 kB",
+          "ShmemHugePages": "0 kB",
+          "ShmemPmdMapped": "0 kB",
+          "HugePages_Total": "0",
+          "HugePages_Free": "0",
+          "HugePages_Rsvd": "0",
+          "HugePages_Surp": "0",
+          "Hugepagesize": "2048 kB",
+          "Hugetlb": "0 kB",
+          "DirectMap4k": "88052 kB",
+          "DirectMap2M": "2795520 kB",
+          "DirectMap1G": "1048576 kB",
+          "raw": "MemTotal:        3783504 kB\nMemFree:          220648 kB\nMemAvailable:    2628636 kB\nBuffers:           83888 kB\nCached:          2853668 kB\nSwapCached:          312 kB\nActive:          1384160 kB\nInactive:        1970252 kB\nActive(anon):     436732 kB\nInactive(anon):   356672 kB\nActive(file):     947428 kB\nInactive(file):  1613580 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097148 kB\nSwapFree:        2092272 kB\nDirty:            101340 kB\nWriteback:             0 kB\nAnonPages:        416792 kB\nMapped:           307948 kB\nShmem:            376480 kB\nSlab:             130272 kB\nSReclaimable:     100292 kB\nSUnreclaim:        29980 kB\nKernelStack:        3088 kB\nPageTables:        11164 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3988900 kB\nCommitted_AS:    1894148 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:           0 kB\nVmallocChunk:          0 kB\nPercpu:              440 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:    118784 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       88052 kB\nDirectMap2M:     2795520 kB\nDirectMap1G:     1048576 kB"
+        },
+        "system": {
+          "cmd2check": "uname -a",
+          "raw": "Linux runner-72989761-project-9951336-concurrent-0 4.19.23-coreos-r1 #1 SMP Mon Feb 25 23:40:01 -00 2019 x86_64 x86_64 x86_64 GNU/Linux",
+          "operating_system": "Linux",
+          "kernel_release": "4.19.23-coreos-r1"
+        },
+        "virtualization": {
+          "cmd2check": "hostnamectl status",
+          "": "",
+          "raw": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-02 11:34:52.0+0000",
+          "dir": "1_2019_08_02T11_34_44_+0000"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "cpu": {
+          "cmd2check": "lscpu",
+          "Architecture": "x86_64",
+          "CPU op-mode(s)": "32-bit, 64-bit",
+          "Byte Order": "Little Endian",
+          "CPU(s)": "1",
+          "On-line CPU(s) list": "0",
+          "Thread(s) per core": "1",
+          "Core(s) per socket": "1",
+          "Socket(s)": "1",
+          "NUMA node(s)": "1",
+          "Vendor ID": "GenuineIntel",
+          "CPU family": "6",
+          "Model": "63",
+          "Model name": "Intel(R) Xeon(R) CPU @ 2.30GHz",
+          "Stepping": "0",
+          "CPU MHz": "2300.000",
+          "BogoMIPS": "4600.00",
+          "Hypervisor vendor": "KVM",
+          "Virtualization type": "full",
+          "L1d cache": "32K",
+          "L1i cache": "32K",
+          "L2 cache": "256K",
+          "L3 cache": "46080K",
+          "NUMA node0 CPU(s)": "0",
+          "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities",
+          "raw": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                1\nOn-line CPU(s) list:   0\nThread(s) per core:    1\nCore(s) per socket:    1\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 63\nModel name:            Intel(R) Xeon(R) CPU @ 2.30GHz\nStepping:              0\nCPU MHz:               2300.000\nBogoMIPS:              4600.00\nHypervisor vendor:     KVM\nVirtualization type:   full\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              46080K\nNUMA node0 CPU(s):     0\nFlags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities"
+        },
+        "ram": {
+          "cmd2check": "cat /proc/meminfo",
+          "MemTotal": "3783504 kB",
+          "MemFree": "213076 kB",
+          "MemAvailable": "2628028 kB",
+          "Buffers": "83896 kB",
+          "Cached": "2858524 kB",
+          "SwapCached": "312 kB",
+          "Active": "1386320 kB",
+          "Inactive": "1972972 kB",
+          "Active(anon)": "437156 kB",
+          "Inactive(anon)": "355944 kB",
+          "Active(file)": "949164 kB",
+          "Inactive(file)": "1617028 kB",
+          "Unevictable": "0 kB",
+          "Mlocked": "0 kB",
+          "SwapTotal": "2097148 kB",
+          "SwapFree": "2092272 kB",
+          "Dirty": "16484 kB",
+          "Writeback": "0 kB",
+          "AnonPages": "416776 kB",
+          "Mapped": "307884 kB",
+          "Shmem": "377424 kB",
+          "Slab": "133712 kB",
+          "SReclaimable": "103820 kB",
+          "SUnreclaim": "29892 kB",
+          "KernelStack": "3088 kB",
+          "PageTables": "11116 kB",
+          "NFS_Unstable": "0 kB",
+          "Bounce": "0 kB",
+          "WritebackTmp": "0 kB",
+          "CommitLimit": "3988900 kB",
+          "Committed_AS": "1894304 kB",
+          "VmallocTotal": "34359738367 kB",
+          "VmallocUsed": "0 kB",
+          "VmallocChunk": "0 kB",
+          "Percpu": "440 kB",
+          "HardwareCorrupted": "0 kB",
+          "AnonHugePages": "116736 kB",
+          "ShmemHugePages": "0 kB",
+          "ShmemPmdMapped": "0 kB",
+          "HugePages_Total": "0",
+          "HugePages_Free": "0",
+          "HugePages_Rsvd": "0",
+          "HugePages_Surp": "0",
+          "Hugepagesize": "2048 kB",
+          "Hugetlb": "0 kB",
+          "DirectMap4k": "88052 kB",
+          "DirectMap2M": "2795520 kB",
+          "DirectMap1G": "1048576 kB",
+          "raw": "MemTotal:        3783504 kB\nMemFree:          213076 kB\nMemAvailable:    2628028 kB\nBuffers:           83896 kB\nCached:          2858524 kB\nSwapCached:          312 kB\nActive:          1386320 kB\nInactive:        1972972 kB\nActive(anon):     437156 kB\nInactive(anon):   355944 kB\nActive(file):     949164 kB\nInactive(file):  1617028 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097148 kB\nSwapFree:        2092272 kB\nDirty:             16484 kB\nWriteback:             0 kB\nAnonPages:        416776 kB\nMapped:           307884 kB\nShmem:            377424 kB\nSlab:             133712 kB\nSReclaimable:     103820 kB\nSUnreclaim:        29892 kB\nKernelStack:        3088 kB\nPageTables:        11116 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3988900 kB\nCommitted_AS:    1894304 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:           0 kB\nVmallocChunk:          0 kB\nPercpu:              440 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:    116736 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       88052 kB\nDirectMap2M:     2795520 kB\nDirectMap1G:     1048576 kB"
+        },
+        "system": {
+          "cmd2check": "uname -a",
+          "raw": "Linux runner-72989761-project-9951336-concurrent-0 4.19.23-coreos-r1 #1 SMP Mon Feb 25 23:40:01 -00 2019 x86_64 x86_64 x86_64 GNU/Linux",
+          "operating_system": "Linux",
+          "kernel_release": "4.19.23-coreos-r1"
+        },
+        "virtualization": {
+          "cmd2check": "hostnamectl status",
+          "": "",
+          "raw": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-02 11:35:09.0+0000",
+          "dir": "1_2019_08_02T11_34_44_+0000"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "cpu": {
+          "cmd2check": "lscpu",
+          "Architecture": "x86_64",
+          "CPU op-mode(s)": "32-bit, 64-bit",
+          "Byte Order": "Little Endian",
+          "CPU(s)": "1",
+          "On-line CPU(s) list": "0",
+          "Thread(s) per core": "1",
+          "Core(s) per socket": "1",
+          "Socket(s)": "1",
+          "NUMA node(s)": "1",
+          "Vendor ID": "GenuineIntel",
+          "CPU family": "6",
+          "Model": "63",
+          "Model name": "Intel(R) Xeon(R) CPU @ 2.30GHz",
+          "Stepping": "0",
+          "CPU MHz": "2300.000",
+          "BogoMIPS": "4600.00",
+          "Hypervisor vendor": "KVM",
+          "Virtualization type": "full",
+          "L1d cache": "32K",
+          "L1i cache": "32K",
+          "L2 cache": "256K",
+          "L3 cache": "46080K",
+          "NUMA node0 CPU(s)": "0",
+          "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities",
+          "raw": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                1\nOn-line CPU(s) list:   0\nThread(s) per core:    1\nCore(s) per socket:    1\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 63\nModel name:            Intel(R) Xeon(R) CPU @ 2.30GHz\nStepping:              0\nCPU MHz:               2300.000\nBogoMIPS:              4600.00\nHypervisor vendor:     KVM\nVirtualization type:   full\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              46080K\nNUMA node0 CPU(s):     0\nFlags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities"
+        },
+        "ram": {
+          "cmd2check": "cat /proc/meminfo",
+          "MemTotal": "3783504 kB",
+          "MemFree": "208980 kB",
+          "MemAvailable": "2627128 kB",
+          "Buffers": "83920 kB",
+          "Cached": "2861532 kB",
+          "SwapCached": "312 kB",
+          "Active": "1388592 kB",
+          "Inactive": "1974016 kB",
+          "Active(anon)": "438752 kB",
+          "Inactive(anon)": "355576 kB",
+          "Active(file)": "949840 kB",
+          "Inactive(file)": "1618440 kB",
+          "Unevictable": "0 kB",
+          "Mlocked": "0 kB",
+          "SwapTotal": "2097148 kB",
+          "SwapFree": "2092272 kB",
+          "Dirty": "9304 kB",
+          "Writeback": "0 kB",
+          "AnonPages": "417012 kB",
+          "Mapped": "307964 kB",
+          "Shmem": "378368 kB",
+          "Slab": "135788 kB",
+          "SReclaimable": "106040 kB",
+          "SUnreclaim": "29748 kB",
+          "KernelStack": "3088 kB",
+          "PageTables": "11172 kB",
+          "NFS_Unstable": "0 kB",
+          "Bounce": "0 kB",
+          "WritebackTmp": "0 kB",
+          "CommitLimit": "3988900 kB",
+          "Committed_AS": "1894416 kB",
+          "VmallocTotal": "34359738367 kB",
+          "VmallocUsed": "0 kB",
+          "VmallocChunk": "0 kB",
+          "Percpu": "440 kB",
+          "HardwareCorrupted": "0 kB",
+          "AnonHugePages": "116736 kB",
+          "ShmemHugePages": "0 kB",
+          "ShmemPmdMapped": "0 kB",
+          "HugePages_Total": "0",
+          "HugePages_Free": "0",
+          "HugePages_Rsvd": "0",
+          "HugePages_Surp": "0",
+          "Hugepagesize": "2048 kB",
+          "Hugetlb": "0 kB",
+          "DirectMap4k": "88052 kB",
+          "DirectMap2M": "2795520 kB",
+          "DirectMap1G": "1048576 kB",
+          "raw": "MemTotal:        3783504 kB\nMemFree:          208980 kB\nMemAvailable:    2627128 kB\nBuffers:           83920 kB\nCached:          2861532 kB\nSwapCached:          312 kB\nActive:          1388592 kB\nInactive:        1974016 kB\nActive(anon):     438752 kB\nInactive(anon):   355576 kB\nActive(file):     949840 kB\nInactive(file):  1618440 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       2097148 kB\nSwapFree:        2092272 kB\nDirty:              9304 kB\nWriteback:             0 kB\nAnonPages:        417012 kB\nMapped:           307964 kB\nShmem:            378368 kB\nSlab:             135788 kB\nSReclaimable:     106040 kB\nSUnreclaim:        29748 kB\nKernelStack:        3088 kB\nPageTables:        11172 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     3988900 kB\nCommitted_AS:    1894416 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:           0 kB\nVmallocChunk:          0 kB\nPercpu:              440 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:    116736 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       88052 kB\nDirectMap2M:     2795520 kB\nDirectMap1G:     1048576 kB"
+        },
+        "system": {
+          "cmd2check": "uname -a",
+          "raw": "Linux runner-72989761-project-9951336-concurrent-0 4.19.23-coreos-r1 #1 SMP Mon Feb 25 23:40:01 -00 2019 x86_64 x86_64 x86_64 GNU/Linux",
+          "operating_system": "Linux",
+          "kernel_release": "4.19.23-coreos-r1"
+        },
+        "virtualization": {
+          "cmd2check": "hostnamectl status",
+          "": "",
+          "raw": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-02 11:35:33.0+0000",
+          "dir": "1_2019_08_02T11_34_44_+0000"
+        }
+      }
+    }
+  }
+}
