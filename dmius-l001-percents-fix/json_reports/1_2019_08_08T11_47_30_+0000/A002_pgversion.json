@@ -1,0 +1,172 @@
+{
+  "project": "test",
+  "name": "pgversion",
+  "checkId": "A002",
+  "timestamptz": "2019-08-08 11:48:19.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-08 11:48:19.0+0000",
+      "dir": "1_2019_08_08T11_47_30_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "version": "PostgreSQL 11.4 (Ubuntu 11.4-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110004",
+        "server_major_ver": "11.4 (Ubuntu 11.4-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-08 11:47:39.0+0000",
+          "dir": "1_2019_08_08T11_47_30_+0000"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "version": "PostgreSQL 11.4 (Ubuntu 11.4-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110004",
+        "server_major_ver": "11.4 (Ubuntu 11.4-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-08 11:47:56.0+0000",
+          "dir": "1_2019_08_08T11_47_30_+0000"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "version": "PostgreSQL 11.4 (Ubuntu 11.4-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110004",
+        "server_major_ver": "11.4 (Ubuntu 11.4-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-08 11:48:19.0+0000",
+          "dir": "1_2019_08_08T11_47_30_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": [
+    {
+      "Id": "A002_ALL_VERSIONS_SAME",
+      "Message": "All nodes have the same Postgres version (`11.4`).  \n"
+    },
+    {
+      "Id": "A002_SUPPORTED_VERSION",
+      "Message": "Postgres major version being used is `11` and it is currently supported by PostgreSQL Global Development Group. End of life is scheduled 2023-11-09. It means that in case of bugs and security issues, updates (new minor versions) with fixes will be released and available for use. Read more: [Versioning Policy](https://www.postgresql.org/support/versioning/).  \n"
+    },
+    {
+      "Id": "A002_NOT_LAST_MINOR_VERSION",
+      "Message": "[P2] The minor version being used (`11.4`) is not up-to-date (the newest version: `11.5`). See [the full list of changes between 11.4 and 11.5](https://why-upgrade.depesz.com/show?from=11.4\u0026to=11.5).  \n"
+    }
+  ],
+  "recommendations": [
+    {
+      "Id": "A002_NOT_LAST_MINOR_VERSION",
+      "Message": "[P2] Consider performing upgrade to the newest minor version: `11.5`.  \n"
+    },
+    {
+      "Id": "A002_GENERAL_OFFICIAL",
+      "Message": "For more information about minor and major upgrades see:  \n    - Official documentation: https://www.postgresql.org/docs/current/upgrading.html  \n"
+    }
+  ],
+  "p1": false,
+  "p2": true,
+  "p3": false
+}
