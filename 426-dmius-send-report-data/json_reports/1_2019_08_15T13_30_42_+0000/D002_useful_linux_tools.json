@@ -1,0 +1,240 @@
+{
+  "project": "test",
+  "name": "useful_linux_tools",
+  "checkId": "D002",
+  "timestamptz": "2019-08-15 13:31:57.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-15 13:31:57.0+0000",
+      "dir": "1_2019_08_15T13_30_42_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "cpu": {
+          "ps": "yes",
+          "htop": "",
+          "top": "yes",
+          "mpstat": "yes",
+          "lscpu": "yes"
+        },
+        "free_space": {
+          "df": "yes",
+          "du": "yes"
+        },
+        "io": {
+          "pidstat": "yes",
+          "iostat": "yes",
+          "iotop": "",
+          "ftrace": "",
+          "blktrace": ""
+        },
+        "memory": {
+          "free": "yes",
+          "vmstat": "yes"
+        },
+        "network": {
+          "tcpdump": "",
+          "netstat": "",
+          "ss": "yes",
+          "iptraf": "",
+          "ethtool": ""
+        },
+        "misc": {
+          "dstat": "",
+          "strace": "",
+          "ltrace": "",
+          "perf": "",
+          "numastat": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-15 13:31:02.0+0000",
+          "dir": "1_2019_08_15T13_30_42_+0000"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "cpu": {
+          "ps": "yes",
+          "htop": "",
+          "top": "yes",
+          "mpstat": "yes",
+          "lscpu": "yes"
+        },
+        "free_space": {
+          "df": "yes",
+          "du": "yes"
+        },
+        "io": {
+          "pidstat": "yes",
+          "iostat": "yes",
+          "iotop": "",
+          "ftrace": "",
+          "blktrace": ""
+        },
+        "memory": {
+          "free": "yes",
+          "vmstat": "yes"
+        },
+        "network": {
+          "tcpdump": "",
+          "netstat": "",
+          "ss": "yes",
+          "iptraf": "",
+          "ethtool": ""
+        },
+        "misc": {
+          "dstat": "",
+          "strace": "",
+          "ltrace": "",
+          "perf": "",
+          "numastat": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-15 13:31:24.0+0000",
+          "dir": "1_2019_08_15T13_30_42_+0000"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "cpu": {
+          "ps": "yes",
+          "htop": "",
+          "top": "yes",
+          "mpstat": "yes",
+          "lscpu": "yes"
+        },
+        "free_space": {
+          "df": "yes",
+          "du": "yes"
+        },
+        "io": {
+          "pidstat": "yes",
+          "iostat": "yes",
+          "iotop": "",
+          "ftrace": "",
+          "blktrace": ""
+        },
+        "memory": {
+          "free": "yes",
+          "vmstat": "yes"
+        },
+        "network": {
+          "tcpdump": "",
+          "netstat": "",
+          "ss": "yes",
+          "iptraf": "",
+          "ethtool": ""
+        },
+        "misc": {
+          "dstat": "",
+          "strace": "",
+          "ltrace": "",
+          "perf": "",
+          "numastat": ""
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-15 13:31:57.0+0000",
+          "dir": "1_2019_08_15T13_30_42_+0000"
+        }
+      }
+    }
+  }
+}
