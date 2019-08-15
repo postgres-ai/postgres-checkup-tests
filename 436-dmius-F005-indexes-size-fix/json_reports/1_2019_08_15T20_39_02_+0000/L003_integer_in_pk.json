@@ -1,0 +1,87 @@
+{
+  "project": "test",
+  "name": "integer_in_pk",
+  "checkId": "L003",
+  "timestamptz": "2019-08-15 20:40:34.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-15 20:40:34.0+0000",
+      "dir": "1_2019_08_15T20_39_02_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test3.node": {
+      "data": {
+        "tables": {
+          "orders": {
+            "table": "test_schema.orders",
+            "pk": "id",
+            "type": "int4",
+            "current_max_value": 800000000,
+            "capacity_used_percent": 37.25
+          },
+          "orders_A": {
+            "table": "test_schema.\"orders_A\"",
+            "pk": "id",
+            "type": "int4",
+            "current_max_value": 300000000,
+            "capacity_used_percent": 13.97
+          }
+        },
+        "min_table_size_bytes": 0
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-15 20:40:34.0+0000",
+          "dir": "1_2019_08_15T20_39_02_+0000"
+        }
+      }
+    }
+  }
+}
