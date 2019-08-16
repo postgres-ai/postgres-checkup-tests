@@ -1,0 +1,1371 @@
+{
+  "project": "test",
+  "name": "autovacuum_wraparound",
+  "checkId": "F002",
+  "timestamptz": "2019-08-16 10:41:15.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-16 10:41:15.0+0000",
+      "dir": "1_2019_08_16T10_39_54_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test3.node": {
+      "data": {
+        "per_instance": {
+          "postgres": {
+            "num": 1,
+            "datname": "postgres",
+            "age": 731,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "dbname": {
+            "num": 2,
+            "datname": "dbname",
+            "age": 731,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template1": {
+            "num": 3,
+            "datname": "template1",
+            "age": 731,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "template0": {
+            "num": 4,
+            "datname": "template0",
+            "age": 731,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          },
+          "checkup_test_db": {
+            "num": 5,
+            "datname": "checkup_test_db",
+            "age": 731,
+            "capacity_used": 0,
+            "datfrozenxid": "561",
+            "warning": 0
+          }
+        },
+        "per_database": {
+          "exp_redundant.t_with_redundant_ref_idx": {
+            "num": 1,
+            "relation": "exp_redundant.t_with_redundant_ref_idx",
+            "age": 691,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "601",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "test_schema.t_with_invalid_index": {
+            "num": 2,
+            "relation": "test_schema.t_with_invalid_index",
+            "age": 686,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "606",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "bloated": {
+            "num": 3,
+            "relation": "bloated",
+            "age": 684,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "608",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_1": {
+            "num": 4,
+            "relation": "t_red_fk_1",
+            "age": 680,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "612",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_red_fk_2": {
+            "num": 5,
+            "relation": "t_red_fk_2",
+            "age": 676,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "616",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_slw_q": {
+            "num": 6,
+            "relation": "t_slw_q",
+            "age": 673,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "619",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_bloat": {
+            "num": 7,
+            "relation": "t_with_bloat",
+            "age": 681,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "611",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": true
+          },
+          "test_schema.orders": {
+            "num": 8,
+            "relation": "test_schema.orders",
+            "age": 605,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "687",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "test_schema.orders_A": {
+            "num": 9,
+            "relation": "test_schema.orders_A",
+            "age": 602,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "690",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_6": {
+            "num": 10,
+            "relation": "t_6",
+            "age": 584,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "708",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_11": {
+            "num": 11,
+            "relation": "t_11",
+            "age": 569,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "723",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_15": {
+            "num": 12,
+            "relation": "t_15",
+            "age": 557,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "735",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_19": {
+            "num": 13,
+            "relation": "t_19",
+            "age": 545,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "747",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_22": {
+            "num": 14,
+            "relation": "t_22",
+            "age": 536,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "756",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_25": {
+            "num": 15,
+            "relation": "t_25",
+            "age": 527,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "765",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_1": {
+            "num": 16,
+            "relation": "t_1",
+            "age": 599,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "693",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_7": {
+            "num": 17,
+            "relation": "t_7",
+            "age": 581,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "711",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_12": {
+            "num": 18,
+            "relation": "t_12",
+            "age": 566,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "726",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_16": {
+            "num": 19,
+            "relation": "t_16",
+            "age": 554,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "738",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_20": {
+            "num": 20,
+            "relation": "t_20",
+            "age": 542,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "750",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_rar_q": {
+            "num": 21,
+            "relation": "t_rar_q",
+            "age": 714,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "578",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_fillfactor": {
+            "num": 22,
+            "relation": "t_fillfactor",
+            "age": 712,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "580",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_unused_index": {
+            "num": 23,
+            "relation": "t_with_unused_index",
+            "age": 711,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "581",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_index": {
+            "num": 24,
+            "relation": "t_with_redundant_index",
+            "age": 709,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "583",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_idx": {
+            "num": 25,
+            "relation": "t_with_redundant_idx",
+            "age": 706,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "586",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_with_redundant_ref_idx": {
+            "num": 26,
+            "relation": "t_with_redundant_ref_idx",
+            "age": 696,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "596",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_2": {
+            "num": 27,
+            "relation": "t_2",
+            "age": 596,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "696",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_8": {
+            "num": 28,
+            "relation": "t_8",
+            "age": 578,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "714",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_13": {
+            "num": 29,
+            "relation": "t_13",
+            "age": 563,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "729",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_17": {
+            "num": 30,
+            "relation": "t_17",
+            "age": 551,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "741",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_23": {
+            "num": 31,
+            "relation": "t_23",
+            "age": 533,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "759",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_27": {
+            "num": 32,
+            "relation": "t_27",
+            "age": 521,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "771",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_29": {
+            "num": 33,
+            "relation": "t_29",
+            "age": 515,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "777",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_30": {
+            "num": 34,
+            "relation": "t_30",
+            "age": 512,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "780",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_31": {
+            "num": 35,
+            "relation": "t_31",
+            "age": 509,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "783",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_32": {
+            "num": 36,
+            "relation": "t_32",
+            "age": 506,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "786",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_33": {
+            "num": 37,
+            "relation": "t_33",
+            "age": 503,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "789",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_3": {
+            "num": 38,
+            "relation": "t_3",
+            "age": 593,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "699",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_9": {
+            "num": 39,
+            "relation": "t_9",
+            "age": 575,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "717",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "pg_catalog.pg_class": {
+            "num": 40,
+            "relation": "pg_catalog.pg_class",
+            "age": 731,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "561",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_4": {
+            "num": 41,
+            "relation": "t_4",
+            "age": 590,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "702",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_5": {
+            "num": 42,
+            "relation": "t_5",
+            "age": 587,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "705",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_10": {
+            "num": 43,
+            "relation": "t_10",
+            "age": 572,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "720",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_14": {
+            "num": 44,
+            "relation": "t_14",
+            "age": 560,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "732",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_18": {
+            "num": 45,
+            "relation": "t_18",
+            "age": 548,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "744",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_21": {
+            "num": 46,
+            "relation": "t_21",
+            "age": 539,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "753",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_24": {
+            "num": 47,
+            "relation": "t_24",
+            "age": 530,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "762",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_26": {
+            "num": 48,
+            "relation": "t_26",
+            "age": 524,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "768",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_28": {
+            "num": 49,
+            "relation": "t_28",
+            "age": 518,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "774",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_34": {
+            "num": 50,
+            "relation": "t_34",
+            "age": 500,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "792",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_35": {
+            "num": 51,
+            "relation": "t_35",
+            "age": 497,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "795",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_36": {
+            "num": 52,
+            "relation": "t_36",
+            "age": 494,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "798",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_37": {
+            "num": 53,
+            "relation": "t_37",
+            "age": 491,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "801",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_38": {
+            "num": 54,
+            "relation": "t_38",
+            "age": 488,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "804",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_39": {
+            "num": 55,
+            "relation": "t_39",
+            "age": 485,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "807",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_40": {
+            "num": 56,
+            "relation": "t_40",
+            "age": 482,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "810",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_41": {
+            "num": 57,
+            "relation": "t_41",
+            "age": 479,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "813",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_42": {
+            "num": 58,
+            "relation": "t_42",
+            "age": 476,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "816",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_43": {
+            "num": 59,
+            "relation": "t_43",
+            "age": 473,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "819",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_44": {
+            "num": 60,
+            "relation": "t_44",
+            "age": 470,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "822",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_45": {
+            "num": 61,
+            "relation": "t_45",
+            "age": 467,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "825",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_46": {
+            "num": 62,
+            "relation": "t_46",
+            "age": 464,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "828",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_47": {
+            "num": 63,
+            "relation": "t_47",
+            "age": 461,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "831",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_48": {
+            "num": 64,
+            "relation": "t_48",
+            "age": 458,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "834",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_49": {
+            "num": 65,
+            "relation": "t_49",
+            "age": 455,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "837",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_50": {
+            "num": 66,
+            "relation": "t_50",
+            "age": 452,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "840",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_51": {
+            "num": 67,
+            "relation": "t_51",
+            "age": 449,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "843",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_52": {
+            "num": 68,
+            "relation": "t_52",
+            "age": 446,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "846",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_53": {
+            "num": 69,
+            "relation": "t_53",
+            "age": 443,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "849",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_54": {
+            "num": 70,
+            "relation": "t_54",
+            "age": 440,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "852",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_55": {
+            "num": 71,
+            "relation": "t_55",
+            "age": 437,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "855",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_56": {
+            "num": 72,
+            "relation": "t_56",
+            "age": 434,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "858",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_57": {
+            "num": 73,
+            "relation": "t_57",
+            "age": 431,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "861",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_58": {
+            "num": 74,
+            "relation": "t_58",
+            "age": 428,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "864",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_59": {
+            "num": 75,
+            "relation": "t_59",
+            "age": 425,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "867",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_60": {
+            "num": 76,
+            "relation": "t_60",
+            "age": 422,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "870",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_61": {
+            "num": 77,
+            "relation": "t_61",
+            "age": 419,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "873",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_62": {
+            "num": 78,
+            "relation": "t_62",
+            "age": 416,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "876",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_63": {
+            "num": 79,
+            "relation": "t_63",
+            "age": 413,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "879",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_64": {
+            "num": 80,
+            "relation": "t_64",
+            "age": 410,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "882",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_65": {
+            "num": 81,
+            "relation": "t_65",
+            "age": 407,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "885",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_66": {
+            "num": 82,
+            "relation": "t_66",
+            "age": 404,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "888",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_67": {
+            "num": 83,
+            "relation": "t_67",
+            "age": 401,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "891",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_68": {
+            "num": 84,
+            "relation": "t_68",
+            "age": 398,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "894",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_69": {
+            "num": 85,
+            "relation": "t_69",
+            "age": 395,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "897",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_70": {
+            "num": 86,
+            "relation": "t_70",
+            "age": 392,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "900",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_71": {
+            "num": 87,
+            "relation": "t_71",
+            "age": 389,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "903",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_72": {
+            "num": 88,
+            "relation": "t_72",
+            "age": 386,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "906",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_73": {
+            "num": 89,
+            "relation": "t_73",
+            "age": 383,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "909",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_74": {
+            "num": 90,
+            "relation": "t_74",
+            "age": 380,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "912",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_75": {
+            "num": 91,
+            "relation": "t_75",
+            "age": 377,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "915",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_76": {
+            "num": 92,
+            "relation": "t_76",
+            "age": 374,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "918",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_77": {
+            "num": 93,
+            "relation": "t_77",
+            "age": 371,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "921",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_78": {
+            "num": 94,
+            "relation": "t_78",
+            "age": 368,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "924",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_79": {
+            "num": 95,
+            "relation": "t_79",
+            "age": 365,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "927",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_80": {
+            "num": 96,
+            "relation": "t_80",
+            "age": 362,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "930",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_81": {
+            "num": 97,
+            "relation": "t_81",
+            "age": 359,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "933",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_82": {
+            "num": 98,
+            "relation": "t_82",
+            "age": 356,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "936",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_83": {
+            "num": 99,
+            "relation": "t_83",
+            "age": 353,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "939",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_84": {
+            "num": 100,
+            "relation": "t_84",
+            "age": 350,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "942",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_85": {
+            "num": 101,
+            "relation": "t_85",
+            "age": 347,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "945",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_86": {
+            "num": 102,
+            "relation": "t_86",
+            "age": 344,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "948",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_87": {
+            "num": 103,
+            "relation": "t_87",
+            "age": 341,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "951",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_88": {
+            "num": 104,
+            "relation": "t_88",
+            "age": 338,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "954",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_89": {
+            "num": 105,
+            "relation": "t_89",
+            "age": 335,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "957",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_90": {
+            "num": 106,
+            "relation": "t_90",
+            "age": 332,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "960",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_91": {
+            "num": 107,
+            "relation": "t_91",
+            "age": 329,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "963",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_92": {
+            "num": 108,
+            "relation": "t_92",
+            "age": 326,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "966",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_93": {
+            "num": 109,
+            "relation": "t_93",
+            "age": 323,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "969",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_94": {
+            "num": 110,
+            "relation": "t_94",
+            "age": 320,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "972",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_95": {
+            "num": 111,
+            "relation": "t_95",
+            "age": 317,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "975",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_96": {
+            "num": 112,
+            "relation": "t_96",
+            "age": 314,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "978",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_97": {
+            "num": 113,
+            "relation": "t_97",
+            "age": 311,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "981",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_98": {
+            "num": 114,
+            "relation": "t_98",
+            "age": 308,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "984",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_99": {
+            "num": 115,
+            "relation": "t_99",
+            "age": 305,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "987",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_100": {
+            "num": 116,
+            "relation": "t_100",
+            "age": 302,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "990",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_101": {
+            "num": 117,
+            "relation": "t_101",
+            "age": 299,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "993",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_102": {
+            "num": 118,
+            "relation": "t_102",
+            "age": 296,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "996",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_103": {
+            "num": 119,
+            "relation": "t_103",
+            "age": 293,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "999",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_104": {
+            "num": 120,
+            "relation": "t_104",
+            "age": 290,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1002",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_105": {
+            "num": 121,
+            "relation": "t_105",
+            "age": 287,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1005",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_106": {
+            "num": 122,
+            "relation": "t_106",
+            "age": 284,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1008",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_107": {
+            "num": 123,
+            "relation": "t_107",
+            "age": 281,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1011",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_108": {
+            "num": 124,
+            "relation": "t_108",
+            "age": 278,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1014",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          },
+          "t_109": {
+            "num": 125,
+            "relation": "t_109",
+            "age": 275,
+            "capacity_used": 0,
+            "rel_relfrozenxid": "1017",
+            "toast_relfrozenxid": null,
+            "warning": 0,
+            "overrided_settings": false
+          }
+        },
+        "overrided_settings_count": 1
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-16 10:41:15.0+0000",
+          "dir": "1_2019_08_16T10_39_54_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": null,
+  "recommendations": null,
+  "p1": false,
+  "p2": false,
+  "p3": false
+}
