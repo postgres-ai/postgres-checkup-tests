@@ -1,0 +1,395 @@
+{
+  "project": "test",
+  "name": "disk_usage_fstype",
+  "checkId": "A008",
+  "timestamptz": "2019-08-22 11:16:23.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2019-08-22 11:16:23.0+0000",
+      "dir": "1_2019_08_22T11_15_09_+0000"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "db_data": {
+          "PGDATA": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data1",
+            "device": "overlay"
+          },
+          "WAL directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data1/pg_wal",
+            "device": "overlay"
+          },
+          "stats_temp_directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data1/pg_stat_tmp",
+            "device": "overlay"
+          }
+        },
+        "fs_data": {
+          "0": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/",
+            "device": "overlay"
+          },
+          "1": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/dev",
+            "path": "/dev",
+            "device": "tmpfs"
+          },
+          "2": {
+            "fstype": "tmpfs",
+            "size": "1.9G",
+            "avail": "1.9G",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/sys/fs/cgroup",
+            "path": "/sys/fs/cgroup",
+            "device": "tmpfs"
+          },
+          "3": {
+            "fstype": "ext4",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/builds",
+            "path": "/builds",
+            "device": "/dev/sda9"
+          },
+          "4": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "24K",
+            "use_percent": "1%",
+            "mount_point": "/dev/shm",
+            "path": "/dev/shm",
+            "device": "shm"
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-22 11:15:27.0+0000",
+          "dir": "1_2019_08_22T11_15_09_+0000"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "db_data": {
+          "PGDATA": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data2",
+            "device": "overlay"
+          },
+          "WAL directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data2/pg_wal",
+            "device": "overlay"
+          },
+          "stats_temp_directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/data2/pg_stat_tmp",
+            "device": "overlay"
+          }
+        },
+        "fs_data": {
+          "0": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/",
+            "device": "overlay"
+          },
+          "1": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/dev",
+            "path": "/dev",
+            "device": "tmpfs"
+          },
+          "2": {
+            "fstype": "tmpfs",
+            "size": "1.9G",
+            "avail": "1.9G",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/sys/fs/cgroup",
+            "path": "/sys/fs/cgroup",
+            "device": "tmpfs"
+          },
+          "3": {
+            "fstype": "ext4",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/builds",
+            "path": "/builds",
+            "device": "/dev/sda9"
+          },
+          "4": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "24K",
+            "use_percent": "1%",
+            "mount_point": "/dev/shm",
+            "path": "/dev/shm",
+            "device": "shm"
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-22 11:15:50.0+0000",
+          "dir": "1_2019_08_22T11_15_09_+0000"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "db_data": {
+          "PGDATA": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/main",
+            "device": "overlay"
+          },
+          "WAL directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/lib/postgresql/11/main/pg_wal",
+            "device": "overlay"
+          },
+          "stats_temp_directory": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/var/run/postgresql/11-main.pg_stat_tmp",
+            "device": "overlay"
+          }
+        },
+        "fs_data": {
+          "0": {
+            "fstype": "overlay",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/",
+            "path": "/",
+            "device": "overlay"
+          },
+          "1": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/dev",
+            "path": "/dev",
+            "device": "tmpfs"
+          },
+          "2": {
+            "fstype": "tmpfs",
+            "size": "1.9G",
+            "avail": "1.9G",
+            "used": "0",
+            "use_percent": "0%",
+            "mount_point": "/sys/fs/cgroup",
+            "path": "/sys/fs/cgroup",
+            "device": "tmpfs"
+          },
+          "3": {
+            "fstype": "ext4",
+            "size": "22G",
+            "avail": "12G",
+            "used": "9.2G",
+            "use_percent": "44%",
+            "mount_point": "/builds",
+            "path": "/builds",
+            "device": "/dev/sda9"
+          },
+          "4": {
+            "fstype": "tmpfs",
+            "size": "64M",
+            "avail": "64M",
+            "used": "24K",
+            "use_percent": "1%",
+            "mount_point": "/dev/shm",
+            "path": "/dev/shm",
+            "device": "shm"
+          }
+        }
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2019-08-22 11:16:23.0+0000",
+          "dir": "1_2019_08_22T11_15_09_+0000"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": [
+    {
+      "Id": "A008_SPACE_USAGE_NORMAL",
+      "Message": "Risks of running out of free disk space in the nearest future are low."
+    }
+  ],
+  "recommendations": null,
+  "p1": false,
+  "p2": false,
+  "p3": false
+}
