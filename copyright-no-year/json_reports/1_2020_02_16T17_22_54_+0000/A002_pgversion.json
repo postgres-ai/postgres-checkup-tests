@@ -1,0 +1,176 @@
+{
+  "project": "test",
+  "name": "pgversion",
+  "checkId": "A002",
+  "timestamptz": "2020-02-16 17:23:22.0+0000",
+  "dependencies": {
+    "null": "null"
+  },
+  "last_nodes_json": {
+    "hosts": {
+      "postgres.test1.node": {
+        "internal_alias": "node1",
+        "index": "1",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test2.node": {
+        "internal_alias": "node2",
+        "index": "2",
+        "role": "standby",
+        "role_change_detected_at": "never"
+      },
+      "postgres.test3.node": {
+        "internal_alias": "node3",
+        "index": "3",
+        "role": "master",
+        "role_change_detected_at": "never"
+      }
+    },
+    "last_check": {
+      "epoch": "1",
+      "timestamptz": "2020-02-16 17:23:22.0+0000",
+      "dir": "1_2020_02_16T17_22_54_+0000",
+      "database": "dbname"
+    }
+  },
+  "database": "dbname",
+  "results": {
+    "postgres.test1.node": {
+      "data": {
+        "version": "PostgreSQL 11.7 (Ubuntu 11.7-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110007",
+        "server_major_ver": "11.7 (Ubuntu 11.7-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2020-02-16 17:23:05.0+0000",
+          "dir": "1_2020_02_16T17_22_54_+0000",
+          "database": "dbname"
+        }
+      }
+    },
+    "postgres.test2.node": {
+      "data": {
+        "version": "PostgreSQL 11.7 (Ubuntu 11.7-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110007",
+        "server_major_ver": "11.7 (Ubuntu 11.7-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2020-02-16 17:23:13.0+0000",
+          "dir": "1_2020_02_16T17_22_54_+0000",
+          "database": "dbname"
+        }
+      }
+    },
+    "postgres.test3.node": {
+      "data": {
+        "version": "PostgreSQL 11.7 (Ubuntu 11.7-1.pgdg16.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609, 64-bit",
+        "server_version_num": "110007",
+        "server_major_ver": "11.7 (Ubuntu 11.7-1.pgdg16.04+1)",
+        "server_minor_ver": "04+1)"
+      },
+      "nodes.json": {
+        "hosts": {
+          "postgres.test1.node": {
+            "internal_alias": "node1",
+            "index": "1",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test2.node": {
+            "internal_alias": "node2",
+            "index": "2",
+            "role": "standby",
+            "role_change_detected_at": "never"
+          },
+          "postgres.test3.node": {
+            "internal_alias": "node3",
+            "index": "3",
+            "role": "master",
+            "role_change_detected_at": "never"
+          }
+        },
+        "last_check": {
+          "epoch": "1",
+          "timestamptz": "2020-02-16 17:23:22.0+0000",
+          "dir": "1_2020_02_16T17_22_54_+0000",
+          "database": "dbname"
+        }
+      }
+    }
+  },
+  "processed": true,
+  "conclusions": [
+    {
+      "Id": "A002_ALL_VERSIONS_SAME",
+      "Message": "All nodes have the same Postgres version (`11.7`).  \n"
+    },
+    {
+      "Id": "A002_SUPPORTED_VERSION",
+      "Message": "Postgres major version being used is `11` and it is currently supported by PostgreSQL Global Development Group. End of life is scheduled 2023-11-09. It means that in case of bugs and security issues, updates (new minor versions) with fixes will be released and available for use. Read more: [Versioning Policy](https://www.postgresql.org/support/versioning/).  \n"
+    },
+    {
+      "Id": "A002_LAST_MINOR_VERSION",
+      "Message": "`11.7` is the most up-to-date Postgres minor version in the branch `11`.  \n"
+    }
+  ],
+  "recommendations": [
+    {
+      "Id": "A002_NOT_LAST_MAJOR_VERSION",
+      "Message": "[P3] Consider upgrading to the newest major version: 12. It has a lot of new features and improvements.  \n"
+    },
+    {
+      "Id": "A002_GENERAL_FULL",
+      "Message": "For more information about minor and major upgrades see:  \n    - Official documentation: https://www.postgresql.org/docs/current/upgrading.html  \n    - [Major-version upgrading with minimal downtime](https://www.depesz.com/2016/11/08/major-version-upgrading-with-minimal-downtime/) (depesz.com)  \n    - [Upgrading PostgreSQL on AWS RDS with minimum or zero downtime](https://medium.com/preply-engineering/postgres-multimaster-34f2446d5e14)  \n    - [Near-Zero Downtime Automated Upgrades of PostgreSQL Clusters in Cloud](https://www.2ndquadrant.com/en/blog/near-zero-downtime-automated-upgrades-postgresql-clusters-cloud/) (2ndQuadrant.com)  \n    - [Updating a 50 terabyte PostgreSQL database](https://medium.com/adyen/updating-a-50-terabyte-postgresql-database-f64384b799e7)  \n"
+    }
+  ],
+  "p1": false,
+  "p2": false,
+  "p3": true
+}
